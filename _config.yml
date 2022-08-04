@@ -2,7 +2,7 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title
 
-exclude: [".rvmrc", ".rbenv-version", "ReadMe.md", "Rakefile", "changelog.md", "License.md"]
+exclude: [".rvmrc", ".rbenv-version", "ReadMe.md", "Rakefile", "changelog.md", "License.md", "vendor/"]
 highlighter: rouge
 
 # Themes are encouraged to use these universal variables
@@ -12,7 +12,7 @@ title : simple site
 author :
   name : Emil Constantinescu
   email : emconsta@anl.gov
-#  github : kbroman
+#  github : emconsta
 #  feedburner : nil
 
 # NOTE: Replacing this next line with your own URL
@@ -61,7 +61,7 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  # ASSET_PATH : https://kbroman.org/simple_site/assets/themes/twitter
+  # ASSET_PATH : https://emconsta.github.io/emil.github.io/assets/themes/twitter
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
