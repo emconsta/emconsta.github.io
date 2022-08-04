@@ -108,8 +108,8 @@ JB :
 header_pages:
  - Research.md
 
- toc:
-  - title: Group 1
-    subfolderitems:
-      - page: Research
-        url: /Research.html
+toc:
+- title: Group 1
+  subfolderitems:
+  - page: Research
+    url: /Research.html
