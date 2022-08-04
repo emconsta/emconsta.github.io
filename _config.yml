@@ -22,7 +22,7 @@ title: Emil Constantinescu's homepage
 email: emconsta[at]mcs.anl.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Computational Mathematician in the Mathematics and Computer Science Division and part of the Laboratory for Applied Mathematics, Numerical Software, and Statistics at Argonne National Laboratory and a Scientist at Large at the Consortium for Advanced Science and Engineering (CASE), The University of Chicago.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/pages" # the subpath of your site, e.g. /blog
 url: "https://emconsta.github.io/emil.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  emconsta
@@ -36,10 +36,10 @@ plugins:
   - jekyll-feed
 
 header_pages:
- - pages/group.md
- - pages/projects.md
- - pages/publications.md
- - pages/research.md
+ - group.md
+ - projects.md
+ - publications.md
+ - research.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
