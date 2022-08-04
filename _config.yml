@@ -5,6 +5,11 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "ReadMe.md", "Rakefile", "changelog.md", "License.md", "vendor/"]
 highlighter: rouge
 
+minima:
+  date_format: "%b %-d, %Y"
+
+theme: minima
+
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
