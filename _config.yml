@@ -35,6 +35,9 @@ theme: minima
 #  - jekyll-feed
 
 header_pages:
+ - pages/group.md
+ - pages/projects.md
+ - pages/publications.md
  - pages/research.md
 
 # Exclude from processing.
