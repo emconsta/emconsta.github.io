@@ -28,7 +28,7 @@ url: "https://emconsta.github.io/emil.github.io" # the base hostname & protocol 
 #github_username:  emconsta
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 
 minima:
   skin: solarized-dark
