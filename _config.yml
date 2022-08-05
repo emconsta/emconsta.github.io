@@ -37,9 +37,9 @@ plugins:
 
 header_pages:
  - pages/group.md
- - projects.md
- - publications.md
- - research.md
+ - pages/projects.md
+ - pages/publications.md
+ - pages/research.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
