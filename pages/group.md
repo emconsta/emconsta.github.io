@@ -6,7 +6,7 @@ description: Group
 
 # Group page
 
-</ul>
+
 <hr />
 <h3 id="research-scientists">Research Scientists:</h3>
 <h4 id="current">Current:</h4>
