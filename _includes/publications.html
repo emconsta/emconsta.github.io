@@ -1,0 +1,40 @@
+{%- assign pubs = site.data.publications -%}
+
+{%- if include.type -%}
+  {%- assign pubs = pubs | where: "type", include.type -%}
+{%- endif -%}
+
+{%- if include.tag -%}
+  {%- assign pubs = pubs | where_exp: "p", "p.tags contains include.tag" -%}
+{%- endif -%}
+
+{%- if include.featured == "true" -%}
+  {%- assign pubs = pubs | where: "featured", true -%}
+{%- endif -%}
+
+{%- assign pubs = pubs | sort: "year" | reverse -%}
+
+{%- assign limit = nil -%}
+{%- if include.limit -%}{%- assign limit = include.limit | plus: 0 -%}{%- endif -%}
+
+{%- if include.group_by_year == "true" -%}
+  {%- assign groups = pubs | group_by: "year" -%}
+  {%- for group in groups -%}
+    <h3>{{ group.name }}</h3>
+    <ul>
+      {%- if limit -%}
+        {%- for pub in group.items limit: limit -%}{%- include publication.html pub=pub -%}{%- endfor -%}
+      {%- else -%}
+        {%- for pub in group.items -%}{%- include publication.html pub=pub -%}{%- endfor -%}
+      {%- endif -%}
+    </ul>
+  {%- endfor -%}
+{%- else -%}
+  <ul>
+    {%- if limit -%}
+      {%- for pub in pubs limit: limit -%}{%- include publication.html pub=pub -%}{%- endfor -%}
+    {%- else -%}
+      {%- for pub in pubs -%}{%- include publication.html pub=pub -%}{%- endfor -%}
+    {%- endif -%}
+  </ul>
+{%- endif -%}

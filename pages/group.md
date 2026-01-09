@@ -4,81 +4,54 @@ title: Group
 description: Group
 ---
 
-# Group page
+# Research Group
 
+## Research scientists
 
-<hr />
-<h3 id="research-scientists">Research Scientists:</h3>
-<h4 id="current">Current:</h4>
-<p>  <a href="https://caidao22.github.io/">Hong Zhang</a> (2016-2018,
-2021-, Sensitivity analysis - PETSc)<br />
-  <a href="http://www.mcs.anl.gov/~attia/">Ahmed Attia</a> (2019-, Data
-assimilation)</p>
-<p> </p>
-<h4 id="past"><strong>Past:</strong></h4>
-  <a href="http://www.mcs.anl.gov/~jbessac">Julie Bessac</a> (2017-2021,
-Data analysis, Statistics)<br />
-  <a href="https://www.mcs.anl.gov/~oanam/">Oana Marin</a> (2016-2018,
-CFD, spectral elements - PETSc; co-supervised with Barry Smith)<br />
+### Current
 
-<h3 id="postdocs">Postdocs:</h3>
-<h4 id="current-1">Current:</h4>
-<p>  <a href="https://www.mcs.anl.gov/~jrudi">Johann Rudi</a> (2020-,
-PDEs, inverse problems)<br />
-  <a href="https://www.anl.gov/profile/shinhoo-kang-0">Shinhoo Kang</a>
-(2019-, PDEs, CFD, multidomain simulation)</p>
-<h4 id="past-1"><br />
-<strong>Past:</strong></h4>
-<p>  <a href="http://www.mcs.anl.gov/~attia/">Ahmed Attia</a>
-(2017-2019, Data assimilation)<br />
-  <a href="http://www.mcs.anl.gov/person/vishwas-rao">Vishwas Rao</a>
-(2017-2018, Data assimilation)<br />
-  <a href="http://www.mcs.anl.gov/~jbessac">Julie Bessac</a> (2014-2017,
-Data analysis, Statistics)<br />
-  <a href="https://caidao22.github.io/">Hong Zhang</a> (2014-2016,
-Sensitivity analysis - PETSc)<br />
-  <a href="https://web.ece.ucsb.edu/~zhengzhang/">Zheng Zhang</a>
-(2015-2016, UQ)<br />
-  <a href="https://debog.github.io">Debojyoti Ghosh</a> (2013-2015, Time
-stepping, CFD - PETSc)<br />
-  <a href="https://www.predictivesciencelab.org/">Ilias Bilionis</a>
-(2013-2014, Uncertainty Quantification)<br />
-  Xiaoyan Zeng (2012, UQ - UQ for the crop model in the CESM - community
-Earth system model)<br />
-<em>  <a
-href="https://energyenvironment.pnnl.gov/staff/staff_info.asp?staff_num=3487">Shri</a></em><a
-href="http://www.mcs.anl.gov/~abhyshr/">rang Abhyankar</a> (2012-2014,
-Time stepping and power grid applications - PETSc)</p>
-<h3 id="grad-students-in-practicum">Grad students in practicum:</h3>
-<p>  <a href="https://www.linkedin.com/in/shaohui-liu-159315a7">Shaohui
-Liu</a> (2019, graduate, Computational Applied Mathematics, Stony Brook
-and UTexas Austin)<br />
-  <a
-href="https://www.coursicle.com/ucmerced/professors/Tucker+Hartland/">Tucker
-Hartland</a> (2018, graduate, Mathematics, UC Merced)<br />
-  <a href="https://github.com/rohitkt10">Rohit Tripathy</a> (2017,
-graduate, Mechanical Engineering, Purdue)<br />
-  <a
-href="https://sites.google.com/a/ncsu.edu/http-www4-ncsu-edu-jlhart3/home">Joey
-Hart</a> (2016, graduate, Applied Mathematics, North Carolina State
-University)<br />
-  <a href="http://people.cs.vt.edu/~attia/">Ahmed Attia</a> (2015,
-graduate, Computer Science, Virginia Tech)<br />
-  <a href="http://people.cs.vt.edu/~zhang/">Hong Zhang</a> (2012,
-graduate, Computer Science, Virginia Tech)<br />
-  <a href="http://people.cs.vt.edu/~alexgc/">Alexandru Cioaca</a> (2010,
-2011, graduate, Computer Science, Virginia Tech)<br />
-  <a href="https://www.sc.fsu.edu/people?uid=jls07c">Jeffrey Steward</a>
-(2010, graduate, Mathematics, Florida State University)<br />
-  <a href="http://matthewrocklin.com">Matthew Rocklin</a> (2009,
-graduate, Computer Science, University of Chicago)<br />
-</p>
-<p> </p>
-<p><em>updated August 2020</em></p></td>
-</tr>
-<tr class="even">
-<td data-valign="top"> </td>
-<td data-valign="top"> </td>
-</tr>
-</tbody>
-</table>
+- [Hong Zhang](https://caidao22.github.io/) (2016–2018, 2021–; Sensitivity analysis, adjoints, PETSc)
+
+### Alumni
+
+- [Ahmed Attia](http://www.mcs.anl.gov/~attia/) (2019–2025; Optimal experimental design, data assimilation)
+- [Shinhoo Kang](https://www.anl.gov/profile/shinhoo-kang-0) (2023–2024; PDEs, CFD, multidomain simulation, machine learning)
+- [Julie Bessac](http://www.mcs.anl.gov/~jbessac) (2017–2021; Data analysis, statistics)
+- [Oana Marin](https://www.mcs.anl.gov/~oanam/) (2016–2018; CFD, spectral elements; co-supervised with Barry Smith)
+
+## Postdoctoral researchers
+
+### Current
+
+- [Junoh Jung](https://www.anl.gov/profile/junoh-jung) (2024–; Fluid dynamics, machine learning)
+- [Pi-Yueh Chuang](https://www.anl.gov/profile/piyueh-chuang) (2024–; HPC, machine learning, statistical methods)
+- [Arkaprabha Ganguli](https://www.anl.gov/profile/arkaprabha-ganguli) (2023–; Machine learning, statistical methods)
+
+### Alumni
+
+- [Piyush Garg](https://pgarg7.web.illinois.edu/wp/) (2022–2023; Machine learning, climate models; now at NVIDIA)
+- [Shinhoo Kang](https://www.anl.gov/profile/shinhoo-kang-0) (2019–2023; PDEs, CFD, multidomain simulation, machine learning)
+- [Johann Rudi](https://personal.math.vt.edu/jrudi/) (2020–2022; PDEs, inverse problems)
+- [Ahmed Attia](http://www.mcs.anl.gov/~attia/) (2017–2019; Data assimilation)
+- [Vishwas Rao](http://www.mcs.anl.gov/person/vishwas-rao) (2017–2018; Data assimilation)
+- [Julie Bessac](http://www.mcs.anl.gov/~jbessac) (2014–2017; Data analysis, statistics)
+- [Hong Zhang](https://caidao22.github.io/) (2014–2016; Sensitivity analysis, PETSc)
+- [Zheng Zhang](https://web.ece.ucsb.edu/~zhengzhang/) (2015–2016; Uncertainty quantification)
+- [Debojyoti Ghosh](https://debog.github.io) (2013–2015; Time stepping, CFD, PETSc)
+- [Ilias Bilionis](https://www.predictivesciencelab.org/) (2013–2014; Uncertainty quantification)
+- Xiaoyan Zeng (2012; UQ for the crop model in CESM)
+- [Shrirang Abhyankar](http://www.mcs.anl.gov/~abhyshr/) (2012–2014; Time stepping and power grid applications, PETSc)
+
+## Graduate students in practicum
+
+- [Haoyuan Chen](https://www.researchgate.net/profile/Haoyuan_Chen5) (2023; Texas A&M University, Industrial and Systems Engineering)
+- [Brian Chen](https://bchen0.github.io) (2023; University of Michigan, Applied Mathematics)
+- [Shaohui Liu](https://www.linkedin.com/in/shaohui-liu-159315a7) (2019; Stony Brook / UT Austin, Computational Applied Mathematics)
+- [Tucker Hartland](https://www.coursicle.com/ucmerced/professors/Tucker+Hartland/) (2018; UC Merced, Mathematics)
+- [Rohit Tripathy](https://github.com/rohitkt10) (2017; Purdue, Mechanical Engineering)
+- [Joey Hart](https://sites.google.com/a/ncsu.edu/http-www4-ncsu-edu-jlhart3/home) (2016; North Carolina State University, Applied Mathematics)
+- [Ahmed Attia](http://people.cs.vt.edu/~attia/) (2015; Virginia Tech, Computer Science)
+- [Hong Zhang](http://people.cs.vt.edu/~zhang/) (2012; Virginia Tech, Computer Science)
+- [Alexandru Cioaca](http://people.cs.vt.edu/~alexgc/) (2010–2011; Virginia Tech, Computer Science)
+- [Jeffrey Steward](https://www.sc.fsu.edu/people?uid=jls07c) (2010; Florida State University, Mathematics)
+- [Matthew Rocklin](http://matthewrocklin.com) (2009; University of Chicago, Computer Science)
