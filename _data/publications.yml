@@ -11,6 +11,7 @@
   arxiv: '2507.00298'
   tags:
   - data-assimilation
+  - sciml
   featured: true
 - id: chen-2025-improving-the-predictability-of-the-madden-julian
   type: journal
@@ -23,6 +24,7 @@
   arxiv: '2505.15934'
   tags:
   - data-assimilation
+  - sciml
   featured: true
 - id: chuang-2025-distributional-sensitivity-analysis-enabling-differentiability-in
   type: journal
@@ -33,6 +35,7 @@
   arxiv: '2508.09347'
   tags:
   - data-assimilation
+  - sciml
   featured: true
 - id: constantinescu-2025-differentiable-dg-with-neural-operator-source
   type: journal
@@ -42,6 +45,7 @@
   arxiv: '2310.18897'
   tags:
   - data-assimilation
+  - sciml
   featured: true
 - id: zhao-2024-data-driven-estimation-of-failure-probabilities-in
   type: journal
@@ -95,6 +99,7 @@
   arxiv: 2310.18897v2
   tags:
   - time-stepping
+  - sciml
 - id: constantinescu-2023-learning-subgrid-scale-models-with-neural-ordinary
   type: journal
   title: Learning subgrid-scale models with neural ordinary differential equations
@@ -106,6 +111,7 @@
   tags:
   - time-stepping
   - data-assimilation
+  - sciml
   featured: true
 - id: maldonado-2022-trust-region-approximation-of-extreme-trajectories-in
   type: journal
@@ -178,6 +184,7 @@
   pdf: https://arxiv.org/pdf/2112.07856.pdf
   tags:
   - data-assimilation
+  - sciml
   featured: true
 - id: constantinescu-2022-entropy-preserving-and-entropy-stable-relaxation-imex-and
   type: journal
@@ -464,6 +471,7 @@
   doi: 10.1615/Int.J.UncertaintyQuantification.2012003722
   tags:
   - data-assimilation
+  - sciml
 - id: giraldo-2013-implicit-explicit-formulations-of-a-three-dimensional-nonhydrostatic
   type: journal
   title: Implicit-explicit formulations of a three-dimensional nonhydrostatic unified model of the atmosphere
@@ -649,6 +657,7 @@
   arxiv: '2006.03466'
   tags:
   - data-assimilation
+  - sciml
   featured: true
 - id: liu-2004-probabilistic-analysis-of-masked-loads-with
   type: journal
@@ -724,6 +733,7 @@
   year: 2020
   tags:
   - data-assimilation
+  - sciml
 - id: mele-2018-performance-evaluation-for-a-petsc-parallel-in-time
   type: proceedings
   title: Performance evaluation for a PETSc Parallel-in-Time Solver based on the MGRIT algorithm
@@ -773,6 +783,7 @@
   year: 2012
   tags:
   - data-assimilation
+  - sciml
 - id: cioaca-2011-adjoint-sensitivity-analysis-for-numerical-weather
   type: proceedings
   title: 'Adjoint Sensitivity Analysis for Numerical Weather Prediction: Applications to Power Grid Optimization'

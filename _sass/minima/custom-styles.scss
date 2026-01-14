@@ -1,2 +1,124 @@
-// Placeholder to allow defining custom styles that override everything else.
-// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+// Custom styles that sit on top of Minima.
+
+.site-header {
+  border-top: 0;
+}
+
+.site-title {
+  font-weight: 600;
+  letter-spacing: -0.25px;
+}
+
+.page-content {
+  padding-top: $spacing-unit * 1.25;
+}
+
+.home-hero {
+  display: flex;
+  gap: $spacing-unit;
+  align-items: center;
+  margin-bottom: $spacing-unit;
+  padding: $spacing-unit * 0.75;
+  border: 1px solid $border-color-01;
+  border-radius: 10px;
+  background: $background-color;
+}
+
+.home-hero__photo {
+  flex: 0 0 auto;
+}
+
+.home-hero__photo img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid $border-color-01;
+}
+
+.home-hero__meta {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.home-hero__name {
+  margin-bottom: 0;
+}
+
+.home-hero__tagline {
+  margin-top: 6px;
+  color: $brand-color;
+}
+
+.home-hero__links {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border: 1px solid $border-color-01;
+  border-radius: 999px;
+  background: $code-background-color;
+  color: $text-color;
+  line-height: 1.1;
+}
+
+.pill:hover,
+.pill:focus {
+  text-decoration: none;
+  border-color: $border-color-03;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  display: block;
+  padding: 16px;
+  border: 1px solid $border-color-01;
+  border-radius: 12px;
+  background: $background-color;
+}
+
+.card:hover,
+.card:focus {
+  text-decoration: none;
+  border-color: $border-color-03;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.card__desc {
+  margin: 0;
+  color: $brand-color;
+}
+
+.card__meta {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: $brand-color;
+  @include relative-font-size(0.9);
+}
+
+@include media-query($on-palm) {
+  .home-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
