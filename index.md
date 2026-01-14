@@ -18,10 +18,13 @@ description: Homepage of Emil Constantinescu
       <a class="pill" href="https://scholar.google.com/citations?hl=en&user=aPLUgCMAAAAJ">Google Scholar</a>
       <a class="pill" href="https://github.com/emconsta">GitHub</a>
     </div>
+    <p>
+      I am a Senior Computational Mathematician in the Mathematics and Computer Science Division and part of the
+      Laboratory for Applied Mathematics, Numerical Software, and Statistics (LANS) at Argonne National Laboratory, and
+      a Scientist at Large at the Consortium for Advanced Science and Engineering (CASE), The University of Chicago.
+    </p>
   </div>
 </div>
-
-I am a Senior Computational Mathematician in the Mathematics and Computer Science Division and part of the Laboratory for Applied Mathematics, Numerical Software, and Statistics (LANS) at Argonne National Laboratory, and a Scientist at Large at the Consortium for Advanced Science and Engineering (CASE), The University of Chicago.
 
 ## Research
 
