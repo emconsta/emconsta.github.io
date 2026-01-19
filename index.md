@@ -11,18 +11,22 @@ description: Homepage of Emil Constantinescu
   </div>
   <div class="home-hero__meta">
     <h1 class="home-hero__name">Emil Constantinescu</h1>
-    <p class="home-hero__tagline">
-      Senior Computational Mathematician, Argonne National Laboratory · Scientist at Large, CASE (University of Chicago)
-    </p>
+    <ul class="home-hero__affiliations">
+      <li>
+        Senior Computational Mathematician, <a href="https://www.anl.gov/mcs">Mathematics and Computer Science Division (MCS)</a>, Argonne National Laboratory
+      </li>
+      <li>
+        <a href="https://www.anl.gov/mcs/lans">Laboratory for Applied Mathematics, Numerical Software, and Statistics (LANS)</a>, Argonne National Laboratory
+      </li>
+      <li>
+        Scientist at Large, <a href="https://researchdevelopment.uchicago.edu/case/">Consortium for Advanced Science and Engineering (CASE)</a>, University of Chicago
+      </li>
+    </ul>
     <div class="home-hero__links">
       <a class="pill" href="https://scholar.google.com/citations?hl=en&user=aPLUgCMAAAAJ">Google Scholar</a>
+      <a class="pill" href="https://orcid.org/0000-0002-7003-6899">ORCID</a>
       <a class="pill" href="https://github.com/emconsta">GitHub</a>
     </div>
-    <p>
-      I am a Senior Computational Mathematician in the Mathematics and Computer Science Division and part of the
-      Laboratory for Applied Mathematics, Numerical Software, and Statistics (LANS) at Argonne National Laboratory, and
-      a Scientist at Large at the Consortium for Advanced Science and Engineering (CASE), The University of Chicago.
-    </p>
   </div>
 </div>
 
