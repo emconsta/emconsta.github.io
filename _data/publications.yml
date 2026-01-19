@@ -54,7 +54,7 @@
   type: journal
   title: Differentiable DG with Neural Operator Source Term Correction
   authors: Shinhoo Kang and Emil M. Constantinescu
-  venue: []
+  venue: Submitted
   volume: []
   number: []
   pages: []
@@ -77,7 +77,7 @@
   pages: []
   year: 2024
   doi: []
-  arxiv: []
+  arxiv: '2401.02555'
   pdf: []
   tags: []
   featured: true
@@ -354,7 +354,7 @@
 - id: hart-2019-global-sensitivity-analysis-for-statistical-model
   type: journal
   title: Global sensitivity analysis for statistical model parameters
-  authors: Joseph Hart*, Julie Bessac, and Emil M. Constantinescu
+  authors: Joseph Hart, Julie Bessac, and Emil M. Constantinescu
   venue: []
   volume: []
   number: []
@@ -370,7 +370,7 @@
   type: journal
   title: An optimal experimental design framework for adaptive inflation and covariance localization for
     ensemble filters
-  authors: Ahmed Attia* and Emil M. Constantinescu
+  authors: Ahmed Attia and Emil M. Constantinescu
   venue: Submitted
   volume: []
   number: []
@@ -418,7 +418,7 @@
   type: journal
   title: Stochastic simulation of predictive space-time scenarios of wind speed using observations and
     physical models
-  authors: Julie Bessac*, Emil M. Constantinescu, and Mihai Anitescu
+  authors: Julie Bessac, Emil M. Constantinescu, and Mihai Anitescu
   venue: []
   volume: '12'
   number: '1'
@@ -432,14 +432,14 @@
   featured: true
 - id: marin-2018-pde-constrained-optimization-with-spectral-elements-using
   type: journal
-  title: PDE-constrained optimization with spectral elements using PETSc and TAO
-  authors: Oana Marin*, Emil Constantinescu, and Barry Smith
+  title: A scalable matrix-free spectral element approach for unsteady PDE constrained optimization using PETSc/TAO
+  authors: Oana Marin, Emil Constantinescu, and Barry Smith
   venue: []
-  volume: []
+  volume: 47
   number: []
-  pages: []
-  year: 2018
-  doi: []
+  pages: 101207
+  year: 2020
+  doi: 10.1016/j.jocs.2020.101207
   arxiv: '1806.01422'
   pdf: []
   tags:
@@ -448,8 +448,8 @@
 - id: abhyankar-2018-petsc-ts-a-modern-scalable-ode-dae-solver
   type: journal
   title: 'PETSc/TS: A modern scalable ODE/DAE solver library'
-  authors: Shrirang Abhyankar, Jed Brown, Emil M. Constantinescu, Debojyoti Ghosh*, Barry F. Smith and
-    Hong Zhang*
+  authors: Shrirang Abhyankar, Jed Brown, Emil M. Constantinescu, Debojyoti Ghosh, Barry F. Smith and
+    Hong Zhang
   venue: []
   volume: []
   number: []
@@ -511,7 +511,7 @@
 - id: petra-2017-a-bayesian-approach-for-parameter-estimation
   type: journal
   title: A Bayesian approach for parameter estimation with uncertainty for dynamic power systems
-  authors: Noemi Petra, Cosmin G. Petra, Zheng Zhang*, Emil M. Constantinescu, and Mihai Anitescu
+  authors: Noemi Petra, Cosmin G. Petra, Zheng Zhang, Emil M. Constantinescu, and Mihai Anitescu
   venue: []
   volume: '32'
   number: '4'
@@ -543,7 +543,7 @@
 - id: constantinescu-2016-semi-implicit-time-integration-of-atmospheric-flows
   type: journal
   title: Semi-implicit time integration of atmospheric flows with characteristic-based flux partitioning
-  authors: Debojyoti Ghosh* and Emil M. Constantinescu
+  authors: Debojyoti Ghosh and Emil M. Constantinescu
   venue: []
   volume: '38'
   number: '3'
@@ -573,7 +573,7 @@
 - id: constantinescu-2015-a-well-balanced-conservative-finite-difference-algorithm-for
   type: journal
   title: A well-balanced conservative finite-difference algorithm for atmospheric flows
-  authors: Debojyoti Ghosh* and Emil M. Constantinescu
+  authors: Debojyoti Ghosh and Emil M. Constantinescu
   venue: []
   volume: []
   number: []
@@ -588,7 +588,7 @@
 - id: ghosh-2015-efficient-implementation-of-non-linear-compact-schemes
   type: journal
   title: Efficient implementation of non-linear compact schemes on massively-parallel platforms
-  authors: Debojyoti Ghosh*, Emil M. Constantinescu, and Jed Brown
+  authors: Debojyoti Ghosh, Emil M. Constantinescu, and Jed Brown
   venue: []
   volume: '37'
   number: '3'
@@ -603,7 +603,7 @@
 - id: bilionis-2015-crop-physiology-calibration-in-the-clm
   type: journal
   title: Crop physiology calibration in the CLM
-  authors: Ilias Bilionis*, Beth A. Drewniak, and Emil M. Constantinescu
+  authors: Ilias Bilionis, Beth A. Drewniak, and Emil M. Constantinescu
   venue: []
   volume: '8'
   number: '4'
@@ -619,7 +619,7 @@
   type: journal
   title: Probabilistic density function method for stochastic ODEs of power systems with uncertain power
     input
-  authors: Peng Wang, David Barajas-Solano, Emil Constantinescu, Shrirang S. Abhyankar, Debojyoti Ghosh*,
+  authors: Peng Wang, David Barajas-Solano, Emil Constantinescu, Shrirang S. Abhyankar, Debojyoti Ghosh,
     Barry Smith, Zhenyu Huang, and Alexandre Tartakovsky
   venue: []
   volume: '3'
@@ -635,7 +635,7 @@
 - id: anitescu-2014-a-low-memory-approach-for-best-state-estimation
   type: journal
   title: A low-memory approach for best-state estimation of hidden Markov models with model error
-  authors: Mihai Anitescu, Xiaoyan Zeng*, and Emil M. Constantinescu
+  authors: Mihai Anitescu, Xiaoyan Zeng, and Emil M. Constantinescu
   venue: []
   volume: '52'
   number: '1'
@@ -650,7 +650,7 @@
 - id: bilionis-2014-data-driven-model-for-solar-irradiation-based
   type: journal
   title: Data-driven model for solar irradiation based on satellite observations
-  authors: '{WEB} Ilias Bilionis*, Emil M. Constantinescu, and Mihai Anitescu'
+  authors: '{WEB} Ilias Bilionis, Emil M. Constantinescu, and Mihai Anitescu'
   venue: []
   volume: '110'
   number: []
@@ -748,7 +748,7 @@
 - id: zeng-2013-calibration-of-the-crop-model-in
   type: journal
   title: Calibration of the crop model in the Community Land Model
-  authors: Xiaoyan Zeng*, Beth A. Drewniak, and Emil M. Constantinescu
+  authors: Xiaoyan Zeng, Beth A. Drewniak, and Emil M. Constantinescu
   venue: []
   volume: '6'
   number: '1'
@@ -815,7 +815,7 @@
   type: journal
   title: A Computational Framework for Uncertainty Quantification and Stochastic Optimization in Unit
     Commitment with Wind Power Generation
-  authors: Emil M. Constantinescu,Victor Zavala, Matthew Rocklin*, Sangmin Lee, and Mihai Anitescu
+  authors: Emil M. Constantinescu,Victor Zavala, Matthew Rocklin, Sangmin Lee, and Mihai Anitescu
   venue: []
   volume: '26'
   number: '1'
@@ -1184,7 +1184,7 @@
   type: proceedings
   title: Evaluation of overlapping restricted additive Schwarz preconditioning for parallel solution of
     very large power flow problems
-  authors: Shrirang Abhyankar*, Barry Smith, and Emil M. Constantinescu
+  authors: Shrirang Abhyankar, Barry Smith, and Emil M. Constantinescu
   venue: []
   volume: []
   number: []
@@ -1246,7 +1246,7 @@
 - id: cioaca-2011-adjoint-sensitivity-analysis-for-numerical-weather
   type: proceedings
   title: 'Adjoint Sensitivity Analysis for Numerical Weather Prediction: Applications to Power Grid Optimization'
-  authors: Alexandru Cioaca*, Victor Zavala, and Emil M. Constantinescu
+  authors: Alexandru Cioaca, Victor Zavala, and Emil M. Constantinescu
   venue: []
   volume: []
   number: []
@@ -1660,7 +1660,7 @@
   type: report
   title: Efficient adjoint computation of hybrid systems of differential algebraic equations with applications
     in power systems
-  authors: Hong Zhang*, Shrirang S. Abhyankar, Emil M. Constantinescu, and Mihai Anitescu
+  authors: Hong Zhang, Shrirang S. Abhyankar, Emil M. Constantinescu, and Mihai Anitescu
   venue: []
   volume: []
   number: []
@@ -1691,7 +1691,7 @@
 - id: ghosh-2014-scalable-nonlinear-compact-schemes
   type: report
   title: Scalable nonlinear compact schemes
-  authors: Debojyoti Ghosh*, Emil M. Constantinescu, and Jed Brown
+  authors: Debojyoti Ghosh, Emil M. Constantinescu, and Jed Brown
   venue: []
   volume: []
   number: []
