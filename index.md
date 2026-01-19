@@ -32,12 +32,12 @@ description: Homepage of Emil Constantinescu
 
 ## Research
 
-My research interests are in scientific computing and applied mathematics, with a focus on algorithms for modeling and simulation of multiscale, real-world processes.
+Scientific machine learning (SciML) is central to my work on modeling and inference for complex dynamical systems. I develop scalable methods for uncertainty quantification and data assimilation, robust time integration for stiff and multiscale dynamics, and PDE simulation with adaptive mesh refinement.
 
 <div class="cards">
-  <a class="card" href="{{ '/pages/time-stepping' | relative_url }}">
-    <h3 class="card__title">Time integration</h3>
-    <p class="card__desc">Robust time-stepping for stiff and multiscale dynamical systems (IMEX, multirate, adjoints).</p>
+  <a class="card" href="{{ '/pages/sciml' | relative_url }}">
+    <h3 class="card__title">Scientific machine learning</h3>
+    <p class="card__desc">Hybrid physics/ML methods for modeling, inference, and uncertainty quantification.</p>
     <p class="card__meta">Selected papers and background →</p>
   </a>
   <a class="card" href="{{ '/pages/data-assimilation' | relative_url }}">
@@ -45,14 +45,14 @@ My research interests are in scientific computing and applied mathematics, with 
     <p class="card__desc">Inverse problems, sensitivity analysis, and data assimilation for large-scale models.</p>
     <p class="card__meta">Selected papers and background →</p>
   </a>
-  <a class="card" href="{{ '/pages/amr' | relative_url }}">
-    <h3 class="card__title">Modeling &amp; simulation (AMR)</h3>
-    <p class="card__desc">Adaptive resolution and scalable solvers for high-fidelity simulation.</p>
+  <a class="card" href="{{ '/pages/time-stepping' | relative_url }}">
+    <h3 class="card__title">Time integration</h3>
+    <p class="card__desc">Robust time-stepping for stiff and multiscale dynamical systems (IMEX, multirate, adjoints).</p>
     <p class="card__meta">Selected papers and background →</p>
   </a>
-  <a class="card" href="{{ '/pages/sciml' | relative_url }}">
-    <h3 class="card__title">Scientific machine learning</h3>
-    <p class="card__desc">Hybrid physics/ML methods for modeling, inference, and uncertainty quantification.</p>
+  <a class="card" href="{{ '/pages/amr' | relative_url }}">
+    <h3 class="card__title">PDE &amp; AMR</h3>
+    <p class="card__desc">High-fidelity PDE simulation with adaptive mesh refinement and scalable solvers.</p>
     <p class="card__meta">Selected papers and background →</p>
   </a>
 </div>

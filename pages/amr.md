@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Modeling & simulation (AMR)
-description: Adaptive mesh refinement and high-resolution simulation
+title: PDE & AMR
+description: PDE simulation with adaptive mesh refinement (AMR)
 ---
 
-# Modeling & simulation (AMR)
+# PDE & AMR
 
-Adaptive mesh refinement (AMR) addresses discretization error by dynamically refining time/space resolution in regions where solution features require it. AMR is especially important in large-scale simulations where uniform fine resolution is too costly.
+Many real-world applications require large-scale numerical solutions of PDEs. I work on scalable simulation algorithms and adaptive mesh refinement (AMR), which dynamically refines space/time resolution in regions where solution features require it.
 
 <img src="{{ '/assets/images/research/grid_refined.jpg' | relative_url }}" alt="Adaptive mesh refinement example" width="420" />
 
@@ -21,4 +21,3 @@ Adaptive mesh refinement (AMR) addresses discretization error by dynamically ref
 ## Technical reports
 
 {% include publications.html type="report" tag="amr" %}
-
