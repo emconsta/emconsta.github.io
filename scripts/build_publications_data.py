@@ -1,4 +1,26 @@
 #!/usr/bin/env python3
+"""
+Build Jekyll publication data from legacy PHP/HTML pages.
+
+This repository historically stored publications in `new-pages/*.php` (e.g.
+`new-pages/research.php`). The Jekyll site now renders publications from a
+single YAML data source: `_data/publications.yml`.
+
+This script:
+  1) Parses publication lists from the legacy pages using BeautifulSoup.
+  2) Extracts structured metadata (authors/title/venue/year/DOI/arXiv/PDF).
+  3) Deduplicates entries across pages and assigns stable IDs.
+  4) Adds topical tags (time-stepping, data-assimilation, amr) based on
+     dedicated legacy topic pages.
+  5) Marks a small set of "featured" papers based on the legacy homepage.
+  6) Writes the merged dataset to `_data/publications.yml`.
+
+Run from the repo root:
+  `python3 scripts/build_publications_data.py`
+
+The output YAML is consumed by Jekyll includes in `_includes/`.
+"""
+
 from __future__ import annotations
 
 import argparse
@@ -10,17 +32,23 @@ from typing import Any
 import yaml
 from bs4 import BeautifulSoup
 
+# Match a 4-digit year anywhere in the text.
 YEAR_RE = re.compile(r"\b(19|20)\d{2}\b")
+# DOI patterns show up either as a DOI URL or as plain text (e.g. "DOI: 10....").
 DOI_RE = re.compile(r"\b10\.\d{4,9}/[-._;()/:A-Z0-9]+\b", re.IGNORECASE)
+# Match arXiv links that include an identifier with an optional version suffix.
 ARXIV_RE = re.compile(r"arxiv\.org/(abs|pdf)/([0-9]{4}\.[0-9]{4,5}(?:v\d+)?)", re.IGNORECASE)
+# Strip embedded PHP blocks so legacy pages become parseable HTML.
 PHP_BLOCK_RE = re.compile(r"<\?php.*?\?>", re.DOTALL)
 
 
 def _collapse_ws(text: str) -> str:
+    """Normalize whitespace by collapsing runs to single spaces."""
     return " ".join(text.split())
 
 
 def _slugify(text: str) -> str:
+    """Create a stable, URL-safe-ish slug used as a publication record ID."""
     slug = text.lower()
     slug = slug.replace("’", "'")
     slug = re.sub(r"[^a-z0-9]+", "-", slug)
@@ -29,6 +57,7 @@ def _slugify(text: str) -> str:
 
 
 def _normalize_title_key(title: str) -> str:
+    """Normalize titles for deduplication (case/punctuation/whitespace insensitive)."""
     key = title.lower()
     key = key.replace("’", "'")
     key = re.sub(r"[^a-z0-9]+", " ", key)
@@ -36,6 +65,7 @@ def _normalize_title_key(title: str) -> str:
 
 
 def _extract_doi_from_url(url: str) -> str | None:
+    """Extract the DOI from a DOI resolver URL (doi.org / dx.doi.org), if present."""
     lowered = url.lower()
     if "doi.org/" not in lowered and "dx.doi.org/" not in lowered:
         return None
@@ -51,6 +81,7 @@ def _extract_doi_from_url(url: str) -> str | None:
 
 
 def _extract_arxiv_id_from_url(url: str) -> str | None:
+    """Extract an arXiv identifier (e.g. 2310.18897v2) from an arxiv.org URL."""
     match = ARXIV_RE.search(url)
     if not match:
         return None
@@ -59,12 +90,15 @@ def _extract_arxiv_id_from_url(url: str) -> str | None:
 
 
 def _read_html(path: Path) -> str:
+    """Read a legacy HTML/PHP page and remove PHP include blocks."""
     text = path.read_text(encoding="utf-8", errors="replace")
     return PHP_BLOCK_RE.sub("", text)
 
 
 @dataclass
 class ParsedRef:
+    """Structured metadata extracted from a single legacy `<li>` entry."""
+
     title: str | None
     authors: str | None
     venue: str | None
@@ -75,10 +109,24 @@ class ParsedRef:
 
 
 def _parse_li(li) -> ParsedRef:
+    """
+    Parse a legacy publication `<li>` node into a `ParsedRef`.
+
+    The legacy pages include icons (bib/doi/pdf) and inconsistent markup. This
+    parser uses simple heuristics:
+      - Title is usually in `<strong>` (fallback to `<b>`).
+      - Venue is usually in `<em>` (first non-empty wins).
+      - Year is the last 4-digit year in the text.
+      - DOI/arXiv/PDF are extracted from links when possible, with DOI also
+        falling back to a text regex match.
+      - Authors are inferred by taking the text before the title substring.
+    """
+    # Remove icon images so they don't pollute extracted text.
     for img in li.find_all("img"):
         img.decompose()
 
     hrefs: list[str] = []
+    # Collect all hrefs; we will later scan them for DOI/arXiv/PDF links.
     for a in li.find_all("a"):
         href = (a.get("href") or "").strip()
         if not href:
@@ -90,6 +138,7 @@ def _parse_li(li) -> ParsedRef:
     if strong:
         title = _collapse_ws(strong.get_text(" ", strip=True))
     else:
+        # Some legacy entries wrap the title in `<b>` instead of `<strong>`.
         b_tag = li.find("b")
         if b_tag:
             title = _collapse_ws(b_tag.get_text(" ", strip=True))
@@ -98,10 +147,12 @@ def _parse_li(li) -> ParsedRef:
         title = title.strip().strip("“”\"' ").rstrip(".")
 
     text = _collapse_ws(li.get_text(" ", strip=True))
+    # If multiple years appear (e.g. citations, preprints), take the last one.
     years = [int(m.group(0)) for m in YEAR_RE.finditer(text)]
     year = years[-1] if years else None
 
     doi = None
+    # Prefer explicit DOI links over regex matching in free text.
     for href in hrefs:
         doi = _extract_doi_from_url(href)
         if doi:
@@ -118,12 +169,14 @@ def _parse_li(li) -> ParsedRef:
 
     pdf = None
     for href in hrefs:
+        # Only keep direct PDF links; other links are handled via DOI/arXiv.
         if href.startswith(("http://", "https://")) and href.lower().endswith(".pdf"):
             pdf = href
             break
 
     venue = None
     for em in li.find_all("em"):
+        # Some entries contain multiple <em> tags; keep the first meaningful one.
         candidate = _collapse_ws(em.get_text(" ", strip=True))
         if candidate:
             venue = candidate
@@ -131,6 +184,7 @@ def _parse_li(li) -> ParsedRef:
 
     authors = None
     if title and title in text:
+        # Assume "Authors ... Title ..." and keep the prefix as an author list.
         before = text.split(title, 1)[0]
         before = before.strip().rstrip("“”\"' ").rstrip(",").strip()
         if before:
@@ -148,14 +202,31 @@ def _parse_li(li) -> ParsedRef:
 
 
 class PublicationIndex:
+    """
+    Merge publication records across multiple legacy sources.
+
+    Multiple legacy pages can reference the same paper. We match existing records
+    by, in order:
+      1) DOI
+      2) arXiv ID
+      3) (normalized title, year)
+
+    Records are assigned stable `id` strings used as YAML keys and can be tagged
+    by research area.
+    """
+
     def __init__(self) -> None:
+        # Primary record store: record_id -> record dict written to YAML.
         self._records: dict[str, dict[str, Any]] = {}
+        # Secondary indexes for deduplication across pages.
         self._doi_to_id: dict[str, str] = {}
         self._arxiv_to_id: dict[str, str] = {}
         self._title_year_to_id: dict[tuple[str, int], str] = {}
+        # Prevent ID collisions when generating new record IDs.
         self._used_ids: set[str] = set()
 
     def _find_existing_id(self, parsed: ParsedRef) -> str | None:
+        """Return an existing record ID if `parsed` matches an already-seen publication."""
         if parsed.doi:
             existing = self._doi_to_id.get(parsed.doi.lower())
             if existing:
@@ -172,6 +243,7 @@ class PublicationIndex:
         return None
 
     def _allocate_id(self, parsed: ParsedRef) -> str:
+        """Generate a stable-ish ID based on author/year/title, avoiding collisions."""
         year = parsed.year or 0
         first_author_last = "unknown"
         if parsed.authors:
@@ -193,6 +265,12 @@ class PublicationIndex:
         return candidate
 
     def upsert(self, parsed: ParsedRef, *, type_: str) -> str:
+        """
+        Insert or update a publication record from a `ParsedRef`.
+
+        Existing records are updated conservatively via `setdefault` so that the
+        first-seen value for a field is preserved unless it was missing.
+        """
         existing_id = self._find_existing_id(parsed)
         if existing_id:
             record = self._records[existing_id]
@@ -232,6 +310,7 @@ class PublicationIndex:
         return existing_id
 
     def add_tag(self, record_id: str, tag: str) -> None:
+        """Add a topic tag to a record (no-op if the record doesn't exist)."""
         record = self._records.get(record_id)
         if not record:
             return
@@ -240,12 +319,14 @@ class PublicationIndex:
             tags.append(tag)
 
     def set_flag(self, record_id: str, flag: str, value: Any = True) -> None:
+        """Set an arbitrary boolean-ish flag on a record (e.g. featured=True)."""
         record = self._records.get(record_id)
         if not record:
             return
         record[flag] = value
 
     def to_sorted_list(self) -> list[dict[str, Any]]:
+        """Return records as a list sorted for stable diffs and human readability."""
         type_order = {"journal": 0, "proceedings": 1, "report": 2}
 
         def sort_key(item: dict[str, Any]) -> tuple:
@@ -259,6 +340,11 @@ class PublicationIndex:
 
 
 def _find_ul_after_anchor(soup: BeautifulSoup, *, anchor_id: str | None = None, anchor_name: str | None = None):
+    """
+    Find the first `<ul>` that follows a named anchor.
+
+    Legacy pages use a mix of `<hX id="...">` and `<a name="...">` anchors.
+    """
     anchor = None
     if anchor_id:
         anchor = soup.find(id=anchor_id)
@@ -278,12 +364,14 @@ def _ingest_section(
     anchor_name: str | None = None,
     tag: str | None = None,
 ):
+    """Parse and ingest a publication `<ul>` section, optionally tagging entries."""
     ul = _find_ul_after_anchor(soup, anchor_id=anchor_id, anchor_name=anchor_name)
     if not ul:
         return
 
     for li in ul.find_all("li", recursive=False):
         parsed = _parse_li(li)
+        # Skip empty list items that contain no useful metadata.
         if not parsed.title and not parsed.doi and not parsed.arxiv:
             continue
         record_id = index.upsert(parsed, type_=type_)
@@ -292,6 +380,7 @@ def _ingest_section(
 
 
 def _mark_featured_from_index_page(index: PublicationIndex, *, soup: BeautifulSoup) -> None:
+    """Mark publications that appear in the legacy homepage "Recent papers" list."""
     header = soup.find(lambda t: t.name == "h4" and "Recent papers" in t.get_text(" ", strip=True))
     if not header:
         return
@@ -312,6 +401,7 @@ def main() -> int:
 
     repo_root: Path = args.repo_root
 
+    # Source-of-truth legacy page that contains the full publication lists.
     legacy_root = repo_root / "new-pages"
     research_path = legacy_root / "research.php"
     if not research_path.exists():
@@ -319,11 +409,13 @@ def main() -> int:
 
     index = PublicationIndex()
 
+    # Ingest the main legacy publication lists.
     research_soup = BeautifulSoup(_read_html(research_path), "html.parser")
     _ingest_section(index, soup=research_soup, type_="journal", anchor_id="Journals")
     _ingest_section(index, soup=research_soup, type_="proceedings", anchor_name="Proceedings")
     _ingest_section(index, soup=research_soup, type_="report", anchor_id="TechnicalReports")
 
+    # Ingest topical pages to attach tags to records referenced there.
     topic_pages = [
         ("time-stepping", legacy_root / "TimeStepping.php"),
         ("data-assimilation", legacy_root / "DA.php"),
@@ -338,11 +430,13 @@ def main() -> int:
         _ingest_section(index, soup=soup, type_="proceedings", anchor_name="Proceedings", tag=tag)
         _ingest_section(index, soup=soup, type_="report", anchor_id="TechnicalReports", tag=tag)
 
+    # Mark featured publications based on the legacy homepage.
     index_php = legacy_root / "index.php"
     if index_php.exists():
         soup = BeautifulSoup(_read_html(index_php), "html.parser")
         _mark_featured_from_index_page(index, soup=soup)
 
+    # Write the final YAML file used by the Jekyll site.
     output_path = repo_root / "_data" / "publications.yml"
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
