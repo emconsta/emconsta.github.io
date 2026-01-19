@@ -41,6 +41,11 @@ ARXIV_RE = re.compile(r"arxiv\.org/(abs|pdf)/([0-9]{4}\.[0-9]{4,5}(?:v\d+)?)", r
 # Strip embedded PHP blocks so legacy pages become parseable HTML.
 PHP_BLOCK_RE = re.compile(r"<\?php.*?\?>", re.DOTALL)
 
+# Legacy pages use a mix of "Vol." and "Volume", and "Pages" / "pp".
+VOLUME_RE = re.compile(r"\b(?:vol\.?|volume)\s*([0-9]+)\b", re.IGNORECASE)
+ISSUE_RE = re.compile(r"\b(?:vol\.?|volume)\s*[0-9]+\s*\(\s*([0-9]+)\s*\)", re.IGNORECASE)
+PAGES_RE = re.compile(r"\b(?:pages|pp\.?)\s*([^,;.]+)", re.IGNORECASE)
+
 
 def _collapse_ws(text: str) -> str:
     """Normalize whitespace by collapsing runs to single spaces."""
@@ -102,6 +107,9 @@ class ParsedRef:
     title: str | None
     authors: str | None
     venue: str | None
+    volume: str | None
+    number: str | None
+    pages: str | None
     year: int | None
     doi: str | None
     arxiv: str | None
@@ -182,6 +190,21 @@ def _parse_li(li) -> ParsedRef:
             venue = candidate
             break
 
+    volume = None
+    volume_match = VOLUME_RE.search(text)
+    if volume_match:
+        volume = volume_match.group(1)
+
+    number = None
+    number_match = ISSUE_RE.search(text)
+    if number_match:
+        number = number_match.group(1)
+
+    pages = None
+    pages_match = PAGES_RE.search(text)
+    if pages_match:
+        pages = pages_match.group(1).strip().rstrip(").,;")
+
     authors = None
     if title and title in text:
         # Assume "Authors ... Title ..." and keep the prefix as an author list.
@@ -194,6 +217,9 @@ def _parse_li(li) -> ParsedRef:
         title=title or None,
         authors=authors or None,
         venue=venue or None,
+        volume=volume or None,
+        number=number or None,
+        pages=pages or None,
         year=year,
         doi=doi,
         arxiv=arxiv,
@@ -287,6 +313,12 @@ class PublicationIndex:
             record.setdefault("authors", parsed.authors)
         if parsed.venue:
             record.setdefault("venue", parsed.venue)
+        if parsed.volume:
+            record.setdefault("volume", parsed.volume)
+        if parsed.number:
+            record.setdefault("number", parsed.number)
+        if parsed.pages:
+            record.setdefault("pages", parsed.pages)
         if parsed.year:
             record.setdefault("year", parsed.year)
         if parsed.doi:
@@ -308,6 +340,41 @@ class PublicationIndex:
             )
 
         return existing_id
+
+    def merge_existing(self, existing_records: list[dict[str, Any]]) -> None:
+        """
+        Merge fields from an existing `_data/publications.yml` file.
+
+        This lets the data file be edited by hand (e.g., extra tags) without
+        losing those changes when regenerating from legacy sources.
+        """
+        by_id: dict[str, dict[str, Any]] = {}
+        for item in existing_records:
+            record_id = item.get("id")
+            if isinstance(record_id, str) and record_id:
+                by_id[record_id] = item
+
+        for record_id, record in self._records.items():
+            existing = by_id.get(record_id)
+            if not existing:
+                continue
+
+            existing_tags = existing.get("tags")
+            if isinstance(existing_tags, list):
+                for tag in existing_tags:
+                    if isinstance(tag, str) and tag:
+                        self.add_tag(record_id, tag)
+
+            if existing.get("featured") is True:
+                self.set_flag(record_id, "featured", True)
+
+            # Fill missing metadata from the existing file if we didn't extract it.
+            for key in ("title", "authors", "venue", "volume", "number", "pages", "year", "doi", "arxiv", "pdf"):
+                if key in record and record.get(key):
+                    continue
+                value = existing.get(key)
+                if value is not None and value != [] and value != "":
+                    record[key] = value
 
     def add_tag(self, record_id: str, tag: str) -> None:
         """Add a topic tag to a record (no-op if the record doesn't exist)."""
@@ -336,7 +403,36 @@ class PublicationIndex:
             title = item.get("title") or ""
             return (type_order.get(item.get("type"), 99), year_sort, authors.lower(), title.lower())
 
-        return [self._records[k] for k in sorted(self._records.keys(), key=lambda k: sort_key(self._records[k]))]
+        def normalize(value: Any) -> Any:
+            if value is None:
+                return []
+            if isinstance(value, str):
+                return value.strip() or []
+            return value
+
+        normalized_records: list[dict[str, Any]] = []
+        for record_id in sorted(self._records.keys(), key=lambda k: sort_key(self._records[k])):
+            record = self._records[record_id]
+            normalized_records.append(
+                {
+                    "id": record["id"],
+                    "type": record.get("type", []),
+                    "title": normalize(record.get("title")),
+                    "authors": normalize(record.get("authors")),
+                    "venue": normalize(record.get("venue")),
+                    "volume": normalize(record.get("volume")),
+                    "number": normalize(record.get("number")),
+                    "pages": normalize(record.get("pages")),
+                    "year": normalize(record.get("year")),
+                    "doi": normalize(record.get("doi")),
+                    "arxiv": normalize(record.get("arxiv")),
+                    "pdf": normalize(record.get("pdf")),
+                    "tags": record.get("tags", []),
+                    "featured": record.get("featured", []),
+                }
+            )
+
+        return normalized_records
 
 
 def _find_ul_after_anchor(soup: BeautifulSoup, *, anchor_id: str | None = None, anchor_name: str | None = None):
@@ -435,6 +531,12 @@ def main() -> int:
     if index_php.exists():
         soup = BeautifulSoup(_read_html(index_php), "html.parser")
         _mark_featured_from_index_page(index, soup=soup)
+
+    existing_path = repo_root / "_data" / "publications.yml"
+    if existing_path.exists():
+        existing_data = yaml.safe_load(existing_path.read_text(encoding="utf-8")) or []
+        if isinstance(existing_data, list):
+            index.merge_existing(existing_data)
 
     # Write the final YAML file used by the Jekyll site.
     output_path = repo_root / "_data" / "publications.yml"
