@@ -116,6 +116,10 @@
   @include relative-font-size(0.9);
 }
 
+.pub-list > li {
+  margin-bottom: $spacing-unit / 4;
+}
+
 .site-footer .footer-col-1 {
   width: calc(30% - (#{$spacing-unit} / 2));
 }

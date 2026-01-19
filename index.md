@@ -60,8 +60,10 @@ My research focuses on scientific machine learning (SciML) for modeling and infe
 
 ## Software
 
-- DAPack (data assimilation package): <https://bitbucket.org/emconsta/dapack>
+- DESolve (time integration package): <https://gitlab.com/emconsta/desolve>
 - PETSc time stepping: <https://petsc.org/release/>
+- DAPack (data assimilation package): <https://bitbucket.org/emconsta/dapack>
+- UQGrid (power grid dynamics; contributor): <https://github.com/dmaldona/uqgrid>
 
 ## Recent papers
 
