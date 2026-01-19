@@ -26,13 +26,14 @@ description: Homepage of Emil Constantinescu
       <a class="pill" href="https://scholar.google.com/citations?hl=en&user=aPLUgCMAAAAJ">Google Scholar</a>
       <a class="pill" href="https://orcid.org/0000-0002-7003-6899">ORCID</a>
       <a class="pill" href="https://github.com/emconsta">GitHub</a>
+      <a class="pill" href="https://gitlab.com/emconsta">GitLab</a>
     </div>
   </div>
 </div>
 
 ## Research
 
-Scientific machine learning (SciML) is central to my work on modeling and inference for complex dynamical systems. I develop scalable methods for uncertainty quantification and data assimilation, robust time integration for stiff and multiscale dynamics, and PDE simulation with adaptive mesh refinement.
+My research focuses on scientific machine learning (SciML) for modeling and inference in complex dynamical systems. I develop scalable methods for uncertainty quantification and data assimilation, robust time integration schemes for stiff and multiscale dynamics, and adaptive mesh refinement techniques for PDE simulation.
 
 <div class="cards">
   <a class="card" href="{{ '/pages/sciml' | relative_url }}">

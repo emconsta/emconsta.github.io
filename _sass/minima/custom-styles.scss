@@ -116,6 +116,32 @@
   @include relative-font-size(0.9);
 }
 
+.site-footer .footer-col-1 {
+  width: calc(30% - (#{$spacing-unit} / 2));
+}
+
+.site-footer .footer-col-2 {
+  width: calc(70% - (#{$spacing-unit} / 2));
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  justify-content: flex-end;
+}
+
+@include media-query($on-laptop) {
+  .site-footer .footer-col-1,
+  .site-footer .footer-col-2 {
+    width: calc(100% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+  }
+}
+
 @include media-query($on-palm) {
   .home-hero {
     flex-direction: column;
