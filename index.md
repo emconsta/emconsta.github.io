@@ -67,4 +67,4 @@ My research focuses on scientific machine learning (SciML) for modeling and infe
 
 ## Recent papers
 
-{% include publications.html type="journal" featured="true" limit="8" %}
+{% include publications.html featured="true" limit="12" %}
