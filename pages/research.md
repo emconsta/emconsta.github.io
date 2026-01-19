@@ -15,8 +15,6 @@ I work on:
 - **PDE simulation & adaptive resolution**: scalable PDE simulation and adaptive mesh refinement (AMR) techniques for efficient large-scale computation ([`pages/amr.md`]({{ '/pages/amr' | relative_url }})).
 - **Scientific machine learning**: hybrid physics/ML methods for modeling, inference, and uncertainty quantification ([`pages/sciml.md`]({{ '/pages/sciml' | relative_url }})).
 
-I use Python for much of my high-level work; one motivation is discussed in this post: <https://www.r-bloggers.com/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/>.
-
 ## Publications
 
 See [`pages/publications.md`]({{ '/pages/publications' | relative_url }}) for a full list.

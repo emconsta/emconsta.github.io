@@ -8,12 +8,12 @@ description: Publications
 
 ## Journal articles
 
-{% include publications.html type="journal" group_by_year="true" %}
+{% include publications.html type="journal" %}
 
 ## Conference / workshops / presentations
 
-{% include publications.html type="proceedings" group_by_year="true" %}
+{% include publications.html type="proceedings" %}
 
 ## Technical reports
 
-{% include publications.html type="report" group_by_year="true" %}
+{% include publications.html type="report" %}
