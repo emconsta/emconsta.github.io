@@ -1089,6 +1089,22 @@
   tags:
   - time-stepping
   featured: true
+- id: jung-2026-learning-differentiable-weak-form-corrections-to-accelerate
+  type: proceedings
+  title: Learning Differentiable Weak-Form Corrections to Accelerate Finite Element Simulations
+  authors: Junoh Jung and Emil Constantinescu
+  venue: Submitted
+  volume: []
+  number: []
+  pages: []
+  year: 2026
+  doi: []
+  arxiv: '2601.20019'
+  pdf: https://arxiv.org/pdf/2601.20019.pdf
+  tags:
+  - sciml
+  - amr
+  featured: []
 - id: kang-2023-multirate-partitioned-runge-kutta-methods-for-coupled
   type: proceedings
   title: Multirate Partitioned Runge-Kutta Methods for Coupled Navier-Stokes Equations
