@@ -65,6 +65,7 @@
   tags:
   - data-assimilation
   - sciml
+  - amr
   featured: true
 - id: zhao-2024-data-driven-estimation-of-failure-probabilities-in
   type: journal
@@ -144,6 +145,7 @@
   tags:
   - time-stepping
   - sciml
+  - amr
   featured: []
 - id: constantinescu-2023-learning-subgrid-scale-models-with-neural-ordinary
   type: journal
@@ -161,6 +163,7 @@
   - time-stepping
   - data-assimilation
   - sciml
+  - amr
   featured: true
 - id: maldonado-2022-trust-region-approximation-of-extreme-trajectories-in
   type: journal
@@ -223,6 +226,7 @@
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: true
 - id: d-amore-2022-a-scalable-space-time-domain-decomposition-approach
   type: journal
@@ -273,6 +277,7 @@
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: true
 - id: kim-2022-gpu-accelerated-weno-schemes-for-the-dns
   type: journal
@@ -288,6 +293,7 @@
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: true
 - id: constantinescu-2021-implicit-extensions-of-an-explicit-multirate
   type: journal
@@ -303,6 +309,7 @@
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: true
 - id: kang-2021-mass-conserving-implicit-explicit-methods-for-coupled-compressible
   type: journal
@@ -318,6 +325,7 @@
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: true
 - id: constantinescu-2020-statistical-treatment-of-inverse-problems-constrained
   type: journal
@@ -444,6 +452,7 @@
   pdf: []
   tags:
   - data-assimilation
+  - amr
   featured: true
 - id: abhyankar-2018-petsc-ts-a-modern-scalable-ode-dae-solver
   type: journal
@@ -476,6 +485,7 @@
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: true
 - id: mele-2018-a-petsc-parallel-in-time-solver-based-on
   type: journal
@@ -491,6 +501,7 @@
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: true
 - id: zhang-2017-discrete-adjoint-sensitivity-analysis-of-power
   type: journal
@@ -554,6 +565,7 @@
   pdf: http://www.mcs.anl.gov/papers/ANL/MCS-TM-352.pdf
   tags:
   - time-stepping
+  - amr
   featured: []
 - id: li-2016-flexible-operation-of-batteries-in-power
   type: journal
@@ -584,6 +596,7 @@
   pdf: http://www.mcs.anl.gov/papers/ANL/MCS-TM-352.pdf
   tags:
   - time-stepping
+  - amr
   featured: []
 - id: ghosh-2015-efficient-implementation-of-non-linear-compact-schemes
   type: journal
@@ -599,6 +612,7 @@
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: []
 - id: bilionis-2015-crop-physiology-calibration-in-the-clm
   type: journal
@@ -682,6 +696,7 @@
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: []
 - id: sandu-2013-extrapolated-multirate-methods-for-differential-equations
   type: journal
@@ -729,6 +744,7 @@
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: []
 - id: salazar-2013-stochastic-optimization-approach-to-water-management
   type: journal
@@ -779,6 +795,7 @@
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: []
 - id: bessa-2012-time-adaptive-conditional-kernel-density-estimation
   type: journal
@@ -1149,7 +1166,9 @@
   doi: []
   arxiv: []
   pdf: []
-  tags: []
+  tags: 
+  - data-assimilation
+  - amr
   featured: true
 - id: rao-2020-a-machine-learning-method-for-computing
   type: proceedings
@@ -1717,7 +1736,9 @@
   doi: []
   arxiv: []
   pdf: http://www.mcs.anl.gov/papers/ANL/MCS-TM-340.pdf
-  tags: []
+  tags: 
+  - amr
+  - time-stepping
   featured: []
 - id: sandu-2009-achieving-very-high-order-for-implicit
   type: report
