@@ -62,6 +62,5 @@ header_pages:
 #   - vendor/ruby/
 
 exclude:
-  - new-pages
-  - scripts
+  - legacy
   - AGENTS.md
