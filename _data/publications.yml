@@ -1104,7 +1104,7 @@
   tags:
   - sciml
   - amr
-  featured: []
+  featured: true
 - id: kang-2023-multirate-partitioned-runge-kutta-methods-for-coupled
   type: proceedings
   title: Multirate Partitioned Runge-Kutta Methods for Coupled Navier-Stokes Equations
