@@ -920,7 +920,7 @@
   tags:
   - data-assimilation
   featured: []
-- id: constantinescu-2007-optimal-experimental-design-for-inverse-problems
+- id: constantinescu-2022-optimal-experimental-design-for-inverse-problems
   type: journal
   title: Optimal experimental design for inverse problems in the presence of observation correlations
   authors: Ahmed Attia and Emil M. Constantinescu
@@ -928,11 +928,12 @@
   volume: '44'
   number: '4'
   pages: A2808-A2842
-  year: 2007
+  year: 2022
   doi: 10.1137/21M1418666
   arxiv: '2007.14476'
   pdf: https://arxiv.org/pdf/2007.14476.pdf
-  tags: []
+  tags:
+  - data-assimilation
   featured: true
 - id: sandu-2007-multirate-timestepping-methods-for-hyperbolic-conservation
   type: journal

@@ -156,7 +156,14 @@ def _parse_li(li) -> ParsedRef:
 
     text = _collapse_ws(li.get_text(" ", strip=True))
     # If multiple years appear (e.g. citations, preprints), take the last one.
-    years = [int(m.group(0)) for m in YEAR_RE.finditer(text)]
+    years: list[int] = []
+    for match in YEAR_RE.finditer(text):
+        # Ignore year-like prefixes inside arXiv IDs (e.g. 2007.14476, 1912.07696)
+        # and DOIs such as "...j.jcp.2007.02.024".
+        end = match.end()
+        if end + 1 < len(text) and text[end] == "." and text[end + 1].isdigit():
+            continue
+        years.append(int(match.group(0)))
     year = years[-1] if years else None
 
     doi = None
