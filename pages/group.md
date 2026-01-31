@@ -8,7 +8,7 @@ description: Group
 
 My group works at the intersection of scientific computing, applied mathematics, and scientific machine learning, with an emphasis on scalable algorithms for modeling, simulation, and inference.
 
-See ([research areas]({{ '/pages/research' | relative_url }})) and selected ([publications]({{ '/pages/publications' | relative_url }})).
+See [research areas]({{ '/pages/research' | relative_url }}) and selected [publications]({{ '/pages/publications' | relative_url }}).
 
 ## Research scientists
 
