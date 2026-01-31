@@ -4,7 +4,7 @@
   type: journal
   title: 'Enhancing interpretability in generative modeling: Statistically disentangled latent spaces
     guided by generative factors in scientific datasets'
-  authors: Arkaprabha Ganguli, Nesar Ramachandra, Julie Bessac, and Emil Constantinescu
+  authors: Arkaprabha Ganguli, Nesar Ramachandra, Julie Bessac, and Emil M Constantinescu
   venue: Springer Machine Learning
   volume: '114'
   number: '9'
@@ -21,7 +21,7 @@
   type: journal
   title: Improving the predictability of the Madden-Julian oscillation at subseasonal scales with Gaussian
     process models
-  authors: Haoyuan Chen, Emil Constantinescu, Vishwas Rao, and Cristiana Stan
+  authors: Haoyuan Chen, Emil M Constantinescu, Vishwas Rao, and Cristiana Stan
   venue: JAMES - Machine learning application to Earth system modeling
   volume: '17'
   number: '5'
@@ -37,7 +37,7 @@
 - id: chuang-2025-distributional-sensitivity-analysis-enabling-differentiability-in
   type: journal
   title: 'Distributional sensitivity analysis: Enabling differentiability in sample-based inference'
-  authors: Pi-Yueh Chuang, Ahmed Attia, and Emil Constantinescu
+  authors: Pi-Yueh Chuang, Ahmed Attia, and Emil M Constantinescu
   venue: Submitted
   volume: []
   number: []
@@ -52,8 +52,8 @@
   featured: true
 - id: constantinescu-2025-differentiable-dg-with-neural-operator-source
   type: journal
-  title: Differentiable DG with Neural Operator Source Term Correction
-  authors: Shinhoo Kang and Emil M. Constantinescu
+  title: Differentiable DG with neural operator source term correction
+  authors: Shinhoo Kang and Emil M Constantinescu
   venue: Submitted
   volume: []
   number: []
@@ -71,7 +71,7 @@
   type: journal
   title: Data-driven estimation of failure probabilities in correlated structure-preserving stochastic
     power system models
-  authors: Hongli Zhao, Tyler E. Maltba, D. Adrian Maldonado, Emil Constantinescu, and Mihai Anitescu
+  authors: Hongli Zhao, Tyler E. Maltba, D. Adrian Maldonado, Emil M Constantinescu, and Mihai Anitescu
   venue: []
   volume: []
   number: []
@@ -86,7 +86,7 @@
   type: journal
   title: Scalable implicit solvers with dynamic mesh adaptation for a relativistic drift-kinetic Fokker-Planck-Boltzmann
     model
-  authors: Johann Rudi, Max Heldman, Emil M. Constantinescu, Qi Tang, and Xian-Zhu Tang
+  authors: Johann Rudi, Max Heldman, Emil M Constantinescu, Qi Tang, and Xian-Zhu Tang
   venue: Journal of Computational Physics
   volume: '507'
   number: []
@@ -102,7 +102,7 @@
 - id: attia-2023-centralized-calibration-of-power-system-dynamic
   type: journal
   title: Centralized calibration of power system dynamic models using variational data assimilation
-  authors: Ahmed Attia, D. Adrian Maldonado, Emil Constantinescu, and Mihai Anitescu
+  authors: Ahmed Attia, D. Adrian Maldonado, Emil M Constantinescu, and Mihai Anitescu
   venue: []
   volume: []
   number: []
@@ -117,7 +117,7 @@
 - id: maldonado-2023-computationally-efficient-power-system-maximum-transient
   type: journal
   title: Computationally efficient power system maximum transient linear growth estimation
-  authors: Daniel Adrian Maldonado, Emil M. Constantinescu, Junbo Zhao, and Mihai Anitescu
+  authors: Daniel Adrian Maldonado, Emil M Constantinescu, Junbo Zhao, and Mihai Anitescu
   venue: Submitted
   volume: []
   number: []
@@ -131,9 +131,9 @@
   featured: true
 - id: constantinescu-2023-enhancing-low-order-discontinuous-galerkin-methods-with
   type: journal
-  title: Enhancing Low-Order Discontinuous Galerkin Methods with Neural Ordinary Differential Equations
-    for Compressible Navier--Stokes Equations
-  authors: Shinhoo Kang and Emil M. Constantinescu
+  title: Enhancing low-order discontinuous Galerkin methods with neural ordinary differential equations
+    for compressible Navier--Stokes equations
+  authors: Shinhoo Kang and Emil M Constantinescu
   venue: []
   volume: []
   number: []
@@ -150,7 +150,7 @@
 - id: constantinescu-2023-learning-subgrid-scale-models-with-neural-ordinary
   type: journal
   title: Learning subgrid-scale models with neural ordinary differential equations
-  authors: Shinhoo Kang and Emil M. Constantinescu
+  authors: Shinhoo Kang and Emil M Constantinescu
   venue: Computers and Fluids, In Press
   volume: '261'
   number: []
@@ -168,7 +168,7 @@
 - id: maldonado-2022-trust-region-approximation-of-extreme-trajectories-in
   type: journal
   title: Trust-region approximation of extreme trajectories in power system dynamics
-  authors: Adrian Maldonado, Emil M. Constantinescu, Hong Zhang, Vishwas Rao, and Mihai Anitescu
+  authors: Adrian Maldonado, Emil M Constantinescu, Hong Zhang, Vishwas Rao, and Mihai Anitescu
   venue: IEEE Transactions on Power Systems
   volume: '37'
   number: '5'
@@ -184,7 +184,7 @@
   type: journal
   title: Electron dynamics in extended systems within real-time time-dependent density functional theory,
   authors: Alina Kononov, Cheng-Wei Lee, Tatiane Pereira dos Santos, Brian Robinson, Yifan Yao, Yi Yao,
-    Xavier Andrade, Andrew David Baczewski, Emil Constantinescu, Alfredo Correa, Yosuke Kanai, Norman
+    Xavier Andrade, Andrew David Baczewski, Emil M Constantinescu, Alfredo Correa, Yosuke Kanai, Norman
     Modine, and Andre Schleife
   venue: MRS Communications
   volume: []
@@ -200,7 +200,7 @@
 - id: constantinescu-2022-optimal-checkpointing-for-adjoint-multistage-time-stepping
   type: journal
   title: Optimal checkpointing for adjoint multistage time-stepping schemes
-  authors: Hong Zhang and Emil M. Constantinescu
+  authors: Hong Zhang and Emil M Constantinescu
   venue: Journal of Computational Science
   volume: '366'
   number: []
@@ -214,8 +214,8 @@
   featured: true
 - id: zhang-2022-stability-analysis-of-coupled-advection-diffusion-models
   type: journal
-  title: Stability Analysis of Coupled Advection-Diffusion Models with Bulk Interface Condition
-  authors: Hong Zhang, Zhengyu Liu, Emil M. Constantinescu, and Robert Jacob
+  title: Stability analysis of coupled advection-diffusion models with bulk interface condition
+  authors: Hong Zhang, Zhengyu Liu, Emil M Constantinescu, and Robert Jacob
   venue: Journal of Scientific Computing
   volume: '93'
   number: '33'
@@ -231,8 +231,8 @@
 - id: d-amore-2022-a-scalable-space-time-domain-decomposition-approach
   type: journal
   title: A scalable space-time domain decomposition approach for solving large scale non linear regularized
-    inverse ill posed problems in 4D Variational Data Assimilation,
-  authors: Luisa D'amore, Emil Constantinescu, and Luisa Carracciuolo
+    inverse ill posed problems in 4D variational data assimilation,
+  authors: Luisa D'amore, Emil M Constantinescu, and Luisa Carracciuolo
   venue: Springer Journal of Scientific Computing
   volume: []
   number: []
@@ -249,7 +249,7 @@
   type: journal
   title: 'AIEADA 1.0: Efficient high-dimensional variational data assimilation with machine-learned reduced-order
     models,'
-  authors: Romit Maulik Vishwas Rao, Jiali Wang, Gianmarco Mengaldo, Emil Constantinescu, Bethany Lusch,
+  authors: Romit Maulik Vishwas Rao, Jiali Wang, Gianmarco Mengaldo, Emil M Constantinescu, Bethany Lusch,
     Prasanna Balaprakash, Ian Foster, Rao Kotamarthi
   venue: GMDD
   volume: []
@@ -266,7 +266,7 @@
 - id: constantinescu-2022-entropy-preserving-and-entropy-stable-relaxation-imex-and
   type: journal
   title: Entropy-preserving and entropy-stable relaxation IMEX and multirate time-stepping methods
-  authors: Shinhoo Kang and Emil M. Constantinescu
+  authors: Shinhoo Kang and Emil M Constantinescu
   venue: Journal of Scientific Computing
   volume: '93'
   number: '23'
@@ -281,8 +281,8 @@
   featured: true
 - id: kim-2022-gpu-accelerated-weno-schemes-for-the-dns
   type: journal
-  title: GPU-Accelerated WENO schemes for the DNS of compressible turbulent flows
-  authors: Youngdae Kim, Debojyoti Ghosh, Emil Constantinescu, and Ramesh Balakrishnan
+  title: GPU-accelerated WENO schemes for the DNS of compressible turbulent flows
+  authors: Youngdae Kim, Debojyoti Ghosh, Emil M Constantinescu, and Ramesh Balakrishnan
   venue: Computers & Fluids
   volume: '251'
   number: []
@@ -298,7 +298,7 @@
 - id: constantinescu-2021-implicit-extensions-of-an-explicit-multirate
   type: journal
   title: Implicit extensions of an explicit multirate Runge–Kutta scheme
-  authors: Emil Constantinescu
+  authors: Emil M Constantinescu
   venue: Applied Mathematics Letters
   volume: '128'
   number: []
@@ -313,8 +313,8 @@
   featured: true
 - id: kang-2021-mass-conserving-implicit-explicit-methods-for-coupled-compressible
   type: journal
-  title: Mass-Conserving Implicit-Explicit Methods for Coupled Compressible Navier-Stokes Equations
-  authors: Shinhoo Kang, Emil M. Constantinescu, Hong Zhang, and Robert Jacob
+  title: Mass-conserving implicit-explicit methods for coupled compressible Navier-Stokes equations
+  authors: Shinhoo Kang, Emil M Constantinescu, Hong Zhang, and Robert Jacob
   venue: Computer Methods in Applied Mechanics and Engineering (CMAME)
   volume: '384'
   number: []
@@ -331,7 +331,7 @@
   type: journal
   title: Statistical treatment of inverse problems constrained by differential equations-based models
     with stochastic terms
-  authors: Emil M. Constantinescu, Noemi Petra, Julie Bessac, and Cosmin G. Petra
+  authors: Emil M Constantinescu, Noemi Petra, Julie Bessac, and Cosmin G. Petra
   venue: SIAM Journal on Uncertainty Quantification
   volume: '8'
   number: '1'
@@ -346,7 +346,7 @@
 - id: guo-2019-extreme-scale-stochastic-particle-tracing-for-uncertain
   type: journal
   title: Extreme-scale stochastic particle tracing for uncertain unsteady flow visualization and analysis
-  authors: Hanqi Guo, Wenbin He, Sangmin Seo, Han-Wei Shen, Emil M. Constantinescu, Chunhui Liu, and Tom
+  authors: Hanqi Guo, Wenbin He, Sangmin Seo, Han-Wei Shen, Emil M Constantinescu, Chunhui Liu, and Tom
     Peterka
   venue: []
   volume: '25'
@@ -362,7 +362,7 @@
 - id: hart-2019-global-sensitivity-analysis-for-statistical-model
   type: journal
   title: Global sensitivity analysis for statistical model parameters
-  authors: Joseph Hart, Julie Bessac, and Emil M. Constantinescu
+  authors: Joseph Hart, Julie Bessac, and Emil M Constantinescu
   venue: []
   volume: []
   number: []
@@ -378,7 +378,7 @@
   type: journal
   title: An optimal experimental design framework for adaptive inflation and covariance localization for
     ensemble filters
-  authors: Ahmed Attia and Emil M. Constantinescu
+  authors: Ahmed Attia and Emil M Constantinescu
   venue: Submitted
   volume: []
   number: []
@@ -394,7 +394,7 @@
   type: journal
   title: Generalizing global error estimation for ordinary differential equations by using coupled time-stepping
     methods
-  authors: Emil Constantinescu
+  authors: Emil M Constantinescu
   venue: []
   volume: '332'
   number: []
@@ -410,7 +410,7 @@
   type: journal
   title: Internal variability, regional climate model, spectral nudging, high spatial resolution, climate
     change
-  authors: Jiali Wang, Julie Bessac, Rao Kotamarthi, Emil M. Constantinescu, and Beth Drewniak
+  authors: Jiali Wang, Julie Bessac, Rao Kotamarthi, Emil M Constantinescu, and Beth Drewniak
   venue: Climate Dynamics
   volume: '50'
   number: []
@@ -426,7 +426,7 @@
   type: journal
   title: Stochastic simulation of predictive space-time scenarios of wind speed using observations and
     physical models
-  authors: Julie Bessac, Emil M. Constantinescu, and Mihai Anitescu
+  authors: Julie Bessac, Emil M Constantinescu, and Mihai Anitescu
   venue: []
   volume: '12'
   number: '1'
@@ -440,8 +440,9 @@
   featured: true
 - id: marin-2018-pde-constrained-optimization-with-spectral-elements-using
   type: journal
-  title: A scalable matrix-free spectral element approach for unsteady PDE constrained optimization using PETSc/TAO
-  authors: Oana Marin, Emil Constantinescu, and Barry Smith
+  title: A scalable matrix-free spectral element approach for unsteady PDE constrained optimization using
+    PETSc/TAO
+  authors: Oana Marin, Emil M Constantinescu, and Barry Smith
   venue: []
   volume: 47
   number: []
@@ -457,8 +458,8 @@
 - id: abhyankar-2018-petsc-ts-a-modern-scalable-ode-dae-solver
   type: journal
   title: 'PETSc/TS: A modern scalable ODE/DAE solver library'
-  authors: Shrirang Abhyankar, Jed Brown, Emil M. Constantinescu, Debojyoti Ghosh, Barry F. Smith and
-    Hong Zhang
+  authors: Shrirang Abhyankar, Jed Brown, Emil M Constantinescu, Debojyoti Ghosh, Barry F. Smith and Hong
+    Zhang
   venue: []
   volume: []
   number: []
@@ -474,7 +475,7 @@
   type: journal
   title: A residual-based shock capturing scheme for the continuous/discontinuous spectral element solution
     of the 2D shallow water equations
-  authors: Simone Marras, Michal A. Kopera, Emil M. Constantinescu, Jenny Suckale, and Francis X. Giraldo
+  authors: Simone Marras, Michal A. Kopera, Emil M Constantinescu, Jenny Suckale, and Francis X. Giraldo
   venue: []
   volume: '114'
   number: []
@@ -490,7 +491,7 @@
 - id: mele-2018-a-petsc-parallel-in-time-solver-based-on
   type: journal
   title: A PETSc parallel-in-time solver based on MGRIT algorithm
-  authors: Valeria Mele, Emil M. Constantinescu, Luisa Carracciuolo, and Luisa D'Amore
+  authors: Valeria Mele, Emil M Constantinescu, Luisa Carracciuolo, and Luisa D'Amore
   venue: []
   volume: []
   number: []
@@ -506,7 +507,7 @@
 - id: zhang-2017-discrete-adjoint-sensitivity-analysis-of-power
   type: journal
   title: Discrete adjoint sensitivity analysis of power system dynamics
-  authors: Hong Zhang, Shrirang S. Abhyankar, Emil M. Constantinescu, and Mihai Anitescu
+  authors: Hong Zhang, Shrirang S. Abhyankar, Emil M Constantinescu, and Mihai Anitescu
   venue: []
   volume: '64'
   number: '5'
@@ -522,7 +523,7 @@
 - id: petra-2017-a-bayesian-approach-for-parameter-estimation
   type: journal
   title: A Bayesian approach for parameter estimation with uncertainty for dynamic power systems
-  authors: Noemi Petra, Cosmin G. Petra, Zheng Zhang, Emil M. Constantinescu, and Mihai Anitescu
+  authors: Noemi Petra, Cosmin G. Petra, Zheng Zhang, Emil M Constantinescu, and Mihai Anitescu
   venue: []
   volume: '32'
   number: '4'
@@ -538,7 +539,7 @@
 - id: abhyankar-2017-parallel-dynamics-simulation-using-a-krylov-schwarz
   type: journal
   title: Parallel dynamics simulation using a Krylov-Schwarz linear solution scheme
-  authors: Shrirang Abhyankar, Emil M. Constantinescu, Barry Smith, Alexander J. Flueck, and Daniel A.
+  authors: Shrirang Abhyankar, Emil M Constantinescu, Barry Smith, Alexander J. Flueck, and Daniel A.
     Maldonado
   venue: []
   volume: '8'
@@ -554,7 +555,7 @@
 - id: constantinescu-2016-semi-implicit-time-integration-of-atmospheric-flows
   type: journal
   title: Semi-implicit time integration of atmospheric flows with characteristic-based flux partitioning
-  authors: Debojyoti Ghosh and Emil M. Constantinescu
+  authors: Debojyoti Ghosh and Emil M Constantinescu
   venue: []
   volume: '38'
   number: '3'
@@ -570,7 +571,7 @@
 - id: li-2016-flexible-operation-of-batteries-in-power
   type: journal
   title: Flexible operation of batteries in power system scheduling with renewable energy
-  authors: Nan Li, Canan Uckun, Emil M. Constantinescu, John Birge, Kory W. Hedman, and Audun Botterud
+  authors: Nan Li, Canan Uckun, Emil M Constantinescu, John Birge, Kory W. Hedman, and Audun Botterud
   venue: []
   volume: []
   number: []
@@ -585,7 +586,7 @@
 - id: constantinescu-2015-a-well-balanced-conservative-finite-difference-algorithm-for
   type: journal
   title: A well-balanced conservative finite-difference algorithm for atmospheric flows
-  authors: Debojyoti Ghosh and Emil M. Constantinescu
+  authors: Debojyoti Ghosh and Emil M Constantinescu
   venue: []
   volume: []
   number: []
@@ -601,7 +602,7 @@
 - id: ghosh-2015-efficient-implementation-of-non-linear-compact-schemes
   type: journal
   title: Efficient implementation of non-linear compact schemes on massively-parallel platforms
-  authors: Debojyoti Ghosh, Emil M. Constantinescu, and Jed Brown
+  authors: Debojyoti Ghosh, Emil M Constantinescu, and Jed Brown
   venue: []
   volume: '37'
   number: '3'
@@ -617,7 +618,7 @@
 - id: bilionis-2015-crop-physiology-calibration-in-the-clm
   type: journal
   title: Crop physiology calibration in the CLM
-  authors: Ilias Bilionis, Beth A. Drewniak, and Emil M. Constantinescu
+  authors: Ilias Bilionis, Beth A. Drewniak, and Emil M Constantinescu
   venue: []
   volume: '8'
   number: '4'
@@ -633,7 +634,7 @@
   type: journal
   title: Probabilistic density function method for stochastic ODEs of power systems with uncertain power
     input
-  authors: Peng Wang, David Barajas-Solano, Emil Constantinescu, Shrirang S. Abhyankar, Debojyoti Ghosh,
+  authors: Peng Wang, David Barajas-Solano, Emil M Constantinescu, Shrirang S. Abhyankar, Debojyoti Ghosh,
     Barry Smith, Zhenyu Huang, and Alexandre Tartakovsky
   venue: []
   volume: '3'
@@ -649,7 +650,7 @@
 - id: anitescu-2014-a-low-memory-approach-for-best-state-estimation
   type: journal
   title: A low-memory approach for best-state estimation of hidden Markov models with model error
-  authors: Mihai Anitescu, Xiaoyan Zeng, and Emil M. Constantinescu
+  authors: Mihai Anitescu, Xiaoyan Zeng, and Emil M Constantinescu
   venue: []
   volume: '52'
   number: '1'
@@ -664,7 +665,7 @@
 - id: bilionis-2014-data-driven-model-for-solar-irradiation-based
   type: journal
   title: Data-driven model for solar irradiation based on satellite observations
-  authors: '{WEB} Ilias Bilionis, Emil M. Constantinescu, and Mihai Anitescu'
+  authors: '{WEB} Ilias Bilionis, Emil M Constantinescu, and Mihai Anitescu'
   venue: []
   volume: '110'
   number: []
@@ -678,9 +679,9 @@
   featured: []
 - id: keyes-2013-multiphysics-simulations-challenges-and-opportunities
   type: journal
-  title: 'Multiphysics Simulations: Challenges and Opportunities'
+  title: 'Multiphysics simulations: Challenges and opportunities'
   authors: David E. Keyes, Lois Curfman McInnes, Carol Woodward, William Gropp, Eric Myra, Michael Pernice,
-    John Bell, Jed Brown, Alain Clo, Jeffrey Connors, Emil Constantinescu, Don Estep, Kate Evans, Charbel
+    John Bell, Jed Brown, Alain Clo, Jeffrey Connors, Emil M Constantinescu, Don Estep, Kate Evans, Charbel
     Farhat, Ammar Hakim, Glenn Hammond, Glen Hansen, Judith Hill, Tobin Isaac, Xiaomin Jiao, Kirk Jordan,
     Dinesh Kaushik, Efthimios Kaxiras, Alice Koniges, Kihwan Lee, Aaron Lott, Qiming Lu, John Magerlein,
     Reed Maxwell, Michael McCourt, Miriam Mehl, Roger Pawlowski, Amanda Peters Randles, Daniel Reynolds,
@@ -701,7 +702,7 @@
 - id: sandu-2013-extrapolated-multirate-methods-for-differential-equations
   type: journal
   title: Extrapolated multirate methods for differential equations with multiple time scales
-  authors: Emil M. Constantinescu and Adrian Sandu
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: '56'
   number: '1'
@@ -716,7 +717,7 @@
 - id: anitescu-2013-physics-based-covariance-models-for-gaussian-processes
   type: journal
   title: Physics-based covariance models for Gaussian processes with multiple outputs
-  authors: Emil M. Constantinescu and Mihai Anitescu
+  authors: Emil M Constantinescu and Mihai Anitescu
   venue: []
   volume: '3'
   number: '1'
@@ -733,7 +734,7 @@
   type: journal
   title: Implicit-explicit formulations of a three-dimensional nonhydrostatic unified model of the atmosphere
     (NUMA)
-  authors: Francis X Giraldo, James F. Kelly, and Emil Constantinescu
+  authors: Francis X Giraldo, James F. Kelly, and Emil M Constantinescu
   venue: []
   volume: '35'
   number: '5'
@@ -748,8 +749,8 @@
   featured: []
 - id: salazar-2013-stochastic-optimization-approach-to-water-management
   type: journal
-  title: Stochastic Optimization Approach to Water Management in Cooling-Constrained Power Plants
-  authors: Juan M. Salazar, Urmila Diwekar, Emil M. Constantinescu, and Victor Zavala
+  title: Stochastic optimization approach to water management in cooling-constrained power plants
+  authors: Juan M. Salazar, Urmila Diwekar, Emil M Constantinescu, and Victor Zavala
   venue: []
   volume: '112'
   number: []
@@ -764,7 +765,7 @@
 - id: zeng-2013-calibration-of-the-crop-model-in
   type: journal
   title: Calibration of the crop model in the Community Land Model
-  authors: Xiaoyan Zeng, Beth A. Drewniak, and Emil M. Constantinescu
+  authors: Xiaoyan Zeng, Beth A. Drewniak, and Emil M Constantinescu
   venue: []
   volume: '6'
   number: '1'
@@ -778,7 +779,7 @@
   featured: []
 - id: keyes-2012-multiphysics-simulations-challenges-and-opportunities
   type: journal
-  title: 'Multiphysics Simulations: Challenges and Opportunities'
+  title: 'Multiphysics simulations: challenges and opportunities'
   authors: D.E. Keyes, L.C. McInnes, C. Woodward, W.D. Gropp, E. Myra, M. Pernice, J. Bell, J. Brown,
     A. Clo, J. Connors, E. Constantinescu, D. Estep, K. Evans, C. Farhat, A. Hakim, G. Hammond, G. Hansen,
     J. Hill, T. Isaac, X. Jiao, K. Jordan, D. Kaushik, E. Kaxiras, A. Koniges, K. Lee, A. Lott, Q. Lu,
@@ -799,8 +800,8 @@
   featured: []
 - id: bessa-2012-time-adaptive-conditional-kernel-density-estimation
   type: journal
-  title: Time Adaptive Conditional Kernel Density Estimation for Wind Power Forecasting
-  authors: Ricardo J. Bessa, Vladimiro Miranda, Audun Botterud, Jianhui Wang, and Emil Constantinescu
+  title: Time adaptive conditional kernel density estimation for wind power forecasting
+  authors: Ricardo J. Bessa, Vladimiro Miranda, Audun Botterud, Jianhui Wang, and Emil M Constantinescu
   venue: []
   volume: '3'
   number: '4'
@@ -814,8 +815,8 @@
   featured: []
 - id: sandu-2011-ensemble-methods-for-dynamic-data-assimilation
   type: journal
-  title: Ensemble Methods for Dynamic Data Assimilation of Chemical Observations in Atmospheric Models
-  authors: Adrian Sandu, Emil M. Constantinescu, Gregory R. Carmichael, Tianfeng Chai, Dacian Daescu and
+  title: Ensemble methods for dynamic data assimilation of chemical observations in atmospheric models
+  authors: Adrian Sandu, Emil M Constantinescu, Gregory R. Carmichael, Tianfeng Chai, Dacian Daescu and
     John Seinfeld
   venue: []
   volume: '5'
@@ -830,9 +831,9 @@
   featured: []
 - id: constantinescu-2011-a-computational-framework-for-uncertainty-quantification
   type: journal
-  title: A Computational Framework for Uncertainty Quantification and Stochastic Optimization in Unit
-    Commitment with Wind Power Generation
-  authors: Emil M. Constantinescu,Victor Zavala, Matthew Rocklin, Sangmin Lee, and Mihai Anitescu
+  title: A computational framework for uncertainty quantification and stochastic optimization in unit
+    commitment with wind power generation
+  authors: Emil M Constantinescu,Victor Zavala, Matthew Rocklin, Sangmin Lee, and Mihai Anitescu
   venue: []
   volume: '26'
   number: '1'
@@ -847,7 +848,7 @@
 - id: sandu-2010-extrapolated-implicit-explicit-time-stepping
   type: journal
   title: Extrapolated implicit-explicit time stepping
-  authors: Emil M. Constantinescu and Adrian Sandu
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: '31'
   number: '6'
@@ -862,7 +863,7 @@
 - id: sandu-2010-optimal-strong-stability-preserving-general-linear-methods
   type: journal
   title: Optimal strong-stability-preserving general linear methods
-  authors: Emil M. Constantinescu and Adrian Sandu
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: '32'
   number: '5'
@@ -877,7 +878,7 @@
 - id: constantinescu-2009-multirate-explicit-adams-methods-for-time
   type: journal
   title: Multirate explicit Adams methods for time integration of conservation laws
-  authors: Adrian Sandu and Emil M. Constantinescu
+  authors: Adrian Sandu and Emil M Constantinescu
   venue: []
   volume: '38'
   number: '2'
@@ -893,7 +894,7 @@
 - id: zavala-2009-on-line-economic-optimization-of-energy-systems
   type: journal
   title: On-line economic optimization of energy systems using weather forecast information
-  authors: Victor Zavala, Emil M. Constantinescu, Theodore Krause, and Mihai Anitescu
+  authors: Victor Zavala, Emil M Constantinescu, Theodore Krause, and Mihai Anitescu
   venue: []
   volume: '19'
   number: '10'
@@ -908,7 +909,7 @@
 - id: constantinescu-2008-modeling-atmospheric-chemistry-and-transport-with
   type: journal
   title: Modeling atmospheric chemistry and transport with dynamic adaptive resolution
-  authors: Emil M. Constantinescu, Adrian Sandu, and Gregory R. Carmichael
+  authors: Emil M Constantinescu, Adrian Sandu, and Gregory R. Carmichael
   venue: []
   volume: '12'
   number: '2'
@@ -924,7 +925,7 @@
 - id: zhang-2008-an-adjoint-sensitivity-analysis-and-4d-var
   type: journal
   title: An adjoint sensitivity analysis and 4D-Var data assimilation study of Texas air quality,
-  authors: Lin Zhang, Emil M. Constantinescu, Adrian Sandu, Youhua Tang, Tianfeng Chai, Gregory R. Carmichael,
+  authors: Lin Zhang, Emil M Constantinescu, Adrian Sandu, Youhua Tang, Tianfeng Chai, Gregory R. Carmichael,
     Daewon Byun, and Eduardo Olaguer
   venue: []
   volume: '42'
@@ -940,7 +941,7 @@
 - id: constantinescu-2022-optimal-experimental-design-for-inverse-problems
   type: journal
   title: Optimal experimental design for inverse problems in the presence of observation correlations
-  authors: Ahmed Attia and Emil M. Constantinescu
+  authors: Ahmed Attia and Emil M Constantinescu
   venue: SIAM Journal on Scientific Computing (SISC)
   volume: '44'
   number: '4'
@@ -955,7 +956,7 @@
 - id: sandu-2007-multirate-timestepping-methods-for-hyperbolic-conservation
   type: journal
   title: Multirate timestepping methods for hyperbolic conservation laws
-  authors: Emil M. Constantinescu and Adrian Sandu
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: '33'
   number: '3'
@@ -971,7 +972,7 @@
 - id: constantinescu-2007-assessment-of-ensemble-based-chemical-data-assimilation
   type: journal
   title: Assessment of ensemble-based chemical data assimilation in an idealized setting
-  authors: Emil M. Constantinescu, Adrian Sandu, Tianfeng Chai, and Gregory R. Carmichael
+  authors: Emil M Constantinescu, Adrian Sandu, Tianfeng Chai, and Gregory R. Carmichael
   venue: []
   volume: '41'
   number: '1'
@@ -985,8 +986,8 @@
   featured: []
 - id: constantinescu-2007-ensemble-based-chemical-data-assimilation-i-general
   type: journal
-  title: 'Ensemble-based chemical data assimilation I: General approach'
-  authors: Emil M. Constantinescu, Adrian Sandu, Tianfeng Chai, and Gregory R. Carmichael
+  title: 'Ensemble-based chemical data assimilation I: general approach'
+  authors: Emil M Constantinescu, Adrian Sandu, Tianfeng Chai, and Gregory R. Carmichael
   venue: []
   volume: '133'
   number: '626'
@@ -1001,7 +1002,7 @@
 - id: constantinescu-2007-ensemble-based-chemical-data-assimilation-ii-covariance
   type: journal
   title: 'Ensemble-based chemical data assimilation II: Covariance localization'
-  authors: Emil M. Constantinescu, Adrian Sandu, Tianfeng Chai, and Gregory R. Carmichael
+  authors: Emil M Constantinescu, Adrian Sandu, Tianfeng Chai, and Gregory R. Carmichael
   venue: []
   volume: '133'
   number: '626'
@@ -1016,7 +1017,7 @@
 - id: constantinescu-2007-autoregressive-models-of-background-errors-for
   type: journal
   title: Autoregressive models of background errors for chemical data assimilation
-  authors: Emil M. Constantinescu, Tianfeng Chai, Adrian Sandu, and Gregory R. Carmichael
+  authors: Emil M Constantinescu, Tianfeng Chai, Adrian Sandu, and Gregory R. Carmichael
   venue: []
   volume: '112'
   number: []
@@ -1031,7 +1032,7 @@
 - id: carmichael-2007-predicting-air-quality-improvements-through-advanced
   type: journal
   title: 'Predicting air quality: Improvements through advanced methods to integrate models and measurements'
-  authors: Gregory R. Carmichael, Adrian Sandu, Tianfeng Chai, Dacian N. Daescu, Emil M. Constantinescu,
+  authors: Gregory R. Carmichael, Adrian Sandu, Tianfeng Chai, Dacian N. Daescu, Emil M Constantinescu,
     and Youhua Tang
   venue: []
   volume: '227'
@@ -1047,7 +1048,7 @@
 - id: rao-2006-a-machine-learning-method-for-computing
   type: journal
   title: A machine learning method for computing rare event probabilities
-  authors: Vishwas Hebbur Venkata Subba Rao, Romit Maulik, Emil Constantinescu, and Mihai Anitescu
+  authors: Vishwas Hebbur Venkata Subba Rao, Romit Maulik, Emil M Constantinescu, and Mihai Anitescu
   venue: []
   volume: []
   number: []
@@ -1063,7 +1064,7 @@
 - id: liu-2004-probabilistic-analysis-of-masked-loads-with
   type: journal
   title: Probabilistic analysis of masked loads with aggregated photovoltaic production
-  authors: Shaohui Liu, Adrian Maldonado, and Emil Constantinescu
+  authors: Shaohui Liu, Adrian Maldonado, and Emil M Constantinescu
   venue: Electric Power Systems Research
   volume: '189'
   number: []
@@ -1077,9 +1078,9 @@
   featured: true
 - id: zhang-1912-petsc-tsadjoint-a-discrete-adjoint-ode
   type: journal
-  title: 'PETSc TSAdjoint: a discrete adjoint ODE solver for first-order and second-order sensitivity
+  title: 'PETSc TSAdjoint: A discrete adjoint ODE solver for first-order and second-order sensitivity
     analysis'
-  authors: Hong Zhang, Emil M. Constantinescu, and Barry F. Smith
+  authors: Hong Zhang, Emil M Constantinescu, and Barry F. Smith
   venue: SIAM Journal of Scientific Computing
   volume: '44'
   number: []
@@ -1095,7 +1096,7 @@
 - id: zhang-1909-stability-analysis-of-interface-conditions-for
   type: journal
   title: Stability analysis of interface conditions for ocean-atmosphere coupling
-  authors: Hong Zhang, Zhengyu Liu, Emil M. Constantinescu, and Robert Jacob
+  authors: Hong Zhang, Zhengyu Liu, Emil M Constantinescu, and Robert Jacob
   venue: Springer Journal of Scientific Computing
   volume: '84'
   number: '44'
@@ -1109,8 +1110,8 @@
   featured: true
 - id: jung-2026-learning-differentiable-weak-form-corrections-to-accelerate
   type: proceedings
-  title: Learning Differentiable Weak-Form Corrections to Accelerate Finite Element Simulations
-  authors: Junoh Jung and Emil Constantinescu
+  title: Learning differentiable weak-form corrections to accelerate finite element simulations
+  authors: Junoh Jung and Emil M Constantinescu
   venue: Submitted
   volume: []
   number: []
@@ -1125,8 +1126,8 @@
   featured: true
 - id: kang-2023-multirate-partitioned-runge-kutta-methods-for-coupled
   type: proceedings
-  title: Multirate Partitioned Runge-Kutta Methods for Coupled Navier-Stokes Equations
-  authors: Shinhoo Kang, Alp Dener, Aidan Hamilton, Hong Zhang, Emil M. Constantinescu, and Robert Jacob
+  title: Multirate partitioned Runge-Kutta methods for coupled Navier-Stokes equations
+  authors: Shinhoo Kang, Alp Dener, Aidan Hamilton, Hong Zhang, Emil M Constantinescu, and Robert Jacob
   venue: Computers & Fluids
   volume: '264'
   number: '15'
@@ -1141,8 +1142,8 @@
   featured: true
 - id: shin-2022-constrained-policy-optimization-for-stochastic-optimal
   type: proceedings
-  title: Constrained Policy Optimization for Stochastic Optimal Control under Nonstationary Uncertainties
-  authors: Sungho Shin, François Pacaud, Emil Constantinescu, and Mihai Anitescu
+  title: Constrained policy optimization for stochastic optimal control under nonstationary uncertainties
+  authors: Sungho Shin, François Pacaud, Emil M Constantinescu, and Mihai Anitescu
   venue: Advances in Automotive Control
   volume: []
   number: []
@@ -1156,8 +1157,8 @@
   featured: true
 - id: constantinescu-2021-revolve-based-adjoint-checkpointing-for-multistage-time
   type: proceedings
-  title: Revolve-Based Adjoint Checkpointing for Multistage Time Integration
-  authors: Hong Zhang and Emil M. Constantinescu
+  title: Revolve-based adjoint checkpointing for multistage time integration
+  authors: Hong Zhang and Emil M Constantinescu
   venue: []
   volume: []
   number: []
@@ -1166,14 +1167,14 @@
   doi: []
   arxiv: []
   pdf: []
-  tags: 
+  tags:
   - data-assimilation
   - amr
   featured: true
 - id: rao-2020-a-machine-learning-method-for-computing
   type: proceedings
   title: A machine learning method for computing rare event probabilities
-  authors: Vishwas Hebbur Venkata Subba Rao, Romit Maulik, Emil Constantinescu, and Mihai Anitescu
+  authors: Vishwas Hebbur Venkata Subba Rao, Romit Maulik, Emil M Constantinescu, and Mihai Anitescu
   venue: []
   volume: []
   number: []
@@ -1188,8 +1189,8 @@
   featured: []
 - id: mele-2018-performance-evaluation-for-a-petsc-parallel-in-time
   type: proceedings
-  title: Performance evaluation for a PETSc Parallel-in-Time Solver based on the MGRIT algorithm
-  authors: Valeria Mele, Diego Romano, Emil Constantinescu, Luisa Carracciuolo, and Luisa D�Amore
+  title: Performance evaluation for a PETSc parallel-in-time solver based on the MGRIT algorithm
+  authors: Valeria Mele, Diego Romano, Emil M Constantinescu, Luisa Carracciuolo, and Luisa D�Amore
   venue: []
   volume: '106'
   number: []
@@ -1203,9 +1204,9 @@
   featured: []
 - id: constantinescu-2013-high-order-partitioned-time-stepping-methods
   type: proceedings
-  title: High Order Partitioned Time Stepping Methods for Stiff Problems
-  authors: Emil M. Constantinescu
-  venue: Emil M. Constantinescu
+  title: High order partitioned time stepping methods for stiff problems
+  authors: Emil M Constantinescu
+  venue: []
   volume: []
   number: []
   pages: []
@@ -1220,7 +1221,7 @@
   type: proceedings
   title: Evaluation of overlapping restricted additive Schwarz preconditioning for parallel solution of
     very large power flow problems
-  authors: Shrirang Abhyankar, Barry Smith, and Emil M. Constantinescu
+  authors: Shrirang Abhyankar, Barry Smith, and Emil M Constantinescu
   venue: []
   volume: []
   number: []
@@ -1234,8 +1235,8 @@
   featured: []
 - id: smith-2012-petsc-s-software-strategy-for-the-design
   type: proceedings
-  title: PETSc's Software Strategy for the Design Space of Composable Extreme-Scale Solvers
-  authors: Barry Smith, Lois Curfman McInnes, Emil Constantinescu, Mark Adams, Satish Balay, Jed Brown,
+  title: PETSc's software strategy for the design space of composable extreme-scale solvers
+  authors: Barry Smith, Lois Curfman McInnes, Emil M Constantinescu, Mark Adams, Satish Balay, Jed Brown,
     Matthew Knepley, and Hong Zhang
   venue: []
   volume: []
@@ -1251,8 +1252,8 @@
 - id: constantinescu-2012-consistency-and-stability-considerations-for-implicit-explicit
   type: proceedings
   title: Consistency and stability considerations for implicit-explicit additive splittings
-  authors: Emil M. Constantinescu
-  venue: Emil M. Constantinescu
+  authors: Emil M Constantinescu
+  venue: []
   volume: []
   number: []
   pages: []
@@ -1266,8 +1267,8 @@
 - id: anitescu-2012-physics-based-auto-and-cross-covariance-models-for
   type: proceedings
   title: Physics-based auto- and cross-covariance models for Gaussian process regression
-  authors: Emil M. Constantinescu and Mihai Anitescu
-  venue: Emil M. Constantinescu
+  authors: Emil M Constantinescu and Mihai Anitescu
+  venue: []
   volume: []
   number: []
   pages: []
@@ -1281,8 +1282,8 @@
   featured: []
 - id: cioaca-2011-adjoint-sensitivity-analysis-for-numerical-weather
   type: proceedings
-  title: 'Adjoint Sensitivity Analysis for Numerical Weather Prediction: Applications to Power Grid Optimization'
-  authors: Alexandru Cioaca, Victor Zavala, and Emil M. Constantinescu
+  title: 'Adjoint sensitivity analysis for numerical weather prediction: Applications to power grid optimization'
+  authors: Alexandru Cioaca, Victor Zavala, and Emil M Constantinescu
   venue: []
   volume: []
   number: []
@@ -1297,7 +1298,7 @@
 - id: constantinescu-2011-quantifying-uncertainty-in-wind-power-predictions
   type: proceedings
   title: Quantifying uncertainty in wind power predictions for stochastic unit commitment optimization
-  authors: Emil M. Constantinescu, Victor M. Zavala, and Mihai Anitescu
+  authors: Emil M Constantinescu, Victor M. Zavala, and Mihai Anitescu
   venue: []
   volume: []
   number: []
@@ -1311,8 +1312,8 @@
   featured: []
 - id: bessa-2011-time-adaptive-kernel-density-forecast-a-new
   type: proceedings
-  title: 'Time-adaptive kernel density forecast: a new method for wind power uncertainty modeling'
-  authors: Ricardo J. Bessa, J. Sumaili, Vladimiro Miranda, Audun Botterud, Jianhui Wang, and Emil Constantinescu
+  title: 'Time-adaptive kernel density forecast: A new method for wind power uncertainty modeling'
+  authors: Ricardo J. Bessa, J. Sumaili, Vladimiro Miranda, Audun Botterud, Jianhui Wang, and Emil M Constantinescu
   venue: []
   volume: []
   number: []
@@ -1326,8 +1327,8 @@
   featured: []
 - id: zavala-2011-integration-of-uncertainty-quantification-and-stochastic
   type: proceedings
-  title: Integration of Uncertainty Quantification and Stochastic Optimization in Power Grid Applications
-  authors: Victor M. Zavala, Emil Constantinescu, and Mihai Anitescu
+  title: Integration of uncertainty quantification and stochastic optimization in power grid applications
+  authors: Victor M. Zavala, Emil M Constantinescu, and Mihai Anitescu
   venue: []
   volume: []
   number: []
@@ -1341,8 +1342,8 @@
   featured: []
 - id: constantinescu-2010-uncertainty-quantification-in-downscaling-procedures-for
   type: proceedings
-  title: Uncertainty Quantification in Downscaling Procedures for Effective Decisions in Energy Systems
-  authors: Emil Constantinescu
+  title: Uncertainty quantification in downscaling procedures for effective decisions in energy systems
+  authors: Emil M Constantinescu
   venue: []
   volume: []
   number: []
@@ -1356,8 +1357,8 @@
   featured: []
 - id: constantinescu-2010-wind-power-forecasting-using-numerical-weather
   type: proceedings
-  title: Wind Power Forecasting Using Numerical Weather Prediction Models
-  authors: Emil Constantinescu, Victor M. Zavala, and Mihai Anitescu
+  title: Wind power forecasting using numerical weather prediction models
+  authors: Emil M Constantinescu, Victor M. Zavala, and Mihai Anitescu
   venue: []
   volume: []
   number: []
@@ -1372,7 +1373,7 @@
 - id: sandu-2010-multirate-explicit-ssp-methods-for-hyperbolic
   type: proceedings
   title: Multirate explicit SSP methods for hyperbolic PDEs
-  authors: Emil M. Constantinescu and Adrian Sandu
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1386,8 +1387,8 @@
   featured: []
 - id: salazar-2010-real-time-water-management-in-power-plants
   type: proceedings
-  title: Real-Time Water Management in Power Plants and Implications in Electricity Markets
-  authors: Juan M. Salazar, Urmila Diwekar, Emil Constantinescu, and Victor M. Zavala
+  title: Real-time water management in power plants and implications in electricity markets
+  authors: Juan M. Salazar, Urmila Diwekar, Emil M Constantinescu, and Victor M. Zavala
   venue: []
   volume: []
   number: []
@@ -1401,8 +1402,8 @@
   featured: []
 - id: zavala-2010-computational-and-economic-limitations-of-dispatch
   type: proceedings
-  title: Computational and Economic Limitations of Dispatch Operations in the Next-Generation Power Grid
-  authors: Victor M. Zavala, Audun Botterud, Emil M. Constantinescu, and Jianhui Wang
+  title: Computational and economic limitations of dispatch operations in the next-generation power grid
+  authors: Victor M. Zavala, Audun Botterud, Emil M Constantinescu, and Jianhui Wang
   venue: []
   volume: []
   number: []
@@ -1417,7 +1418,7 @@
 - id: zavala-2010-proactive-energy-management-for-next-generation-building
   type: proceedings
   title: Proactive energy management for next-generation building systems
-  authors: Victor M. Zavala, Jianhui Wang, Sven Leyffer, Emil M. Constantinescu, Mihai Anitescu, and Guenter
+  authors: Victor M. Zavala, Jianhui Wang, Sven Leyffer, Emil M Constantinescu, Mihai Anitescu, and Guenter
     Conzelmann
   venue: []
   volume: []
@@ -1433,7 +1434,7 @@
 - id: zavala-2010-economic-impacts-of-advanced-weather-forecasting
   type: proceedings
   title: Economic impacts of advanced weather forecasting in energy system operations
-  authors: Victor Zavala, Emil M. Constantinescu, and Mihai Anitescu
+  authors: Victor Zavala, Emil M Constantinescu, and Mihai Anitescu
   venue: []
   volume: []
   number: []
@@ -1447,7 +1448,7 @@
   featured: []
 - id: unknown-2009-on-general-linear-time-stepping-methods
   type: proceedings
-  title: On General Linear Time Stepping Methods
+  title: On general linear time stepping methods
   authors: []
   venue: []
   volume: []
@@ -1463,7 +1464,7 @@
 - id: constantinescu-2009-multirate-time-discretizations-for-hyperbolic-partial
   type: proceedings
   title: Multirate time discretizations for hyperbolic partial differential equations
-  authors: Adrian Sandu and Emil M. Constantinescu
+  authors: Adrian Sandu and Emil M Constantinescu
   venue: []
   volume: '1168'
   number: '1'
@@ -1479,7 +1480,7 @@
 - id: constantinescu-2009-the-certain-importance-of-uncertainty-in
   type: proceedings
   title: The certain importance of uncertainty in modeling and simulations
-  authors: Emil M. Constantinescu
+  authors: Emil M Constantinescu
   venue: []
   volume: []
   number: []
@@ -1493,8 +1494,8 @@
   featured: []
 - id: sandu-2009-challenges-in-ensemble-kalman-data-assimilation
   type: proceedings
-  title: Challenges in Ensemble Kalman Data Assimilation for Atmospheric Chemical Transport Models
-  authors: Emil M. Constantinescu and Adrian Sandu
+  title: Challenges in ensemble Kalman data assimilation for atmospheric chemical transport models
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1509,7 +1510,7 @@
 - id: sandu-2009-explicit-time-stepping-methods-with-high
   type: proceedings
   title: Explicit time stepping methods with high stage order and monotonicity properties
-  authors: Emil M. Constantinescu and Adrian Sandu
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1524,7 +1525,7 @@
 - id: sandu-2008-extrapolated-multirate-numerical-integration-methods
   type: proceedings
   title: Extrapolated multirate numerical integration methods
-  authors: Emil M. Constantinescu and Adrian Sandu
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1538,8 +1539,8 @@
   featured: []
 - id: sandu-2008-on-extrapolated-multirate-numerical-integration-methods
   type: proceedings
-  title: On Extrapolated multirate numerical integration methods
-  authors: Emil M. Constantinescu and Adrian Sandu
+  title: On extrapolated multirate numerical integration methods
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1554,7 +1555,7 @@
 - id: sandu-2007-localized-ensemble-kalman-dynamic-data-assimilation
   type: proceedings
   title: Localized ensemble Kalman dynamic data assimilation for atmospheric chemistry
-  authors: Adrian Sandu, Emil M. Constantinescu, Gregory R. Carmichael, Tianfeng Chai, John H. Seinfeld,
+  authors: Adrian Sandu, Emil M Constantinescu, Gregory R. Carmichael, Tianfeng Chai, John H. Seinfeld,
     and Dacian Daescu
   venue: []
   volume: []
@@ -1570,7 +1571,7 @@
 - id: sandu-2007-4d-var-computational-tools-for-the-assimilation
   type: proceedings
   title: 4D-Var computational tools for the assimilation of observations in chemical transport models
-  authors: Emil M. Constantinescu and Adrian Sandu
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1585,7 +1586,7 @@
 - id: sandu-2007-strong-stability-preserving-multirate-schemes-for
   type: proceedings
   title: Strong stability preserving multirate schemes for hyperbolic conservation laws
-  authors: Emil M. Constantinescu and Adrian Sandu
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1601,7 +1602,7 @@
   type: proceedings
   title: A real-space parallel optimization model reduction approach for electronic structure computation
     in large nanostructures using orbital-free density functional theory
-  authors: Dan Negrut, Mihai Anitescu, Anter El-Azab, Steve Benson, Emil Constantinescu, Peter Zapol,
+  authors: Dan Negrut, Mihai Anitescu, Anter El-Azab, Steve Benson, Emil M Constantinescu, Peter Zapol,
     and Toby Heyn
   venue: []
   volume: []
@@ -1617,7 +1618,7 @@
 - id: sandu-2005-ensemble-filter-data-assimilation-for-atmospheric
   type: proceedings
   title: Ensemble filter data assimilation for atmospheric chemical transport models
-  authors: Adrian Sandu, Emil M. Constantinescu, Wenyuan Liao, Gregory R. Carmichael, Tianfeng Chai, John
+  authors: Adrian Sandu, Emil M Constantinescu, Wenyuan Liao, Gregory R. Carmichael, Tianfeng Chai, John
     H. Seinfeld, and Dacian Daescu
   venue: []
   volume: []
@@ -1633,7 +1634,7 @@
 - id: sandu-2005-on-adaptive-mesh-refinement-for-atmospheric
   type: proceedings
   title: On adaptive mesh refinement for atmospheric pollution models
-  authors: Emil M. Constantinescu and Adrian Sandu
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1649,7 +1650,7 @@
 - id: constantinescu-2005-mesh-refinement-strategies-in-air-quality
   type: proceedings
   title: Mesh refinement strategies in air quality modeling
-  authors: Emil M. Constantinescu, Wenyuan Liao, and Adrian Sandu
+  authors: Emil M Constantinescu, Wenyuan Liao, and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1665,7 +1666,7 @@
 - id: sandu-2004-parallel-adaptive-simulations-of-regional-air
   type: proceedings
   title: Parallel adaptive simulations of regional air quality
-  authors: Adrian Sandu, Chaitaniya Belwal, and Emil Constantinescu
+  authors: Adrian Sandu, Chaitaniya Belwal, and Emil M Constantinescu
   venue: []
   volume: []
   number: []
@@ -1680,7 +1681,7 @@
 - id: belwal-2004-adaptive-resolution-modeling-of-regional-air
   type: proceedings
   title: Adaptive resolution modeling of regional air quality
-  authors: Chaitaniya Belwal, Adrian Sandu, and Emil Constantinescu
+  authors: Chaitaniya Belwal, Adrian Sandu, and Emil M Constantinescu
   venue: []
   volume: []
   number: []
@@ -1696,7 +1697,7 @@
   type: report
   title: Efficient adjoint computation of hybrid systems of differential algebraic equations with applications
     in power systems
-  authors: Hong Zhang, Shrirang S. Abhyankar, Emil M. Constantinescu, and Mihai Anitescu
+  authors: Hong Zhang, Shrirang S. Abhyankar, Emil M Constantinescu, and Mihai Anitescu
   venue: []
   volume: []
   number: []
@@ -1711,7 +1712,7 @@
 - id: cappello-2015-improving-the-trust-in-results-of
   type: report
   title: Improving the trust in results of numerical simulations and scientific data analytics
-  authors: Franck Cappello, Emil Constantinescu, Paul Hovland, Tom Peterka, Carolyn Phillips, Marc Snir,
+  authors: Franck Cappello, Emil M Constantinescu, Paul Hovland, Tom Peterka, Carolyn Phillips, Marc Snir,
     Stefan Wild
   venue: []
   volume: []
@@ -1727,7 +1728,7 @@
 - id: ghosh-2014-scalable-nonlinear-compact-schemes
   type: report
   title: Scalable nonlinear compact schemes
-  authors: Debojyoti Ghosh, Emil M. Constantinescu, and Jed Brown
+  authors: Debojyoti Ghosh, Emil M Constantinescu, and Jed Brown
   venue: []
   volume: []
   number: []
@@ -1736,14 +1737,14 @@
   doi: []
   arxiv: []
   pdf: http://www.mcs.anl.gov/papers/ANL/MCS-TM-340.pdf
-  tags: 
+  tags:
   - amr
   - time-stepping
   featured: []
 - id: sandu-2009-achieving-very-high-order-for-implicit
   type: report
-  title: 'Achieving Very High Order for Implicit Explicit Time Stepping: Extrapolation Methods'
-  authors: Emil M. Constantinescu and Adrian Sandu
+  title: 'Achieving very high order for implicit explicit time stepping: extrapolation methods'
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1757,8 +1758,8 @@
   featured: []
 - id: sandu-2009-optimal-explicit-strong-stability-preserving-general-linear-methods
   type: report
-  title: 'Optimal Explicit Strong-Stability-Preserving General Linear Methods: Complete Results'
-  authors: Emil M. Constantinescu and Adrian Sandu
+  title: 'Optimal explicit strong-stability-preserving general linear methods: Complete results'
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1772,9 +1773,9 @@
   featured: []
 - id: constantinescu-2009-unit-commitment-with-wind-power-generation
   type: report
-  title: 'Unit Commitment with Wind Power Generation: Integrating Wind Forecast Uncertainty and Stochastic
-    Programming'
-  authors: Emil M. Constantinescu,Victor Zavala, Matthew Rocklin, Sangmin Lee, and Mihai Anitescu
+  title: 'Unit commitment with wind power generation: Integrating wind forecast uncertainty and stochastic
+    programming'
+  authors: Emil M Constantinescu,Victor Zavala, Matthew Rocklin, Sangmin Lee, and Mihai Anitescu
   venue: []
   volume: []
   number: []
@@ -1788,8 +1789,8 @@
   featured: []
 - id: zavala-2009-exploiting-weather-forecast-information-in-the
   type: report
-  title: Exploiting Weather Forecast Information in the Operation of Integrated Energy Systems
-  authors: Victor Zavala, Emil M. Constantinescu, Theodore Krause, and Mihai Anitescu
+  title: Exploiting weather forecast information in the operation of integrated energy systems
+  authors: Victor Zavala, Emil M Constantinescu, Theodore Krause, and Mihai Anitescu
   venue: []
   volume: []
   number: []
@@ -1804,7 +1805,7 @@
 - id: constantinescu-2008-on-the-order-of-general-linear
   type: report
   title: On the order of general linear methods
-  authors: Emil M. Constantinescu
+  authors: Emil M Constantinescu
   venue: []
   volume: '22'
   number: '9'
@@ -1818,8 +1819,8 @@
   featured: []
 - id: sandu-2008-on-extrapolated-multirate-methods
   type: report
-  title: On Extrapolated Multirate Methods
-  authors: Emil M. Constantinescu and Adrian Sandu
+  title: On extrapolated multirate methods
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1835,7 +1836,7 @@
 - id: constantinescu-2007-multirate-explicit-adams-methods-for-time
   type: report
   title: Multirate explicit Adams methods for time integration of conservation laws
-  authors: Adrian Sandu and Emil M. Constantinescu
+  authors: Adrian Sandu and Emil M Constantinescu
   venue: []
   volume: []
   number: []
@@ -1851,7 +1852,7 @@
 - id: sandu-2007-update-on-multirate-timestepping-methods-for
   type: report
   title: Update on multirate timestepping methods for hyperbolic conservation laws
-  authors: Emil M. Constantinescu and Adrian Sandu
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1867,7 +1868,7 @@
 - id: sandu-2006-multirate-timestepping-methods-for-hyperbolic-conservation
   type: report
   title: Multirate timestepping methods for hyperbolic conservation laws
-  authors: Emil M. Constantinescu and Adrian Sandu
+  authors: Emil M Constantinescu and Adrian Sandu
   venue: []
   volume: []
   number: []
@@ -1883,7 +1884,7 @@
 - id: constantinescu-2006-ensemble-based-chemical-data-assimilation-i-an
   type: report
   title: 'Ensemble-based chemical data assimilation I: An idealized setting'
-  authors: Emil M. Constantinescu, Adrian Sandu, Tianfeng Chai, and Gregory R. Carmichael
+  authors: Emil M Constantinescu, Adrian Sandu, Tianfeng Chai, and Gregory R. Carmichael
   venue: []
   volume: []
   number: []
@@ -1898,7 +1899,7 @@
 - id: constantinescu-2006-ensemble-based-chemical-data-assimilation-ii-real
   type: report
   title: 'Ensemble-based chemical data assimilation II: Real observations'
-  authors: Emil M. Constantinescu, Adrian Sandu, Tianfeng Chai, and Gregory R. Carmichael
+  authors: Emil M Constantinescu, Adrian Sandu, Tianfeng Chai, and Gregory R. Carmichael
   venue: []
   volume: []
   number: []
@@ -1913,7 +1914,7 @@
 - id: constantinescu-2006-ensemble-based-chemical-data-assimilation-iii-filter
   type: report
   title: 'Ensemble-based chemical data assimilation III: Filter localization'
-  authors: Emil M. Constantinescu, Adrian Sandu, Tianfeng Chai, and Gregory R. Carmichael
+  authors: Emil M Constantinescu, Adrian Sandu, Tianfeng Chai, and Gregory R. Carmichael
   venue: []
   volume: []
   number: []
@@ -1928,7 +1929,7 @@
 - id: constantinescu-2006-autoregressive-models-of-background-errors-for
   type: report
   title: Autoregressive models of background errors for chemical data assimilation
-  authors: Emil M. Constantinescu, Tianfeng Chai, Adrian Sandu, and Gregory R. Carmichael
+  authors: Emil M Constantinescu, Tianfeng Chai, Adrian Sandu, and Gregory R. Carmichael
   venue: []
   volume: []
   number: []

@@ -10,7 +10,7 @@ My background is in **scientific computing**, **applied mathematics**, **uncerta
 
 My current research interests are in scientific computing and scientific machine learning (SciML). I am also actively developing AI-based agentic workflows.
 
-See the [Group page]({{ '/pages/group' | relative_url }}) for people and collaborations.
+See the [Group page]({{ '/pages/group' | relative_url }}) for my current and former group members.
 
 ## Research areas
 
