@@ -8,20 +8,22 @@ description: Group
 
 My group works at the intersection of scientific computing, applied mathematics, and scientific machine learning, with an emphasis on scalable algorithms for modeling, simulation, and inference.
 
-See [`pages/research.md`]({{ '/pages/research' | relative_url }}) for research areas and selected publications.
+See ([research areas]({{ '/pages/research' | relative_url }})) and selected ([publications]({{ '/pages/publications' | relative_url }})).
 
 ## Research scientists
 
+{% comment %}
 ### Current
 
 | Name | Years | Focus |
 | --- | --- | --- |
-| [Hong Zhang](https://caidao22.github.io/) | 2016–2018, 2021– | Sensitivity analysis, adjoints, PETSc |
+{% endcomment %}
 
 ### Alumni
 
 | Name | Years | Focus |
 | --- | --- | --- |
+| [Hong Zhang](https://caidao22.github.io/) | 2016–2018, 2021–2026 | Sensitivity analysis, adjoints, PETSc |
 | [Ahmed Attia](http://www.mcs.anl.gov/~attia/) | 2019–2025 | Optimal experimental design, data assimilation |
 | [Shinhoo Kang](https://www.anl.gov/profile/shinhoo-kang-0) | 2023–2024 | PDEs, CFD, multidomain simulation, machine learning |
 | [Julie Bessac](http://www.mcs.anl.gov/~jbessac) | 2017–2021 | Data analysis, statistics |
