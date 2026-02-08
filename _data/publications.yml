@@ -1076,7 +1076,7 @@
   tags:
   - data-assimilation
   featured: true
-- id: zhang-1912-petsc-tsadjoint-a-discrete-adjoint-ode
+- id: zhang-2022-petsc-tsadjoint-a-discrete-adjoint-ode
   type: journal
   title: 'PETSc TSAdjoint: A discrete adjoint ODE solver for first-order and second-order sensitivity
     analysis'
@@ -1085,7 +1085,7 @@
   volume: '44'
   number: []
   pages: C1-C24
-  year: 1912
+  year: 2022
   doi: 10.1137/21M140078X
   arxiv: '1912.07696'
   pdf: https://arxiv.org/abs/1912.07696.pdf
@@ -1093,7 +1093,7 @@
   - time-stepping
   - data-assimilation
   featured: true
-- id: zhang-1909-stability-analysis-of-interface-conditions-for
+- id: zhang-2020-stability-analysis-of-interface-conditions-for
   type: journal
   title: Stability analysis of interface conditions for ocean-atmosphere coupling
   authors: Hong Zhang, Zhengyu Liu, Emil M Constantinescu, and Robert Jacob
@@ -1101,7 +1101,7 @@
   volume: '84'
   number: '44'
   pages: []
-  year: 1909
+  year: 2020
   doi: 10.1007/s10915-020-01293-y
   arxiv: '1909.00916'
   pdf: https://arxiv.org/pdf/1909.00916.pdf
