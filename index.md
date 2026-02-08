@@ -5,6 +5,13 @@ tagline: Homepage
 description: Homepage of Emil Constantinescu
 ---
 
+<nav class="home-jumpnav" aria-label="Homepage sections">
+  <a href="#research">Research</a>
+  <a href="#software">Software</a>
+  <a href="#recent-papers">Recent papers</a>
+  <a href="{{ '/pages/group' | relative_url }}">Group</a>
+</nav>
+
 <div class="home-hero">
   <div class="home-hero__photo">
     <img src="{{ '/assets/images/emil-constantinescu-pic.jpg' | relative_url }}" alt="Emil Constantinescu" />
@@ -41,6 +48,8 @@ description: Homepage of Emil Constantinescu
 
 ## Research {#research}
 
+<p class="home-section-intro">Core research themes and representative directions.</p>
+
 My research focuses on scientific machine learning (SciML) for modeling and inference in complex dynamical systems. I develop scalable methods for uncertainty quantification and data assimilation, robust time integration schemes for stiff and multiscale dynamics, and adaptive mesh refinement techniques for PDE simulation.
 
 <div class="cards cards--research">
@@ -72,33 +81,41 @@ My research focuses on scientific machine learning (SciML) for modeling and infe
 
 ## Software {#software}
 
+<p class="home-section-intro">Open-source software contributions for scientific computing and machine learning workflows.</p>
+
 <div class="cards cards--software">
   <article class="card software-card">
     <h3 class="card__title">DESolve</h3>
-    <p class="software-card__role">Role: Lead package</p>
-    <p class="card__desc">Time integration package for stiff and multiscale dynamical systems.</p>
+    <p class="software-card__role">Lead package</p>
+    <p class="card__desc">Time integration for stiff and multiscale systems.</p>
     <p class="software-card__links"><a class="pub-chip" href="https://gitlab.com/emconsta/desolve">GitLab</a></p>
   </article>
   <article class="card software-card">
     <h3 class="card__title">PETSc TS</h3>
-    <p class="software-card__role">Role: Core contributor</p>
-    <p class="card__desc">Scalable ODE/DAE and time stepping infrastructure for high-performance computing.</p>
+    <p class="software-card__role">Core contributor</p>
+    <p class="card__desc">Scalable ODE/DAE and time stepping in HPC.</p>
     <p class="software-card__links"><a class="pub-chip" href="https://petsc.org/release/">Project page</a></p>
   </article>
   <article class="card software-card">
     <h3 class="card__title">DAPack</h3>
-    <p class="software-card__role">Role: Lead package</p>
-    <p class="card__desc">Data assimilation tools for uncertainty quantification and inference in dynamical systems.</p>
+    <p class="software-card__role">Lead package</p>
+    <p class="card__desc">Data assimilation for uncertainty quantification and inference.</p>
     <p class="software-card__links"><a class="pub-chip" href="https://bitbucket.org/emconsta/dapack">Repository</a></p>
   </article>
   <article class="card software-card">
     <h3 class="card__title">UQGrid</h3>
-    <p class="software-card__role">Role: Contributor</p>
-    <p class="card__desc">Power grid dynamics and uncertainty quantification workflows for resilience studies.</p>
+    <p class="software-card__role">Contributor</p>
+    <p class="card__desc">Power grid dynamics and UQ workflows.</p>
     <p class="software-card__links"><a class="pub-chip" href="https://github.com/dmaldona/uqgrid">GitHub</a></p>
   </article>
 </div>
 
 ## Recent papers {#recent-papers}
 
-{% include publications.html featured="true" limit="12" %}
+<p class="home-section-intro">Selected recent and featured publications.</p>
+
+{% include publications.html featured="true" limit="8" %}
+
+<p class="home-section-actions">
+  <a class="pill pill--primary" href="{{ '/pages/publications' | relative_url }}">View all publications</a>
+</p>
