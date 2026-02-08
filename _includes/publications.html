@@ -1,4 +1,5 @@
 {%- assign pubs = site.data.publications -%}
+{%- assign entry_layout = include.entry_layout | default: "classic" -%}
 
 {%- if include.type -%}
   {%- assign pubs = pubs | where: "type", include.type -%}
@@ -21,20 +22,20 @@
   {%- assign groups = pubs | group_by: "year" -%}
   {%- for group in groups -%}
     <h3>{{ group.name }}</h3>
-    <ul class="pub-list">
+    <ul class="pub-list{% if entry_layout == 'rows' %} pub-list--rows{% endif %}">
       {%- if limit -%}
-        {%- for pub in group.items limit: limit -%}{%- include publication.html pub=pub -%}{%- endfor -%}
+        {%- for pub in group.items limit: limit -%}{%- include publication.html pub=pub entry_layout=entry_layout -%}{%- endfor -%}
       {%- else -%}
-        {%- for pub in group.items -%}{%- include publication.html pub=pub -%}{%- endfor -%}
+        {%- for pub in group.items -%}{%- include publication.html pub=pub entry_layout=entry_layout -%}{%- endfor -%}
       {%- endif -%}
     </ul>
   {%- endfor -%}
 {%- else -%}
-  <ul class="pub-list">
+  <ul class="pub-list{% if entry_layout == 'rows' %} pub-list--rows{% endif %}">
     {%- if limit -%}
-      {%- for pub in pubs limit: limit -%}{%- include publication.html pub=pub -%}{%- endfor -%}
+      {%- for pub in pubs limit: limit -%}{%- include publication.html pub=pub entry_layout=entry_layout -%}{%- endfor -%}
     {%- else -%}
-      {%- for pub in pubs -%}{%- include publication.html pub=pub -%}{%- endfor -%}
+      {%- for pub in pubs -%}{%- include publication.html pub=pub entry_layout=entry_layout -%}{%- endfor -%}
     {%- endif -%}
   </ul>
 {%- endif -%}

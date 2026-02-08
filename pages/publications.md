@@ -6,14 +6,33 @@ description: Publications
 
 # Publications
 
-## Journal articles
+{% assign pubs = site.data.publications %}
+{% assign journal_pubs = pubs | where: "type", "journal" %}
+{% assign proceedings_pubs = pubs | where: "type", "proceedings" %}
+{% assign report_pubs = pubs | where: "type", "report" %}
 
-{% include publications.html type="journal" %}
+<div class="publications-overview">
+  <div class="publications-overview__stats">
+    <span class="pill">{{ journal_pubs | size }} journal articles</span>
+    <span class="pill">{{ proceedings_pubs | size }} conference / workshop papers</span>
+    <span class="pill">{{ report_pubs | size }} technical reports</span>
+  </div>
 
-## Conference / workshops / presentations
+  <nav class="pub-nav" aria-label="Publications sections">
+    <a href="#journals">Journal articles</a>
+    <a href="#proceedings">Conference / workshops / presentations</a>
+    <a href="#reports">Technical reports</a>
+  </nav>
+</div>
 
-{% include publications.html type="proceedings" %}
+## Journal articles {#journals}
 
-## Technical reports
+{% include publications.html type="journal" entry_layout="rows" %}
 
-{% include publications.html type="report" %}
+## Conference / workshops / presentations {#proceedings}
+
+{% include publications.html type="proceedings" entry_layout="rows" %}
+
+## Technical reports {#reports}
+
+{% include publications.html type="report" entry_layout="rows" %}
