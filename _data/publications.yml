@@ -1045,7 +1045,7 @@
   tags:
   - data-assimilation
   featured: []
-- id: rao-2006-a-machine-learning-method-for-computing
+- id: rao-2020-a-machine-learning-method-for-computing
   type: journal
   title: A machine learning method for computing rare event probabilities
   authors: Vishwas Hebbur Venkata Subba Rao, Romit Maulik, Emil M Constantinescu, and Mihai Anitescu
@@ -1053,7 +1053,7 @@
   volume: []
   number: []
   pages: []
-  year: 2006
+  year: 2020
   doi: 10.1007/978-3-030-50433-5_14
   arxiv: '2006.03466'
   pdf: []
@@ -1061,7 +1061,7 @@
   - data-assimilation
   - sciml
   featured: true
-- id: liu-2004-probabilistic-analysis-of-masked-loads-with
+- id: liu-2020-probabilistic-analysis-of-masked-loads-with
   type: journal
   title: Probabilistic analysis of masked loads with aggregated photovoltaic production
   authors: Shaohui Liu, Adrian Maldonado, and Emil M Constantinescu
@@ -1069,7 +1069,7 @@
   volume: '189'
   number: []
   pages: '106670'
-  year: 2004
+  year: 2020
   doi: 10.1016/j.epsr.2020.106670
   arxiv: '2004.10334'
   pdf: []
