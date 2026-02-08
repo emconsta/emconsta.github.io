@@ -128,9 +128,18 @@ body {
   color: var(--ink-strong);
 }
 
+.home-hero__value {
+  margin-top: 8px;
+  margin-bottom: 0;
+  max-width: 58ch;
+  color: var(--ink-strong);
+  font-weight: 500;
+}
+
 .home-hero__affiliations {
   margin-top: 10px;
   margin-bottom: 0;
+  max-width: 72ch;
 }
 
 .home-hero__affiliations li {
@@ -143,6 +152,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 14px;
+}
+
+.home-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 10px;
+  margin-bottom: $spacing-unit * 0.75;
 }
 
 .pill {
@@ -212,11 +228,50 @@ body {
   color: var(--ink-muted);
 }
 
+.card__tag {
+  margin-top: 0;
+  margin-bottom: 7px;
+  color: var(--accent);
+  font-weight: 600;
+  @include relative-font-size(0.85);
+}
+
 .card__meta {
   margin-top: 11px;
   margin-bottom: 0;
   color: var(--accent);
   @include relative-font-size(0.9);
+}
+
+.cards--research .card {
+  display: flex;
+  flex-direction: column;
+  min-height: 228px;
+}
+
+.cards--research .card__meta {
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.software-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 210px;
+}
+
+.software-card__role {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-weight: 600;
+  @include relative-font-size(0.88);
+}
+
+.software-card__links {
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-top: 11px;
 }
 
 .group-overview {

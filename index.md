@@ -11,6 +11,7 @@ description: Homepage of Emil Constantinescu
   </div>
   <div class="home-hero__meta">
     <h1 class="home-hero__name">Emil Constantinescu</h1>
+    <p class="home-hero__value">Scalable scientific machine learning and scientific computing for simulation, inference, and uncertainty-aware decision support.</p>
     <ul class="home-hero__affiliations">
       <li>
         Senior Computational Mathematician, <a href="https://www.anl.gov/mcs">Mathematics and Computer Science Division (MCS)</a>, Argonne National Laboratory
@@ -31,40 +32,73 @@ description: Homepage of Emil Constantinescu
   </div>
 </div>
 
-## Research
+<div class="home-overview">
+  <a class="pill" href="#research">4 research areas</a>
+  <a class="pill" href="#software">4 software packages</a>
+  <a class="pill" href="#recent-papers">12 featured papers</a>
+  <a class="pill" href="{{ '/pages/group' | relative_url }}">Group members</a>
+</div>
+
+## Research {#research}
 
 My research focuses on scientific machine learning (SciML) for modeling and inference in complex dynamical systems. I develop scalable methods for uncertainty quantification and data assimilation, robust time integration schemes for stiff and multiscale dynamics, and adaptive mesh refinement techniques for PDE simulation.
 
-<div class="cards">
+<div class="cards cards--research">
   <a class="card" href="{{ '/pages/sciml' | relative_url }}">
     <h3 class="card__title">Scientific machine learning</h3>
+    <p class="card__tag">Focus: SciML</p>
     <p class="card__desc">Hybrid physics/ML methods for modeling, inference, and uncertainty quantification.</p>
     <p class="card__meta">Selected papers and background →</p>
   </a>
   <a class="card" href="{{ '/pages/data-assimilation' | relative_url }}">
     <h3 class="card__title">Uncertainty quantification &amp; data assimilation</h3>
+    <p class="card__tag">Focus: UQ/DA</p>
     <p class="card__desc">Inverse problems, sensitivity analysis, and data assimilation for large-scale models.</p>
     <p class="card__meta">Selected papers and background →</p>
   </a>
   <a class="card" href="{{ '/pages/time-stepping' | relative_url }}">
     <h3 class="card__title">Time integration</h3>
+    <p class="card__tag">Focus: Time stepping</p>
     <p class="card__desc">Robust time-stepping for stiff and multiscale dynamical systems (IMEX, multirate, adjoints).</p>
     <p class="card__meta">Selected papers and background →</p>
   </a>
   <a class="card" href="{{ '/pages/amr' | relative_url }}">
     <h3 class="card__title">PDE &amp; AMR</h3>
+    <p class="card__tag">Focus: PDE/AMR</p>
     <p class="card__desc">High-fidelity PDE simulation with adaptive mesh refinement and scalable solvers.</p>
     <p class="card__meta">Selected papers and background →</p>
   </a>
 </div>
 
-## Software
+## Software {#software}
 
-- DESolve (time integration package): <https://gitlab.com/emconsta/desolve>
-- PETSc time stepping: <https://petsc.org/release/>
-- DAPack (data assimilation package): <https://bitbucket.org/emconsta/dapack>
-- UQGrid (power grid dynamics; contributor): <https://github.com/dmaldona/uqgrid>
+<div class="cards cards--software">
+  <article class="card software-card">
+    <h3 class="card__title">DESolve</h3>
+    <p class="software-card__role">Role: Lead package</p>
+    <p class="card__desc">Time integration package for stiff and multiscale dynamical systems.</p>
+    <p class="software-card__links"><a class="pub-chip" href="https://gitlab.com/emconsta/desolve">GitLab</a></p>
+  </article>
+  <article class="card software-card">
+    <h3 class="card__title">PETSc TS</h3>
+    <p class="software-card__role">Role: Core contributor</p>
+    <p class="card__desc">Scalable ODE/DAE and time stepping infrastructure for high-performance computing.</p>
+    <p class="software-card__links"><a class="pub-chip" href="https://petsc.org/release/">Project page</a></p>
+  </article>
+  <article class="card software-card">
+    <h3 class="card__title">DAPack</h3>
+    <p class="software-card__role">Role: Lead package</p>
+    <p class="card__desc">Data assimilation tools for uncertainty quantification and inference in dynamical systems.</p>
+    <p class="software-card__links"><a class="pub-chip" href="https://bitbucket.org/emconsta/dapack">Repository</a></p>
+  </article>
+  <article class="card software-card">
+    <h3 class="card__title">UQGrid</h3>
+    <p class="software-card__role">Role: Contributor</p>
+    <p class="card__desc">Power grid dynamics and uncertainty quantification workflows for resilience studies.</p>
+    <p class="software-card__links"><a class="pub-chip" href="https://github.com/dmaldona/uqgrid">GitHub</a></p>
+  </article>
+</div>
 
-## Recent papers
+## Recent papers {#recent-papers}
 
 {% include publications.html featured="true" limit="12" %}
