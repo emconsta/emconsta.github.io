@@ -37,6 +37,10 @@ See the [Group page]({{ '/pages/group' | relative_url }}) for my current and for
   </a>
 </div>
 
+## Project pages
+
+See the [Projects page]({{ '/pages/projects' | relative_url }}) for high-level research-thrust overviews, including [Hybrid ML-PDE for accelerated simulation]({{ '/pages/project-hybrid-ml-pde' | relative_url }}).
+
 ## Software
 
 - DESolve (time integration package): <https://gitlab.com/emconsta/desolve>

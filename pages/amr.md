@@ -10,6 +10,14 @@ Many real-world applications require large-scale numerical solutions of PDEs. I 
 
 <img src="{{ '/assets/images/research/grid_refined.jpg' | relative_url }}" alt="Adaptive mesh refinement example" width="420" />
 
+## Related project
+
+<div class="project-callout">
+  <h3>Hybrid ML-PDE for accelerated simulation</h3>
+  <p>Includes learned corrections embedded in PDE discretizations, with direct relevance to stable, scalable simulation pipelines.</p>
+  <p><a href="{{ '/pages/project-hybrid-ml-pde' | relative_url }}">View project details</a></p>
+</div>
+
 ## Selected journal publications
 
 {% include publications.html type="journal" tag="amr" %}

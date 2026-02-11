@@ -326,6 +326,119 @@ body {
   padding-top: 8px;
 }
 
+.cards--projects {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.project-card {
+  max-width: 900px;
+}
+
+.project-overview {
+  margin-bottom: $spacing-unit * 0.75;
+  padding: 14px 16px;
+  border: 1px solid var(--surface-border);
+  border-radius: 14px;
+  background: var(--surface-glass);
+  box-shadow: var(--surface-shadow);
+}
+
+.project-overview__lead {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--ink-strong);
+}
+
+.project-overview__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+}
+
+.project-callout {
+  margin-bottom: $spacing-unit * 0.55;
+  padding: 12px 14px;
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.project-callout h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.project-callout p {
+  margin-bottom: 8px;
+}
+
+.project-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.project-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: $spacing-unit * 0.3;
+}
+
+.project-media-grid--tight {
+  gap: 12px;
+}
+
+.project-media-card {
+  margin-bottom: $spacing-unit * 0.75;
+  padding: 14px 16px;
+  border: 1px solid var(--surface-border);
+  border-radius: 14px;
+  background: var(--surface-glass);
+  box-shadow: var(--surface-shadow);
+}
+
+.project-media-card h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.project-media-card__lead {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.project-media-standalone {
+  max-width: 860px;
+  margin: 12px auto $spacing-unit * 0.75;
+}
+
+.project-media {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.project-media img,
+.project-media video {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(114, 130, 176, 0.2);
+}
+
+.project-media video {
+  aspect-ratio: 16 / 9;
+  background: rgba(30, 40, 74, 0.04);
+}
+
+.project-media figcaption {
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: var(--ink-muted);
+  @include relative-font-size(0.9);
+}
+
 .group-overview {
   margin-bottom: $spacing-unit * 0.7;
   padding: 14px 16px;
@@ -574,6 +687,10 @@ body {
   }
 
   .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .project-media-grid {
     grid-template-columns: 1fr;
   }
 
