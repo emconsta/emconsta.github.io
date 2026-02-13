@@ -114,7 +114,7 @@ My research focuses on scientific machine learning (SciML) for modeling and infe
 
 <p class="home-section-intro">Selected recent and featured publications.</p>
 
-{% include publications.html featured="true" limit="8" %}
+{% include publications.html featured="true" limit="12" %}
 
 <p class="home-section-actions">
   <a class="pill pill--primary" href="{{ '/pages/publications' | relative_url }}">View all publications</a>
