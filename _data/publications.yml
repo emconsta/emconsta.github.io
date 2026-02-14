@@ -1179,7 +1179,7 @@
   type: proceedings
   title: Analysis of the growth of small perturbations in power system dynamics
   authors: Adrian Maldonado and Emil M Constantinescu
-  venue: In press, IEEE PSCC 2022
+  venue: IEEE PSCC 2022
   volume: []
   number: []
   pages: []
@@ -1329,9 +1329,9 @@
   venue: Advances in Automotive Control
   volume: []
   number: []
-  pages: []
+  pages: [634-639]
   year: 2022
-  doi: []
+  doi: [10.23919/ACC55779.2023.10156553]
   arxiv: '2209.13050'
   pdf: []
   tags:
@@ -1384,27 +1384,12 @@
   - time-stepping
   - amr
   featured: []
-- id: constantinescu-2013-high-order-partitioned-time-stepping-methods
-  type: proceedings
-  title: High order partitioned time stepping methods for stiff problems
-  authors: Emil M Constantinescu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2013
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - time-stepping
-  featured: []
 - id: abhyankar-2013-evaluation-of-overlapping-restricted-additive-schwarz
   type: proceedings
   title: Evaluation of overlapping restricted additive Schwarz preconditioning for parallel solution of
     very large power flow problems
   authors: Shrirang Abhyankar, Barry Smith, and Emil M Constantinescu
-  venue: []
+  venue: [Proceedings of the 3rd International Workshop on High Performance Computing, Networking and Analytics for the Power Grid]
   volume: []
   number: []
   pages: 5:1-5:8
@@ -1420,22 +1405,7 @@
   title: PETSc's software strategy for the design space of composable extreme-scale solvers
   authors: Barry Smith, Lois Curfman McInnes, Emil M Constantinescu, Mark Adams, Satish Balay, Jed Brown,
     Matthew Knepley, and Hong Zhang
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2012
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - time-stepping
-  featured: []
-- id: constantinescu-2012-consistency-and-stability-considerations-for-implicit-explicit
-  type: proceedings
-  title: Consistency and stability considerations for implicit-explicit additive splittings
-  authors: Emil M Constantinescu
-  venue: []
+  venue: [DOE Exascale Research Conference, Portland, OR, April 16-18]
   volume: []
   number: []
   pages: []
@@ -1450,22 +1420,7 @@
   type: proceedings
   title: 'Adjoint sensitivity analysis for numerical weather prediction: Applications to power grid optimization'
   authors: Alexandru Cioaca, Victor Zavala, and Emil M Constantinescu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2011
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - data-assimilation
-  featured: []
-- id: constantinescu-2011-quantifying-uncertainty-in-wind-power-predictions
-  type: proceedings
-  title: Quantifying uncertainty in wind power predictions for stochastic unit commitment optimization
-  authors: Emil M Constantinescu, Victor M. Zavala, and Mihai Anitescu
-  venue: []
+  venue: [Proceedings of the first international workshop on high performance computing, networking and analytics for the power grid, Seattle, WA, November 13]
   volume: []
   number: []
   pages: []
@@ -1491,66 +1446,6 @@
   tags:
   - data-assimilation
   featured: []
-- id: zavala-2011-integration-of-uncertainty-quantification-and-stochastic
-  type: proceedings
-  title: Integration of uncertainty quantification and stochastic optimization in power grid applications
-  authors: Victor M. Zavala, Emil M Constantinescu, and Mihai Anitescu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2011
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - data-assimilation
-  featured: []
-- id: constantinescu-2010-uncertainty-quantification-in-downscaling-procedures-for
-  type: proceedings
-  title: Uncertainty quantification in downscaling procedures for effective decisions in energy systems
-  authors: Emil M Constantinescu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2010
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - data-assimilation
-  featured: []
-- id: constantinescu-2010-wind-power-forecasting-using-numerical-weather
-  type: proceedings
-  title: Wind power forecasting using numerical weather prediction models
-  authors: Emil M Constantinescu, Victor M. Zavala, and Mihai Anitescu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2010
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - data-assimilation
-  featured: []
-- id: sandu-2010-multirate-explicit-ssp-methods-for-hyperbolic
-  type: proceedings
-  title: Multirate explicit SSP methods for hyperbolic PDEs
-  authors: Emil M Constantinescu and Adrian Sandu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2010
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - time-stepping
-  featured: []
 - id: salazar-2010-real-time-water-management-in-power-plants
   type: proceedings
   title: Real-time water management in power plants and implications in electricity markets
@@ -1570,7 +1465,7 @@
   type: proceedings
   title: Computational and economic limitations of dispatch operations in the next-generation power grid
   authors: Victor M. Zavala, Audun Botterud, Emil M Constantinescu, and Jianhui Wang
-  venue: []
+  venue: [IEEE Conference on Innovative Technologies for an Efficient and Reliable Energy Supply]
   volume: []
   number: []
   pages: []
@@ -1586,7 +1481,7 @@
   title: Proactive energy management for next-generation building systems
   authors: Victor M. Zavala, Jianhui Wang, Sven Leyffer, Emil M Constantinescu, Mihai Anitescu, and Guenter
     Conzelmann
-  venue: []
+  venue: [SimBuild 2010]
   volume: []
   number: []
   pages: []
@@ -1601,7 +1496,7 @@
   type: proceedings
   title: Economic impacts of advanced weather forecasting in energy system operations
   authors: Victor Zavala, Emil M Constantinescu, and Mihai Anitescu
-  venue: []
+  venue: [IEEE PES Conference on Innovative Smart Grid Technologies]
   volume: []
   number: []
   pages: []
@@ -1612,26 +1507,27 @@
   tags:
   - data-assimilation
   featured: []
-- id: unknown-2009-on-general-linear-time-stepping-methods
+- id: sandu-2010-on-multirate-numerical-integration-methods
   type: proceedings
-  title: On general linear time stepping methods
-  authors: []
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2009
-  doi: []
+  title: On multirate numerical integration methods
+  authors: Emil M Constantinescu and Adrian Sandu
+  venue: (invited) The European Consortium for Mathematics in Industry (ECMI-2008) in Progress in Industrial Mathematics at ECMI 2008, University College London, England, June 30 - July 4, 2008
+  volume: '15'
+  number: '2'
+  pages: 341-347
+  year: 2010
+  doi: 10.1007/978-3-642-12110-4_52
   arxiv: []
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: []
-- id: constantinescu-2009-multirate-time-discretizations-for-hyperbolic-partial
+- id: sandu-2009-multirate-time-discretizations-for-hyperbolic-partial
   type: proceedings
   title: Multirate time discretizations for hyperbolic partial differential equations
   authors: Adrian Sandu and Emil M Constantinescu
-  venue: []
+  venue: International Conference of Numerical Analysis and Applied Mathematics 2009 (ICNAAM 2009), Crete, Greece, September 18-22, 2009
   volume: '1168'
   number: '1'
   pages: 1411-1414
@@ -1643,76 +1539,16 @@
   - time-stepping
   - amr
   featured: []
-- id: constantinescu-2009-the-certain-importance-of-uncertainty-in
-  type: proceedings
-  title: The certain importance of uncertainty in modeling and simulations
-  authors: Emil M Constantinescu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2009
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - data-assimilation
-  featured: []
-- id: sandu-2009-challenges-in-ensemble-kalman-data-assimilation
-  type: proceedings
-  title: Challenges in ensemble Kalman data assimilation for atmospheric chemical transport models
-  authors: Emil M Constantinescu and Adrian Sandu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2009
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - data-assimilation
-  featured: []
 - id: sandu-2009-explicit-time-stepping-methods-with-high
   type: proceedings
   title: Explicit time stepping methods with high stage order and monotonicity properties
   authors: Emil M Constantinescu and Adrian Sandu
-  venue: []
+  venue: Lecture Notes in Computer Science, International Conference on Computational Science (ICCS), Baton Rouge, Louisiana, May 25-27, 2009
   volume: []
   number: []
   pages: []
   year: 2009
   doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - time-stepping
-  featured: []
-- id: sandu-2008-extrapolated-multirate-numerical-integration-methods
-  type: proceedings
-  title: Extrapolated multirate numerical integration methods
-  authors: Emil M Constantinescu and Adrian Sandu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2008
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - amr
-  featured: []
-- id: sandu-2008-on-extrapolated-multirate-numerical-integration-methods
-  type: proceedings
-  title: On extrapolated multirate numerical integration methods
-  authors: Emil M Constantinescu and Adrian Sandu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2008
-  doi: 10.1007/978-3-642-12110-4_52
   arxiv: []
   pdf: []
   tags:
@@ -1721,56 +1557,23 @@
 - id: sandu-2007-localized-ensemble-kalman-dynamic-data-assimilation
   type: proceedings
   title: Localized ensemble Kalman dynamic data assimilation for atmospheric chemistry
-  authors: Adrian Sandu, Emil M Constantinescu, Gregory R. Carmichael, Tianfeng Chai, John H. Seinfeld,
-    and Dacian Daescu
-  venue: []
+  authors: Adrian Sandu, Emil M Constantinescu, Gregory R. Carmichael, Tianfeng Chai, John H. Seinfeld, and Dacian Daescu
+  venue: International Conference on Computational Science (ICCS)
   volume: []
   number: []
-  pages: []
+  pages: 1018-1025
   year: 2007
   doi: []
   arxiv: []
   pdf: []
   tags:
   - data-assimilation
-  featured: []
-- id: sandu-2007-4d-var-computational-tools-for-the-assimilation
-  type: proceedings
-  title: 4D-Var computational tools for the assimilation of observations in chemical transport models
-  authors: Emil M Constantinescu and Adrian Sandu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2007
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - data-assimilation
-  featured: []
-- id: sandu-2007-strong-stability-preserving-multirate-schemes-for
-  type: proceedings
-  title: Strong stability preserving multirate schemes for hyperbolic conservation laws
-  authors: Emil M Constantinescu and Adrian Sandu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2007
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - time-stepping
   featured: []
 - id: negrut-2006-a-real-space-parallel-optimization-model-reduction
   type: proceedings
-  title: A real-space parallel optimization model reduction approach for electronic structure computation
-    in large nanostructures using orbital-free density functional theory
-  authors: Dan Negrut, Mihai Anitescu, Anter El-Azab, Steve Benson, Emil M Constantinescu, Peter Zapol,
-    and Toby Heyn
-  venue: []
+  title: A real-space parallel optimization model reduction approach for electronic structure computation in large nanostructures using orbital-free density functional theory
+  authors: Dan Negrut, Mihai Anitescu, Anter El-Azab, Steve Benson, Emil M Constantinescu, Peter Zapol, and Toby Heyn
+  venue: IMECE 2006-15740, ASME International Mechanical Engineering Congress and Exposition, Chicago, IL
   volume: []
   number: []
   pages: []
@@ -1781,15 +1584,14 @@
   tags:
   - amr
   featured: []
-- id: sandu-2005-ensemble-filter-data-assimilation-for-atmospheric
+- id: sandu-2005-ensemble-based-filter-data-assimilation-for-atmospheric
   type: proceedings
-  title: Ensemble filter data assimilation for atmospheric chemical transport models
-  authors: Adrian Sandu, Emil M Constantinescu, Wenyuan Liao, Gregory R. Carmichael, Tianfeng Chai, John
-    H. Seinfeld, and Dacian Daescu
-  venue: []
+  title: Ensemble-based filter data assimilation for atmospheric chemical transport models
+  authors: Adrian Sandu, Emil M Constantinescu, Wenyuan Liao, Gregory R. Carmichael, Tianfeng Chai, John H. Seinfeld, and Dacian Daescu
+  venue: International Conference on Computational Science (ICCS), Atlanta, GA, May 22-25, 2005, Springer-Verlag in Lecture Notes in Computer Science
   volume: []
   number: []
-  pages: []
+  pages: 648-655
   year: 2005
   doi: []
   arxiv: []
@@ -1801,10 +1603,10 @@
   type: proceedings
   title: On adaptive mesh refinement for atmospheric pollution models
   authors: Emil M Constantinescu and Adrian Sandu
-  venue: []
+  venue: International Conference on Computational Science (ICCS), Atlanta, GA, May 22-25, 2005, Springer-Verlag in Lecture Notes in Computer Science
   volume: []
   number: []
-  pages: 798-806 Atlanta
+  pages: 798-805
   year: 2005
   doi: []
   arxiv: []
@@ -1817,10 +1619,10 @@
   type: proceedings
   title: Mesh refinement strategies in air quality modeling
   authors: Emil M Constantinescu, Wenyuan Liao, and Adrian Sandu
-  venue: []
+  venue: High Performance Computing Symposium, San Diego, CA, April 2005
   volume: []
   number: []
-  pages: 158-163 - San Diego
+  pages: 158-163
   year: 2005
   doi: []
   arxiv: []
@@ -1829,26 +1631,11 @@
   - time-stepping
   - amr
   featured: []
-- id: sandu-2004-parallel-adaptive-simulations-of-regional-air
-  type: proceedings
-  title: Parallel adaptive simulations of regional air quality
-  authors: Adrian Sandu, Chaitaniya Belwal, and Emil M Constantinescu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2004
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - amr
-  featured: []
 - id: belwal-2004-adaptive-resolution-modeling-of-regional-air
   type: proceedings
   title: Adaptive resolution modeling of regional air quality
   authors: Chaitaniya Belwal, Adrian Sandu, and Emil M Constantinescu
-  venue: []
+  venue: ACM Symposium on Applied Computing (SAC 2004), Nicosia, Cyprus, March 14-17, 2004
   volume: []
   number: []
   pages: 235-239
