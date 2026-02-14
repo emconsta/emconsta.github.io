@@ -1108,6 +1108,204 @@
   - sciml
   - amr
   featured: true
+- id: ganguli-2025-uncovering-physical-drivers-of-dark-matter
+  type: proceedings
+  title: Uncovering physical drivers of dark matter halo structures with auxiliary-variable-guided generative
+    models
+  authors: Arkaprabha Ganguli, Anirban Samaddar, Florian Kéruzoré, Nesar Ramachandra, Julie Bessac,
+    Sandeep Madireddy, and Emil M Constantinescu
+  venue: Machine Learning and the Physical Sciences, part of the 38th Conference on Neural Information
+    Processing Systems (NeurIPS)
+  volume: []
+  number: []
+  pages: []
+  year: 2025
+  doi: []
+  arxiv: []
+  pdf: []
+  tags:
+  - sciml
+  featured: []
+- id: chuang-2024-characterization-and-optimization-of-the-fitting
+  type: proceedings
+  title: Characterization and optimization of the fitting of quantum correlation functions
+  authors: Pi-Yueh Chuang, Niteya Shah, Patrick Barry, Ian Cloët, Emil M Constantinescu, Nobuo Sato,
+    Jian-Wei Qiu, and Wu-chun Feng
+  venue: IEEE High-Performance Extreme Computing (HPEC)
+  volume: []
+  number: []
+  pages: []
+  year: 2024
+  doi: 10.1109/HPEC62836.2024.10938443
+  arxiv: []
+  pdf: []
+  tags: []
+  featured: []
+- id: chen-2023-uncertainty-quantification-of-the-madden-julian
+  type: proceedings
+  title: Uncertainty quantification of the Madden-Julian oscillation with Gaussian processes
+  authors: Haoyuan Chen, Emil M Constantinescu, Vishwas Rao, and Cristiana Stan
+  venue: 2023 Tackling Climate Change with Machine Learning Workshop, part of the 37th Conference on Neural
+    Information Processing Systems (NeurIPS)
+  volume: []
+  number: []
+  pages: []
+  year: 2023
+  doi: []
+  arxiv: []
+  pdf: []
+  tags:
+  - sciml
+  - data-assimilation
+  featured: []
+- id: garg-2023-physics-informed-domain-aware-atmospheric-radiative-transfer
+  type: proceedings
+  title: Physics-informed domain-aware atmospheric radiative transfer emulator for all sky conditions
+  authors: Piyush Garg, Emil M Constantinescu, Bethany Lusch, Troy Arcomano, Jiali Wang, and Rao Kotamarthi
+  venue: 2023 Tackling Climate Change with Machine Learning Workshop, part of the 37th Conference on Neural
+    Information Processing Systems (NeurIPS)
+  volume: []
+  number: []
+  pages: []
+  year: 2023
+  doi: []
+  arxiv: []
+  pdf: []
+  tags:
+  - sciml
+  - data-assimilation
+  featured: []
+- id: maldonado-2022-analysis-of-the-growth-of-small-perturbations
+  type: proceedings
+  title: Analysis of the growth of small perturbations in power system dynamics
+  authors: Adrian Maldonado and Emil M Constantinescu
+  venue: In press, IEEE PSCC 2022
+  volume: []
+  number: []
+  pages: []
+  year: 2022
+  doi: []
+  arxiv: []
+  pdf: []
+  tags:
+  - time-stepping
+  featured: []
+- id: lei-2022-a-novel-continuum-approximation-to-power
+  type: proceedings
+  title: A novel continuum approximation to power system electromechanical dynamics
+  authors: Sheng Lei, Adrian Maldonado, Emil M Constantinescu, Junbo Zhao, Someya Yarahmadi, Lamine
+    Mili, and Mihai Anitescu
+  venue: IEEE Power & Energy Society Innovative Smart Grid Technologies Conference (ISGT)
+  volume: []
+  number: []
+  pages: 1-5
+  year: 2022
+  doi: 10.1109/ISGT50606.2022.9817495
+  arxiv: []
+  pdf: []
+  tags:
+  - time-stepping
+  featured: []
+- id: foster-2017-computing-just-what-you-need-online
+  type: proceedings
+  title: 'Computing just what you need: Online data analysis and reduction at extreme scales'
+  authors: Ian Foster, Mark Ainsworth, Bryce Allen, Julie Bessac, Franck Cappello, Jong Youl Choi,
+    Emil M Constantinescu, Philip E. Davis, Sheng Di, Wendy Di, Hanqi Guo, Scott Klasky, Kerstin Kleese
+    Van Dam, Tahsin Kurc, Qing Liu, Abid Malik, Kshitij Mehta, Klaus Mueller, Todd Munson, George Ostouchov,
+    Manish Parashar, Tom Peterka, Line Pouchard, Dingwen Tao, Ozan Tugluk, Stefan Wild, Matthew Wolf,
+    Justin M. Wozniak, Wei Xu, Shinjae Yoo
+  venue: Euro-Par 2017; 23rd International European Conference on Parallel and Distributed Computing, Santiago
+    de Compostela, Spain, August 28 - September 1, 2017
+  volume: []
+  number: []
+  pages: []
+  year: 2017
+  doi: []
+  arxiv: []
+  pdf: []
+  tags: []
+  featured: []
+- id: marras-2016-an-sgs-based-stabilization-for-the-high-order
+  type: proceedings
+  title: An SGS-based stabilization for the high-order approximation of the shallow water equations
+  authors: Simone Marras, Jenny Suckale, Francis X. Giraldo, and Emil M Constantinescu
+  venue: Springer's Lecture Notes in Computational Science and Engineering (LNCSE) Series, ICOSAHOM 2016
+  volume: []
+  number: []
+  pages: []
+  year: 2016
+  doi: []
+  arxiv: []
+  pdf: []
+  tags:
+  - amr
+  featured: []
+- id: guhur-2017-detection-of-silent-data-corruption-in-adaptive
+  type: proceedings
+  title: Detection of silent data corruption in adaptive numerical integration solvers
+  authors: Pierre-Louis Guhur, Emil M Constantinescu, Debojyoti Ghosh, Tom Peterka, and Franck Cappello
+  venue: IEEE Cluster 2017, September 5-8, 2017, Hawaii, USA
+  volume: []
+  number: []
+  pages: 592-602
+  year: 2017
+  doi: []
+  arxiv: []
+  pdf: []
+  tags:
+  - time-stepping
+  featured: []
+- id: abhyankar-2017-variable-step-multi-stage-integration-methods-for-fast
+  type: proceedings
+  title: Variable-step multi-stage integration methods for fast and accurate power system dynamics simulation
+  authors: Shrirang Abhyankar, Emil M Constantinescu, and Alexander Flueck
+  venue: Proceedings of IREP 2017 Symposium on X Bulk Power Systems Dynamics and Control Symposium, Espinho,
+    August 27 - September 1, 2017
+  volume: []
+  number: []
+  pages: []
+  year: 2017
+  doi: []
+  arxiv: []
+  pdf: []
+  tags:
+  - time-stepping
+  featured: []
+- id: guhur-2016-lightweight-and-accurate-silent-data-corruption-detection
+  type: proceedings
+  title: Lightweight and accurate silent data corruption detection in ordinary differential equation solvers
+  authors: Pierre-Louis Guhur, Hong Zhang, Tom Peterka, Emil M Constantinescu, and Franck Cappello
+  venue: 'Euro-Par 2016; 22nd International European Conference on Parallel and Distributed Computing,
+    Grenoble, France, August 22-26, 2016; Proceedings: Springer Euro-Par 2016 Parallel Processing, Theoretical
+    Computer Science and General Issues'
+  volume: []
+  number: []
+  pages: 644-656
+  year: 2016
+  doi: 10.1007/978-3-319-43659-3
+  arxiv: []
+  pdf: []
+  tags:
+  - time-stepping
+  featured: []
+- id: ghosh-2015-well-balanced-formulation-of-gravitational-source-terms
+  type: proceedings
+  title: Well-balanced formulation of gravitational source terms for conservative finite-difference atmospheric
+    flow solvers
+  authors: Debojyoti Ghosh and Emil M Constantinescu
+  venue: 7th AIAA Atmospheric and Space Environments Conference (Aviation Forum), June 22-26, 2015, Dallas,
+    TX
+  volume: []
+  number: []
+  pages: []
+  year: 2015
+  doi: []
+  arxiv: []
+  pdf: []
+  tags:
+  - time-stepping
+  - amr
+  featured: []
 - id: kang-2023-multirate-partitioned-runge-kutta-methods-for-coupled
   type: journal
   title: Multirate partitioned Runge-Kutta methods for coupled Navier-Stokes equations
@@ -1143,48 +1341,32 @@
   type: proceedings
   title: Revolve-based adjoint checkpointing for multistage time integration
   authors: Hong Zhang and Emil M Constantinescu
-  venue: []
+  venue: ICCS 2021 (International Conference on Computational Science 2021)
   volume: []
   number: []
-  pages: []
+  pages: 451-464
   year: 2021
   doi: []
   arxiv: []
   pdf: []
   tags:
-  - data-assimilation
-  - amr
+  - time-stepping
   featured: true
-- id: rao-2020-a-machine-learning-method-for-computing
+- id: ghosh-2015-nonlinear-compact-finite-difference-schemes-with-semi-implicit
   type: proceedings
-  title: A machine learning method for computing rare event probabilities
-  authors: Vishwas Hebbur Venkata Subba Rao, Romit Maulik, Emil M Constantinescu, and Mihai Anitescu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2020
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - data-assimilation
-  - sciml
-  featured: []
-- id: mele-2018-performance-evaluation-for-a-petsc-parallel-in-time
-  type: proceedings
-  title: Performance evaluation for a PETSc parallel-in-time solver based on the MGRIT algorithm
-  authors: Valeria Mele, Diego Romano, Emil M Constantinescu, Luisa Carracciuolo, and Luisa D�Amore
-  venue: []
+  title: Nonlinear compact finite-difference schemes with semi-implicit time stepping
+  authors: Debojyoti Ghosh and Emil M Constantinescu
+  venue: Springer's Lecture Notes in Computational Science and Engineering (LNCSE) Series, ICOSAHOM 2014
   volume: '106'
   number: []
   pages: 237-245
-  year: 2018
+  year: 2015
   doi: 10.1007/978-3-319-19800-2_20
   arxiv: []
   pdf: []
   tags:
   - time-stepping
+  - amr
   featured: []
 - id: constantinescu-2013-high-order-partitioned-time-stepping-methods
   type: proceedings
@@ -1248,22 +1430,6 @@
   tags:
   - time-stepping
   featured: []
-- id: anitescu-2012-physics-based-auto-and-cross-covariance-models-for
-  type: proceedings
-  title: Physics-based auto- and cross-covariance models for Gaussian process regression
-  authors: Emil M Constantinescu and Mihai Anitescu
-  venue: []
-  volume: []
-  number: []
-  pages: []
-  year: 2012
-  doi: []
-  arxiv: []
-  pdf: []
-  tags:
-  - data-assimilation
-  - sciml
-  featured: []
 - id: cioaca-2011-adjoint-sensitivity-analysis-for-numerical-weather
   type: proceedings
   title: 'Adjoint sensitivity analysis for numerical weather prediction: Applications to power grid optimization'
@@ -1298,7 +1464,7 @@
   type: proceedings
   title: 'Time-adaptive kernel density forecast: A new method for wind power uncertainty modeling'
   authors: Ricardo J. Bessa, J. Sumaili, Vladimiro Miranda, Audun Botterud, Jianhui Wang, and Emil M Constantinescu
-  venue: []
+  venue: 17th Power Systems Computation Conference (PSCC'11), Stockholm, Sweden, August 22-26, 2011
   volume: []
   number: []
   pages: []
