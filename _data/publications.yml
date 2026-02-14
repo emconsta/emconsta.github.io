@@ -1352,6 +1352,22 @@
   tags:
   - time-stepping
   featured: true
+- id: mele-2018-performance-evaluation-for-a-petsc-parallel-in-time
+  type: proceedings
+  title: Performance evaluation for a PETSc parallel-in-time solver based on the MGRIT algorithm
+  authors: Valeria Mele, Diego Romano, Emil M Constantinescu, Luisa Carracciuolo, and Luisa D'Amore
+  venue: Euro-Par 2018; 24th International European Conference on Parallel and Distributed Computing, Turin,
+    Italy, August 27-31, 2018
+  volume: []
+  number: []
+  pages: []
+  year: 2018
+  doi: []
+  arxiv: []
+  pdf: []
+  tags:
+  - time-stepping
+  featured: []
 - id: ghosh-2015-nonlinear-compact-finite-difference-schemes-with-semi-implicit
   type: proceedings
   title: Nonlinear compact finite-difference schemes with semi-implicit time stepping
