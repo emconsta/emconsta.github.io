@@ -9,6 +9,7 @@ description: Time integration and multirate methods
 Time-stepping methods are algorithms for the numerical solution of ordinary differential equations and the time evolution of PDE discretizations. I work on advanced time-integration techniques including general linear methods, implicit–explicit (IMEX) schemes, and multirate time-stepping algorithms. Many of these methods are implemented in PETSc.
 
 - PETSc: <https://petsc.org/release/>
+- Project overview: [Time integration project]({{ '/pages/project-time-integration' | relative_url }})
 
 ## Selected journal publications
 
@@ -21,4 +22,3 @@ Time-stepping methods are algorithms for the numerical solution of ordinary diff
 ## Technical reports
 
 {% include publications.html type="report" tag="time-stepping" %}
-

@@ -51,9 +51,11 @@ My group works at the intersection of scientific computing, applied mathematics,
   </article>
 </div>
 
+<!--
 ### Research scientists
 
 No current appointments in this category.
+-->
 
 ## Alumni {#alumni}
 
