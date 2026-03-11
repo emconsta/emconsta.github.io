@@ -43,7 +43,7 @@ See the [Projects page]({{ '/pages/projects' | relative_url }}) for high-level r
 
 ## Software
 
-- DESolve (time integration package): <https://gitlab.com/emconsta/desolve>
+- DESolve (time integration package): <https://github.com/emconsta/desolve>
 - PETSc time stepping: <https://petsc.org/release/>
 - DAPack (data assimilation package): <https://bitbucket.org/emconsta/dapack>
 - UQGrid (power grid dynamics; contributor): <https://github.com/dmaldona/uqgrid>
