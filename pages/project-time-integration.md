@@ -261,7 +261,7 @@ parameters and requires careful stability analysis.
     <h3 class="card__title">DESolve</h3>
     <p class="software-card__role">Time integration package</p>
     <p class="card__desc">Research implementation of MREXIM, along with prototyping of stiff and multirate integrators.</p>
-    <p class="software-card__links"><a class="pub-chip" href="https://github.com/emconsta/desolve">GitHub</a></p>
+    <p class="software-card__links"><a class="pub-chip" href="https://emconsta.github.io/desolve">Website</a> <a class="pub-chip" href="https://github.com/emconsta/desolve">GitHub</a></p>
   </article>
 </div>
 

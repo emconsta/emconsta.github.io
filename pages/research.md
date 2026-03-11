@@ -27,7 +27,7 @@ See the [Group page]({{ '/pages/group' | relative_url }}) for my current and for
   </a>
   <a class="card" href="{{ '/pages/time-stepping' | relative_url }}">
     <h3 class="card__title">Time integration</h3>
-    <p class="card__desc">Robust time-stepping for stiff and multiscale dynamical systems (IMEX, multirate, adjoints).</p>
+    <p class="card__desc">Robust time-stepping for stiff and multiscale dynamical systems (IMEX, multirate, adjoints), with methods implemented in PETSc and DESolve.</p>
     <p class="card__meta">Selected papers and background →</p>
   </a>
   <a class="card" href="{{ '/pages/amr' | relative_url }}">
@@ -43,7 +43,7 @@ See the [Projects page]({{ '/pages/projects' | relative_url }}) for high-level r
 
 ## Software
 
-- DESolve (time integration package): <https://github.com/emconsta/desolve>
+- DESolve (time integration package): <https://emconsta.github.io/desolve> | GitHub: <https://github.com/emconsta/desolve>
 - PETSc time stepping: <https://petsc.org/release/>
 - DAPack (data assimilation package): <https://bitbucket.org/emconsta/dapack>
 - UQGrid (power grid dynamics; contributor): <https://github.com/dmaldona/uqgrid>

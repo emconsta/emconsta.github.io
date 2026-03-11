@@ -68,7 +68,7 @@ My research focuses on scientific machine learning (SciML) for modeling and infe
   <a class="card" href="{{ '/pages/time-stepping' | relative_url }}">
     <h3 class="card__title">Time integration</h3>
     <p class="card__tag">Focus: Time stepping</p>
-    <p class="card__desc">Robust time-stepping for stiff and multiscale dynamical systems (IMEX, multirate, adjoints).</p>
+    <p class="card__desc">Robust time-stepping for stiff and multiscale dynamical systems (IMEX, multirate, adjoints), including methods implemented in PETSc and DESolve.</p>
     <p class="card__meta">Selected papers and background →</p>
   </a>
   <a class="card" href="{{ '/pages/amr' | relative_url }}">
@@ -88,7 +88,7 @@ My research focuses on scientific machine learning (SciML) for modeling and infe
     <h3 class="card__title">DESolve</h3>
     <p class="software-card__role">Lead package</p>
     <p class="card__desc">Time integration for stiff and multiscale systems.</p>
-    <p class="software-card__links"><a class="pub-chip" href="https://github.com/emconsta/desolve">GitHub</a></p>
+    <p class="software-card__links"><a class="pub-chip" href="https://emconsta.github.io/desolve">Website</a> <a class="pub-chip" href="https://github.com/emconsta/desolve">GitHub</a></p>
   </article>
   <article class="card software-card">
     <h3 class="card__title">PETSc TS</h3>
