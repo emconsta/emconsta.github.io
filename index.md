@@ -7,6 +7,7 @@ description: Homepage of Emil Constantinescu
 
 <nav class="home-jumpnav" aria-label="Homepage sections">
   <a href="#research">Research</a>
+  <a href="#projects">Projects</a>
   <a href="#software">Software</a>
   <a href="#recent-papers">Recent papers</a>
   <a href="{{ '/pages/group' | relative_url }}">Group</a>
@@ -41,6 +42,7 @@ description: Homepage of Emil Constantinescu
 
 <div class="home-overview">
   <a class="pill" href="#research">4 research areas</a>
+  <a class="pill" href="#projects">3 projects</a>
   <a class="pill" href="#software">4 software packages</a>
   <a class="pill" href="#recent-papers">12 featured papers</a>
   <a class="pill" href="{{ '/pages/group' | relative_url }}">Group members</a>
@@ -52,7 +54,7 @@ description: Homepage of Emil Constantinescu
 
 My research focuses on scientific machine learning (SciML) for modeling and inference in complex dynamical systems. I develop scalable methods for uncertainty quantification and data assimilation, robust time integration schemes for stiff and multiscale dynamics, and adaptive mesh refinement techniques for PDE simulation.
 
-<div class="cards cards--research">
+<div class="cards cards--research cards--compact">
   <a class="card" href="{{ '/pages/sciml' | relative_url }}">
     <h3 class="card__title">Scientific machine learning</h3>
     <p class="card__tag">Focus: SciML</p>
@@ -62,13 +64,13 @@ My research focuses on scientific machine learning (SciML) for modeling and infe
   <a class="card" href="{{ '/pages/data-assimilation' | relative_url }}">
     <h3 class="card__title">Uncertainty quantification &amp; data assimilation</h3>
     <p class="card__tag">Focus: UQ/DA</p>
-    <p class="card__desc">Inverse problems, sensitivity analysis, and data assimilation for large-scale models.</p>
+    <p class="card__desc">Inverse problems, sensitivity analysis, and scalable data assimilation.</p>
     <p class="card__meta">Selected papers and background →</p>
   </a>
   <a class="card" href="{{ '/pages/time-stepping' | relative_url }}">
     <h3 class="card__title">Time integration</h3>
     <p class="card__tag">Focus: Time stepping</p>
-    <p class="card__desc">Robust time-stepping for stiff and multiscale dynamical systems (IMEX, multirate, adjoints), including methods implemented in PETSc and DESolve.</p>
+    <p class="card__desc">Robust time-stepping for stiff and multiscale dynamics (IMEX, multirate, adjoints), with PETSc and DESolve implementations.</p>
     <p class="card__meta">Selected papers and background →</p>
   </a>
   <a class="card" href="{{ '/pages/amr' | relative_url }}">
@@ -79,11 +81,40 @@ My research focuses on scientific machine learning (SciML) for modeling and infe
   </a>
 </div>
 
+## Projects {#projects}
+
+<p class="home-section-intro">Current project overviews and research-thrust pages.</p>
+
+<div class="cards cards--home-projects cards--compact">
+  <a class="card project-card" href="{{ '/pages/project-hybrid-ml-pde' | relative_url }}">
+    <p class="card__tag">Scientific machine learning</p>
+    <h3 class="card__title">Hybrid ML-PDE for accelerated simulation</h3>
+    <p class="card__desc">Learned weak-form and source-term corrections for finite element and DG solvers, designed for long-horizon accuracy at reduced computational cost.</p>
+    <p class="card__meta">Open project page →</p>
+  </a>
+  <a class="card project-card" href="{{ '/pages/project-data-assimilation' | relative_url }}">
+    <p class="card__tag">UQ &amp; data assimilation</p>
+    <h3 class="card__title">Data assimilation and uncertainty-aware inference</h3>
+    <p class="card__desc">Ensemble and variational data assimilation, physics-informed Gaussian processes, and uncertainty-aware forecasting for atmospheric chemistry and climate variability.</p>
+    <p class="card__meta">Open project page →</p>
+  </a>
+  <a class="card project-card" href="{{ '/pages/project-time-integration' | relative_url }}">
+    <p class="card__tag">Time integration</p>
+    <h3 class="card__title">Time integration for stiff and multiscale dynamics</h3>
+    <p class="card__desc">SSP and general linear methods, IMEX and multirate schemes, and global error estimation for PDE discretizations.</p>
+    <p class="card__meta">Open project page →</p>
+  </a>
+</div>
+
+<p class="home-section-actions">
+  <a class="pill" href="{{ '/pages/projects' | relative_url }}">View all project pages</a>
+</p>
+
 ## Software {#software}
 
 <p class="home-section-intro">Open-source software contributions for scientific computing and machine learning workflows.</p>
 
-<div class="cards cards--software">
+<div class="cards cards--software cards--compact">
   <article class="card software-card">
     <h3 class="card__title">DESolve</h3>
     <p class="software-card__role">Lead package</p>
@@ -99,7 +130,7 @@ My research focuses on scientific machine learning (SciML) for modeling and infe
   <article class="card software-card">
     <h3 class="card__title">DAPack</h3>
     <p class="software-card__role">Lead package</p>
-    <p class="card__desc">Data assimilation for uncertainty quantification and inference.</p>
+    <p class="card__desc">Data assimilation for UQ and inference.</p>
     <p class="software-card__links"><a class="pub-chip" href="https://bitbucket.org/emconsta/dapack">Repository</a></p>
   </article>
   <article class="card software-card">
