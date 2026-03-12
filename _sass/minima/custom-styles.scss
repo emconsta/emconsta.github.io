@@ -186,6 +186,75 @@ body {
   margin-bottom: $spacing-unit * 0.75;
 }
 
+.home-section {
+  --section-accent: #5566b7;
+  --section-accent-soft: rgba(85, 102, 183, 0.18);
+  --section-accent-surface: rgba(85, 102, 183, 0.06);
+  margin-bottom: $spacing-unit * 0.9;
+}
+
+.home-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.home-section-heading__icon {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--section-accent-soft);
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), var(--section-accent-surface));
+  color: var(--section-accent);
+  box-shadow: 0 10px 24px rgba(38, 56, 116, 0.08);
+}
+
+.home-section-heading__icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-section-heading__eyebrow {
+  margin: 0 0 2px;
+  color: var(--section-accent);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  @include relative-font-size(0.72);
+}
+
+.home-section-heading h2 {
+  margin: 0;
+}
+
+.home-section--research {
+  --section-accent: #5163b5;
+  --section-accent-soft: rgba(81, 99, 181, 0.2);
+  --section-accent-surface: rgba(81, 99, 181, 0.08);
+}
+
+.home-section--projects {
+  --section-accent: #1f7f8f;
+  --section-accent-soft: rgba(31, 127, 143, 0.22);
+  --section-accent-surface: rgba(31, 127, 143, 0.08);
+}
+
+.home-section--software {
+  --section-accent: #2d6f97;
+  --section-accent-soft: rgba(45, 111, 151, 0.22);
+  --section-accent-surface: rgba(45, 111, 151, 0.08);
+}
+
 .home-section-intro {
   margin-top: 0;
   margin-bottom: 10px;
@@ -237,6 +306,15 @@ body {
 
 .cards--compact .card {
   padding: 16px 17px;
+}
+
+.home-section .card {
+  border-top: 3px solid var(--section-accent-soft);
+}
+
+.home-section .card:hover,
+.home-section .card:focus {
+  border-top-color: var(--section-accent);
 }
 
 .card {
@@ -314,6 +392,11 @@ body {
   padding-top: 8px;
 }
 
+.home-section--research .card__tag,
+.home-section--research .card__meta {
+  color: var(--section-accent);
+}
+
 .software-card {
   display: flex;
   flex-direction: column;
@@ -334,6 +417,10 @@ body {
   @include relative-font-size(0.82);
 }
 
+.home-section--software .software-card__role {
+  color: var(--section-accent);
+}
+
 .cards--software .card__title {
   margin-bottom: 4px;
 }
@@ -350,6 +437,16 @@ body {
 
 .cards--software.cards--compact .software-card__links {
   padding-top: 6px;
+}
+
+.home-section--software .pub-chip,
+.home-section--projects .card__tag,
+.home-section--projects .card__meta {
+  color: var(--section-accent);
+}
+
+.home-section--software .pub-chip {
+  border-color: var(--section-accent-soft);
 }
 
 .cards--projects {
@@ -769,6 +866,16 @@ body {
 }
 
 @include media-query($on-palm) {
+  .home-section-heading {
+    gap: 11px;
+  }
+
+  .home-section-heading__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
   .home-hero {
     flex-direction: column;
     align-items: flex-start;
