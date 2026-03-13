@@ -190,6 +190,8 @@ body {
   --section-accent: #5566b7;
   --section-accent-soft: rgba(85, 102, 183, 0.18);
   --section-accent-surface: rgba(85, 102, 183, 0.06);
+  --section-card-tint: rgba(85, 102, 183, 0.09);
+  --section-card-highlight: rgba(255, 255, 255, 0.82);
   margin-bottom: $spacing-unit * 0.9;
 }
 
@@ -238,21 +240,24 @@ body {
 }
 
 .home-section--research {
-  --section-accent: #5163b5;
-  --section-accent-soft: rgba(81, 99, 181, 0.2);
-  --section-accent-surface: rgba(81, 99, 181, 0.08);
+  --section-accent: #665eb8;
+  --section-accent-soft: rgba(102, 94, 184, 0.2);
+  --section-accent-surface: rgba(102, 94, 184, 0.08);
+  --section-card-tint: rgba(162, 146, 221, 0.14);
 }
 
 .home-section--projects {
   --section-accent: #1f7f8f;
   --section-accent-soft: rgba(31, 127, 143, 0.22);
   --section-accent-surface: rgba(31, 127, 143, 0.08);
+  --section-card-tint: rgba(102, 185, 177, 0.13);
 }
 
 .home-section--software {
-  --section-accent: #2d6f97;
-  --section-accent-soft: rgba(45, 111, 151, 0.22);
-  --section-accent-surface: rgba(45, 111, 151, 0.08);
+  --section-accent: #2b7899;
+  --section-accent-soft: rgba(43, 120, 153, 0.22);
+  --section-accent-surface: rgba(43, 120, 153, 0.08);
+  --section-card-tint: rgba(141, 200, 224, 0.13);
 }
 
 .home-section-intro {
@@ -310,11 +315,17 @@ body {
 
 .home-section .card {
   border-top: 3px solid var(--section-accent-soft);
+  border-color: rgba(123, 138, 181, 0.18);
+  background: linear-gradient(160deg, var(--section-card-highlight), var(--section-card-tint));
 }
 
 .home-section .card:hover,
 .home-section .card:focus {
   border-top-color: var(--section-accent);
+}
+
+.home-section .card::before {
+  background: linear-gradient(175deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
 }
 
 .card {
@@ -447,6 +458,7 @@ body {
 
 .home-section--software .pub-chip {
   border-color: var(--section-accent-soft);
+  background: rgba(255, 255, 255, 0.68);
 }
 
 .cards--projects {

@@ -1,5 +1,23 @@
 # Publication metadata for the site (edit this file directly).
 # Use `[]` for missing values so they don’t render.
+- id: ganguli-2025-uncovering-physical-drivers-of-dark-matter
+  type: journal
+  title: Uncovering physical drivers of dark matter halo structures with auxiliary-variable-guided generative
+    models
+  authors: Arkaprabha Ganguli, Anirban Samaddar, Florian Kéruzoré, Nesar Ramachandra, Julie Bessac,
+    Sandeep Madireddy, and Emil M Constantinescu
+  venue: Submitted
+  volume: []
+  number: []
+  pages: []
+  year: 2025
+  doi: []
+  arxiv: '2602.23518'
+  pdf: []
+  tags:
+  - data-assimilation
+  - sciml
+  featured: true
 - id: ganguli-2025-enhancing-interpretability-in-generative-modeling-statistically
   type: journal
   title: 'Enhancing interpretability in generative modeling: Statistically disentangled latent spaces
@@ -1096,7 +1114,7 @@
   type: proceedings
   title: Learning differentiable weak-form corrections to accelerate finite element simulations
   authors: Junoh Jung and Emil M Constantinescu
-  venue: Submitted
+  venue: To appear
   volume: []
   number: []
   pages: []
@@ -1645,6 +1663,23 @@
   pdf: []
   tags:
   - amr
+  featured: []
+- id: balay-2025-petsc-tao-users-manual-revision-3-24
+  type: report
+  title: PETSc/TAO users manual revision 3.24
+  authors: Satish Balay, S. Abhyankar, Mark F. Adams, Jed Brown, P. Brune, K. Buschelman, Emil M
+    Constantinescu, Lisandro Dalcin, S. Benson, A. Dener, and others
+  venue: Argonne National Laboratory (ANL), Argonne, IL (United States)
+  volume: []
+  number: []
+  pages: []
+  year: 2025
+  doi: []
+  arxiv: []
+  pdf: []
+  tags:
+  - amr
+  - time-stepping
   featured: []
 - id: zhang-2017-efficient-adjoint-computation-of-hybrid-systems
   type: report
