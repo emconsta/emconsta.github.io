@@ -151,5 +151,4 @@ Weak-form corrections (finite elements, incompressible flows):
 
 1. Junoh Jung and Emil M Constantinescu. *Learning differentiable weak-form corrections to accelerate finite element simulations* (proceedings, 2026). [arXiv](https://arxiv.org/abs/2601.20019)
 2. Shinhoo Kang and Emil M Constantinescu. *Differentiable DG with neural operator source term correction* (2025). [arXiv](https://arxiv.org/abs/2310.18897)
-3. Shinhoo Kang and Emil M Constantinescu. *Enhancing low-order discontinuous Galerkin methods with neural ordinary differential equations for compressible Navier-Stokes equations* (2023). [arXiv](https://arxiv.org/abs/2310.18897v2)
-4. Shinhoo Kang and Emil M Constantinescu. *Learning subgrid-scale models with neural ordinary differential equations*. Computers and Fluids, 2023. [DOI](https://doi.org/10.1016/j.compfluid.2023.105919) [arXiv](https://arxiv.org/abs/2212.09967)
+3. Shinhoo Kang and Emil M Constantinescu. *Learning subgrid-scale models with neural ordinary differential equations*. Computers and Fluids, 2023. [DOI](https://doi.org/10.1016/j.compfluid.2023.105919) [arXiv](https://arxiv.org/abs/2212.09967)
