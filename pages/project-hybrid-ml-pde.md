@@ -31,12 +31,39 @@ description: "Hybrid ML-PDE project overview"
   </div>
 </div>
 
-## Motivation
+<nav class="project-nav" aria-label="Hybrid ML-PDE sections">
+  <a href="#motivation">Motivation</a>
+  <a href="#strategies">Correction strategies</a>
+  <a href="#training">Training</a>
+  <a href="#results">Representative results</a>
+  <a href="#funding">Funding</a>
+  <a href="#references">References</a>
+</nav>
+
+<div class="cards project-key-grid">
+  <article class="card project-key-card">
+    <p class="card__tag">Scientific question</p>
+    <h3 class="card__title">How can coarse PDE solvers learn missing physics?</h3>
+    <p class="card__desc">The project asks how to correct low-order DG and finite element models without discarding the discretization structure that makes them scalable and interpretable.</p>
+  </article>
+  <article class="card project-key-card">
+    <p class="card__tag">Core idea</p>
+    <h3 class="card__title">Use structured learned corrections</h3>
+    <p class="card__desc">We study two correction mechanisms: expressive source-term augmentation for compressible DG models and discretization-consistent weak-form corrections for incompressible finite elements.</p>
+  </article>
+  <article class="card project-key-card">
+    <p class="card__tag">Why it matters</p>
+    <h3 class="card__title">Improve fidelity without abandoning scientific solvers</h3>
+    <p class="card__desc">The goal is not just better short-horizon fit, but more stable long-time rollouts that remain compatible with existing solvers, adjoints, and conservation constraints.</p>
+  </article>
+</div>
+
+## Motivation {#motivation}
 
 High-fidelity PDE simulations are accurate but expensive. Low-order models are efficient but often miss unresolved dynamics and accumulate rollout error.  
-This project studies learned correction operators that are trained end-to-end through differentiable simulators, with the goal of improving long-horizon fidelity while preserving key numerical structure.
+This project studies learned correction operators trained end-to-end through differentiable simulators, with the goal of improving long-horizon fidelity while preserving the parts of the numerical method that make scientific simulation trustworthy.
 
-## Source term and weak-form correction strategies
+## Source term and weak-form correction strategies {#strategies}
 
 The project explores two ways to inject learnable corrections into PDE solvers. They differ in *where the correction enters* and therefore in the tradeoff between expressivity and numerical consistency.
 
@@ -78,7 +105,7 @@ In benchmark studies, this structure can translate into better optimization beha
   </figure>
 </div>
 
-## Training 
+## Training and differentiation {#training}
 
 Across both correction mechanisms, training typically minimizes rollout mismatch to projected/filter-aligned high-fidelity trajectories:
 
@@ -86,24 +113,7 @@ Across both correction mechanisms, training typically minimizes rollout mismatch
 
 with gradients computed by differentiating through the time integrator (e.g., neural ODE / adjoint methods for DG+source models, and discrete adjoints plus backpropagation for weak-form finite element models).
 
-## What this project contributes 
-
-1. Continuous-in-time neural correction operators compatible with variable-step integration.
-2. Strong-form (source-term) corrections for DG discretizations of compressible flows, including conservation-aware designs.
-3. Weak-form corrections that modify discrete operators in a finite element setting for incompressible flows.
-4. Differentiable training pipelines that couple PDE solvers with ML frameworks for long-horizon optimization.
-
-## Advantages and limitations
-
-Source-term corrections (DG, compressible flows):
-1. Pros: high expressivity; direct representation of missing physics; natural fit for continuous-in-time training and variable time stepping.
-2. Cons: must explicitly control conservation/stability (e.g., mass); naive choices can drift and destabilize; architecture locality matters for scalability.
-
-Weak-form corrections (finite elements, incompressible flows):
-1. Pros: discretization-consistent; preserves sparsity/locality and solver structure; often better conditioned for long-horizon training.
-2. Cons: reduced hypothesis space; requires choosing a structured correction parameterization and appropriate bounds/regularization.
-
-## Gallery
+## Representative results {#results}
 
 <div class="project-media-card">
   <h3>Compressible Navier-Stokes (DG): Q-criterion and conservation</h3>
@@ -140,14 +150,14 @@ Weak-form corrections (finite elements, incompressible flows):
 - [Scientific machine learning]({{ '/pages/sciml' | relative_url }})
 - [PDE & AMR]({{ '/pages/amr' | relative_url }})
 
-## Funding
+## Funding {#funding}
 
 - U.S. Department of Energy, Office of Science, Office of Advanced Scientific Computing Research (ASCR) and the Scientific Discovery through Advanced Computing (SciDAC) FASTMath Institute program ([FASTMath](https://sites.google.com/lbl.gov/scidacfastmathinstitute/home))
 - U.S. Department of Energy, Office of Science, Office of Advanced Scientific Computing Research (ASCR), the Applied Mathematics Program through the Competitive Portfolios Project on Energy Efficient Computing: A Holistic Methodology
 - U.S. Department of Energy, Office of Science, Office of Advanced Scientific Computing Research (ASCR) and the Scientific Discovery through Advanced Computing (SciDAC) ASCR-BER partnership program
 - Argonne Leadership Computing Facility (ALCF) Postdoctoral Fellowship
 
-## References for deeper dive
+## References for deeper dive {#references}
 
 1. Junoh Jung and Emil M Constantinescu. *Learning differentiable weak-form corrections to accelerate finite element simulations* (proceedings, 2026). [arXiv](https://arxiv.org/abs/2601.20019)
 2. Shinhoo Kang and Emil M Constantinescu. *Differentiable DG with neural operator source term correction* (2025). [arXiv](https://arxiv.org/abs/2310.18897)

@@ -31,7 +31,35 @@ description: "Data assimilation and uncertainty-aware inference project overview
   </div>
 </div>
 
-## Motivation
+<nav class="project-nav" aria-label="Data assimilation sections">
+  <a href="#motivation">Motivation</a>
+  <a href="#topic-chemistry-da">Chemistry DA</a>
+  <a href="#topic-variational-da">Variational DA</a>
+  <a href="#topic-gp-inference">Physics-informed GPs</a>
+  <a href="#topic-mjo">MJO forecasting</a>
+  <a href="#software">Software</a>
+  <a href="#funding">Funding</a>
+</nav>
+
+<div class="cards project-key-grid">
+  <article class="card project-key-card">
+    <p class="card__tag">Scientific question</p>
+    <h3 class="card__title">How do we infer hidden states and parameters from sparse noisy data?</h3>
+    <p class="card__desc">Scientific DA problems combine partial observations, uncertain models, and large state spaces, so uncertainty has to be represented in a computationally realistic way.</p>
+  </article>
+  <article class="card project-key-card">
+    <p class="card__tag">Core idea</p>
+    <h3 class="card__title">Combine numerical structure with statistical models</h3>
+    <p class="card__desc">This work spans ensemble and variational DA, inverse problems, and physics-informed Gaussian processes, with each tool addressing a different computational bottleneck.</p>
+  </article>
+  <article class="card project-key-card">
+    <p class="card__tag">What visitors should learn</p>
+    <h3 class="card__title">Different inference tasks need different approximations</h3>
+    <p class="card__desc">The page is organized around four settings: chemistry DA, scalable 4D-Var, multi-output GP inference, and probabilistic climate forecasting.</p>
+  </article>
+</div>
+
+## Motivation {#motivation}
 
 Many inference problems in science can be framed as estimating an evolving state $x(t)$ from partial and noisy observations $y(t)$, given an imperfect dynamical model.
 In discrete time, a common abstraction is
@@ -89,7 +117,7 @@ with the forecast covariance $\mathbf{P}_k^{f}$ estimated from the ensemble.
 3. Physics-informed covariance modeling for multi-output Gaussian processes and hidden-process inference.
 4. Probabilistic GP forecasting workflows with explicit uncertainty calibration for time-series prediction problems.
 
-## Topic 1: Chemical data assimilation with EnKF and flow-dependent priors
+## Topic 1: Chemical data assimilation with EnKF and flow-dependent priors {#topic-chemistry-da}
 
 Atmospheric chemistry DA is challenging because (i) the state is large and coupled across species, (ii) observations are sparse/heterogeneous, and (iii) background error structure is strongly flow-dependent.
 In ensemble Kalman workflows, the **background covariance** plays a central role because it controls how observation increments propagate through the model state.
@@ -151,7 +179,7 @@ In addition, the chemistry DA studies in this project analyze sensitivity to pra
   {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
 </ul>
 
-## Topic 2: Variational DA and scalable PDE-constrained inverse problems
+## Topic 2: Variational DA and scalable PDE-constrained inverse problems {#topic-variational-da}
 
 In variational DA, the dominant cost often comes from repeatedly solving large linear/nonlinear systems inside an optimization method.
 This motivates algorithms that reduce memory footprint and expose parallel structure in space and time.
@@ -160,6 +188,23 @@ Two representative directions in this project are:
 
 1. **Low-memory best-state estimation** for hidden Markov models with model error, which targets large-scale inference where naive smoothing formulations become memory-prohibitive.
 2. **Space-time domain decomposition for 4D-Var**, which decomposes the inference problem into coupled local subproblems, enabling scalable solvers for large regularized inverse problems.
+
+<div class="project-media-card">
+  <h3>Scalable variational DA: local solvers and domain decomposition</h3>
+  <p class="project-media-card__lead">
+    These two images summarize the algorithmic theme in this part of the project: break a large inverse problem into computational units that are easier to solve and coordinate.
+  </p>
+  <div class="project-media-grid project-media-grid--tight">
+    <figure class="project-media">
+      <img src="{{ '/assets/images/projects/data-assimilation/4dvar-local-solver.jpg' | relative_url }}" alt="Nested local solver view for scalable variational data assimilation" />
+      <figcaption>Nested local solvers illustrate how low-memory variational estimation can be organized around smaller optimization steps rather than one monolithic global solve.</figcaption>
+    </figure>
+    <figure class="project-media">
+      <img src="{{ '/assets/images/projects/data-assimilation/4dvar-domain-decomposition.jpg' | relative_url }}" alt="Space-time domain decomposition for 4D-Var" />
+      <figcaption>Space-time domain decomposition partitions the assimilation window into coupled local subdomains, exposing parallel structure while preserving consistency across interfaces.</figcaption>
+    </figure>
+  </div>
+</div>
 
 <div class="project-callout">
   <h3>Advantages and limitations</h3>
@@ -177,7 +222,7 @@ Two representative directions in this project are:
   {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
 </ul>
 
-## Topic 3: Physics-informed Gaussian processes for multi-output inference
+## Topic 3: Physics-informed Gaussian processes for multi-output inference {#topic-gp-inference}
 
 Gaussian processes (GPs) provide a flexible, nonparametric route to inference with uncertainty quantification. A key practical challenge is specifying covariance structure that is both expressive and physically meaningful, especially for **multiple outputs** (co-kriging) and for settings where some processes are hidden/unobserved.
 
@@ -228,7 +273,7 @@ In space-time settings, GP models can also fuse deterministic numerical weather 
   {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
 </ul>
 
-## Topic 4: Data-driven prediction with Gaussian processes (MJO forecasting)
+## Topic 4: Data-driven prediction with Gaussian processes (MJO forecasting) {#topic-mjo}
 
 Recent work also explores GP models as a data-driven route to probabilistic forecasting of climate variability.
 For the Madden--Julian Oscillation (MJO), GP models can be calibrated using empirical correlations and then corrected a posteriori to better match forecast uncertainty.
@@ -313,7 +358,7 @@ In numerical experiments, this strategy improves deterministic prediction skill 
   {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
 </ul>
 
-## Software
+## Software {#software}
 
 <p class="home-section-intro">
   Several of the methods above are implemented and tested in production-grade scientific computing libraries.
@@ -339,7 +384,7 @@ In numerical experiments, this strategy improves deterministic prediction skill 
 - [Projects index]({{ '/pages/projects' | relative_url }})
 - [UQ &amp; data assimilation research area]({{ '/pages/data-assimilation' | relative_url }})
 
-## Funding
+## Funding {#funding}
 
 - U.S. Department of Energy, Office of Science, Office of Advanced Scientific Computing Research (ASCR) (including SciDAC programs on recent work).
 - Argonne National Laboratory Directed Research and Development (LDRD) (on recent work).

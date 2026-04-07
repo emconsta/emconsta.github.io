@@ -33,7 +33,36 @@ description: "Time integration project overview"
   </div>
 </div>
 
-## Motivation
+<nav class="project-nav" aria-label="Time integration sections">
+  <a href="#motivation">Motivation</a>
+  <a href="#topic-ssp-glm">SSP and GLMs</a>
+  <a href="#topic-imex">IMEX</a>
+  <a href="#topic-multirate">Multirate</a>
+  <a href="#topic-global-error">Global error</a>
+  <a href="#software">Software</a>
+  <a href="#funding">Funding</a>
+  <a href="#references">References</a>
+</nav>
+
+<div class="cards project-key-grid">
+  <article class="card project-key-card">
+    <p class="card__tag">Scientific question</p>
+    <h3 class="card__title">How should time integrators adapt to stiff, multiscale dynamics?</h3>
+    <p class="card__desc">After spatial discretization, many PDEs become very large ODE or DAE systems whose fastest scales can dominate stability, cost, and accumulated error.</p>
+  </article>
+  <article class="card project-key-card">
+    <p class="card__tag">Core idea</p>
+    <h3 class="card__title">Exploit structure instead of brute force</h3>
+    <p class="card__desc">The methods here use SSP design, implicit-explicit splitting, multirate partitions, and explicit global-error tracking to target the right source of difficulty in each problem.</p>
+  </article>
+  <article class="card project-key-card">
+    <p class="card__tag">Practical outcome</p>
+    <h3 class="card__title">Algorithms that land in production software</h3>
+    <p class="card__desc">A key objective is not just analysis, but methods that can be implemented in libraries such as PETSc TS and DESolve for real scientific simulation workflows.</p>
+  </article>
+</div>
+
+## Motivation {#motivation}
 
 Many scientific applications evolve PDEs in time. After spatial discretization, these problems typically
 take the form of large ODE systems:
@@ -48,7 +77,7 @@ Two challenges tend to dominate:
 This project explores integrators that exploit structure (splittings, partitions, and error estimators) to
 improve efficiency while maintaining stability and reliable accuracy.
 
-## Topic 1: New methodologies for numerical integrators
+## Topic 1: New methodologies for numerical integrators {#topic-ssp-glm}
 
 At the core are **one-step** (Runge-Kutta) and **multistep** (linear multistep) methods. For hyperbolic
 PDEs and nonlinear conservation laws, robustness often means preserving stability properties that are
@@ -89,7 +118,7 @@ embedded error estimation.
   {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
 </ul>
 
-## Topic 2: Implicit-explicit (IMEX) and splitting methods
+## Topic 2: Implicit-explicit (IMEX) and splitting methods {#topic-imex}
 
 In many PDE models, different terms have very different stiffness and solver cost. IMEX methods start
 from an additive split
@@ -113,7 +142,7 @@ multiphysics coupling and for systems where a fully implicit method would be too
     a representative cost-versus-error comparison across different IMEX-type strategies.
   </p>
   <div class="project-media-grid project-media-grid--tight">
-    <figure class="project-media">
+    <figure class="project-media project-media--span-2">
       <img src="{{ '/assets/images/projects/time-stepping/imex-error-vs-cpu.jpg' | relative_url }}" alt="Error versus CPU time comparison across IMEX and related methods" />
       <figcaption>Error versus CPU time illustrates efficiency tradeoffs among IMEX variants.</figcaption>
     </figure>
@@ -128,7 +157,7 @@ multiphysics coupling and for systems where a fully implicit method would be too
   {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
 </ul>
 
-## Topic 3: Multirate methods for multiple time scales
+## Topic 3: Multirate methods for multiple time scales {#topic-multirate}
 
 Multirate methods target problems where some components evolve fast and others evolve slowly. One way to
 express this is a partition:
@@ -190,7 +219,7 @@ This project studies multirate methods built from several design patterns:
   {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
 </ul>
 
-## Topic 4: Global error estimation and control
+## Topic 4: Global error estimation and control {#topic-global-error}
 
 Most adaptive time integrators choose the time step by controlling a **local error estimate** (LEE), for example from an embedded method pair.
 This is effective for short integrations, but it does not directly control the **global error** $e^{[n]} = y^{[n]} - y(t_n)$, which can drift above
@@ -244,7 +273,7 @@ parameters and requires careful stability analysis.
   {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
 </ul>
 
-## Software
+## Software {#software}
 
 <p class="home-section-intro">
   Many of the methods above are available in open-source libraries used in production simulations.
@@ -271,22 +300,24 @@ parameters and requires careful stability analysis.
 - [Time integration research area]({{ '/pages/time-stepping' | relative_url }})
 - [PDE & AMR]({{ '/pages/amr' | relative_url }})
 
-## Funding
+## Funding {#funding}
 
 - U.S. Department of Energy, Office of Science, Office of Advanced Scientific Computing Research (ASCR), the Applied Mathematics Program.
 - U.S. National Science Foundation (on earlier work, prior to 2008)
 
-## References for deeper dive
+## References for deeper dive {#references}
 
 <p class="home-section-intro">
-  The lists below are filtered from the site’s publication database.
+  The references below are selected to match the four method families highlighted on this page.
 </p>
 
-<h3>Journal articles</h3>
-{% include publications.html type="journal" tag="time-stepping" entry_layout="rows" %}
-
-<h3>Proceedings / presentations</h3>
-{% include publications.html type="proceedings" tag="time-stepping" entry_layout="rows" %}
-
-<h3>Technical reports</h3>
-{% include publications.html type="report" tag="time-stepping" entry_layout="rows" %}
+<ul class="pub-list">
+  {%- assign p = site.data.publications | where: "id", "sandu-2010-optimal-strong-stability-preserving-general-linear-methods" | first -%}
+  {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
+  {%- assign p = site.data.publications | where: "id", "sandu-2010-extrapolated-implicit-explicit-time-stepping" | first -%}
+  {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
+  {%- assign p = site.data.publications | where: "id", "constantinescu-2009-multirate-explicit-adams-methods-for-time" | first -%}
+  {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
+  {%- assign p = site.data.publications | where: "id", "constantinescu-2018-generalizing-global-error-estimation-for-ordinary" | first -%}
+  {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
+</ul>
