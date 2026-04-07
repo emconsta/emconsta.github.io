@@ -1,6 +1,6 @@
 # Publication metadata for the site (edit this file directly).
 # Use `[]` for missing values so they don’t render.
-- id: ganguli-2025-uncovering-physical-drivers-of-dark-matter
+- id: ganguli-2026-uncovering-physical-drivers-of-dark-matter
   type: journal
   title: Uncovering physical drivers of dark matter halo structures with auxiliary-variable-guided generative
     models
@@ -10,9 +10,25 @@
   volume: []
   number: []
   pages: []
-  year: 2025
+  year: 2026
   doi: []
   arxiv: '2602.23518'
+  pdf: []
+  tags:
+  - data-assimilation
+  - sciml
+  featured: true
+- id: ganguli-2026-disentangled-deep-priors-for-bayesian-inverse
+  type: journal
+  title: Disentangled deep priors for Bayesian inverse problems
+  authors: Arkaprabha Ganguli and Emil M Constantinescu
+  venue: Submitted
+  volume: []
+  number: []
+  pages: []
+  year: 2026
+  doi: []
+  arxiv: '2604.02304'
   pdf: []
   tags:
   - data-assimilation
