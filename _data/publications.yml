@@ -13,7 +13,7 @@
   year: 2026
   doi: []
   arxiv: '2602.23518'
-  pdf: []
+  pdf: https://arxiv.org/pdf/2602.23518.pdf
   tags:
   - data-assimilation
   - sciml
@@ -29,7 +29,7 @@
   year: 2026
   doi: []
   arxiv: '2604.02304'
-  pdf: []
+  pdf: https://arxiv.org/pdf/2604.02304.pdf
   tags:
   - data-assimilation
   - sciml
@@ -1155,8 +1155,8 @@
   pages: []
   year: 2025
   doi: []
-  arxiv: []
-  pdf: []
+  arxiv: '2602.23518'
+  pdf: https://arxiv.org/pdf/2602.23518.pdf
   tags:
   - sciml
   featured: []
