@@ -42,7 +42,7 @@ description: Homepage of Emil Constantinescu
 
 <div class="home-overview">
   <a class="pill" href="#research">4 research areas</a>
-  <a class="pill" href="#projects">3 selected projects</a>
+  <a class="pill" href="#projects">4 selected projects</a>
   <a class="pill" href="#software">4 software packages</a>
   <a class="pill" href="#recent-papers">12 featured papers</a>
   <a class="pill" href="{{ '/pages/group' | relative_url }}">Group members</a>
@@ -119,6 +119,12 @@ description: Homepage of Emil Constantinescu
       <p class="card__tag">Scientific machine learning</p>
       <h3 class="card__title">Hybrid ML-PDE for accelerated simulation</h3>
       <p class="card__desc">Learned weak-form and source-term corrections for finite element and DG solvers, designed for long-horizon accuracy at reduced computational cost.</p>
+      <p class="card__meta">Open project page →</p>
+    </a>
+    <a class="card project-card" href="{{ '/pages/project-disentangling' | relative_url }}">
+      <p class="card__tag">Scientific machine learning</p>
+      <h3 class="card__title">Disentangled latent spaces for scientific modeling</h3>
+      <p class="card__desc">Auxiliary-guided latent representations for interpretable generative modeling, dark-matter structure analysis, and deep priors for inverse problems.</p>
       <p class="card__meta">Open project page →</p>
     </a>
     <a class="card project-card" href="{{ '/pages/project-data-assimilation' | relative_url }}">

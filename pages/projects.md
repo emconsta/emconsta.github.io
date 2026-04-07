@@ -15,6 +15,12 @@ Project pages provide concise overviews of active research thrusts, with motivat
     <p class="card__desc">Learned weak-form and source-term corrections for finite element and DG solvers, designed for long-horizon accuracy at reduced computational cost.</p>
     <p class="card__meta">Open project page →</p>
   </a>
+  <a class="card project-card" href="{{ '/pages/project-disentangling' | relative_url }}">
+    <p class="card__tag">Scientific machine learning</p>
+    <h3 class="card__title">Disentangled latent spaces for scientific modeling</h3>
+    <p class="card__desc">Auxiliary-guided latent representations for interpretable generative modeling, dark-matter structure analysis, and deep priors for inverse problems.</p>
+    <p class="card__meta">Open project page →</p>
+  </a>
   <a class="card project-card" href="{{ '/pages/project-data-assimilation' | relative_url }}">
     <p class="card__tag">UQ &amp; data assimilation</p>
     <h3 class="card__title">Data assimilation and uncertainty-aware inference</h3>
