@@ -7,7 +7,7 @@
   --surface-shadow: 0 8px 22px rgba(44, 56, 92, 0.1);
   --surface-shadow-hover: 0 12px 28px rgba(44, 56, 92, 0.14);
   --ink-strong: #1e284a;
-  --ink-muted: #495a82;
+  --ink-muted: #3d4e72;
   --accent: #3f61bf;
 }
 
@@ -35,6 +35,12 @@ body {
   font-weight: 700;
   letter-spacing: -0.2px;
   color: var(--ink-strong);
+}
+
+.site-nav {
+  background: var(--surface-glass-strong);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .site-nav .page-link {
@@ -158,7 +164,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 10px;
-  margin-bottom: $spacing-unit * 0.6;
+  margin-bottom: $spacing-unit * 0.75;
 }
 
 .home-jumpnav a {
@@ -192,7 +198,7 @@ body {
   --section-accent-surface: rgba(85, 102, 183, 0.06);
   --section-card-tint: rgba(85, 102, 183, 0.09);
   --section-card-highlight: rgba(255, 255, 255, 0.82);
-  margin-bottom: $spacing-unit * 0.9;
+  margin-bottom: $spacing-unit * 0.75;
 }
 
 .home-section-heading {
@@ -227,12 +233,7 @@ body {
 }
 
 .home-section-heading__eyebrow {
-  margin: 0 0 2px;
-  color: var(--section-accent);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  @include relative-font-size(0.72);
+  display: none;
 }
 
 .home-section-heading h2 {
@@ -258,6 +259,12 @@ body {
   --section-accent-soft: rgba(43, 120, 153, 0.22);
   --section-accent-surface: rgba(43, 120, 153, 0.08);
   --section-card-tint: rgba(141, 200, 224, 0.13);
+}
+
+.home-section--publications {
+  --section-accent: #6b5ea0;
+  --section-accent-soft: rgba(107, 94, 160, 0.2);
+  --section-accent-surface: rgba(107, 94, 160, 0.08);
 }
 
 .home-section-intro {

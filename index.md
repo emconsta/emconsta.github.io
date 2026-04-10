@@ -40,14 +40,6 @@ description: Homepage of Emil Constantinescu
   </div>
 </div>
 
-<div class="home-overview">
-  <a class="pill" href="#research">4 research areas</a>
-  <a class="pill" href="#projects">4 selected projects</a>
-  <a class="pill" href="#software">4 software packages</a>
-  <a class="pill" href="#recent-papers">12 featured papers</a>
-  <a class="pill" href="{{ '/pages/group' | relative_url }}">Group members</a>
-</div>
-
 <section id="research" class="home-section home-section--research">
   <div class="home-section-heading">
     <span class="home-section-heading__icon" aria-hidden="true">
@@ -59,7 +51,6 @@ description: Homepage of Emil Constantinescu
       </svg>
     </span>
     <div>
-      <p class="home-section-heading__eyebrow">Research areas</p>
       <h2>Research</h2>
     </div>
   </div>
@@ -107,8 +98,7 @@ description: Homepage of Emil Constantinescu
       </svg>
     </span>
     <div>
-      <p class="home-section-heading__eyebrow">Selected project pages</p>
-      <h2>Projects (selected)</h2>
+      <h2>Projects</h2>
     </div>
   </div>
 
@@ -155,7 +145,6 @@ description: Homepage of Emil Constantinescu
       </svg>
     </span>
     <div>
-      <p class="home-section-heading__eyebrow">Open-source packages</p>
       <h2>Software</h2>
     </div>
   </div>
@@ -190,12 +179,24 @@ description: Homepage of Emil Constantinescu
   </div>
 </section>
 
-## Recent papers {#recent-papers}
+<section id="recent-papers" class="home-section home-section--publications">
+  <div class="home-section-heading">
+    <span class="home-section-heading__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+        <path d="M8 7h6M8 11h4"></path>
+      </svg>
+    </span>
+    <div>
+      <h2>Recent papers</h2>
+    </div>
+  </div>
 
-<p class="home-section-intro">Selected recent and featured publications.</p>
+  <p class="home-section-intro">Selected recent and featured publications.</p>
 
-{% include publications.html featured="true" limit="12" %}
+  {% include publications.html featured="true" limit="12" %}
 
-<p class="home-section-actions">
-  <a class="pill pill--primary" href="{{ '/pages/publications' | relative_url }}">View all publications</a>
-</p>
+  <p class="home-section-actions">
+    <a class="pill pill--primary" href="{{ '/pages/publications' | relative_url }}">View all publications</a>
+  </p>
+</section>
