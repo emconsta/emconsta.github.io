@@ -1,13 +1,13 @@
 // Custom styles that sit on top of Minima.
 
 :root {
-  --surface-glass: rgba(255, 255, 255, 0.82);
-  --surface-glass-strong: rgba(255, 255, 255, 0.9);
-  --surface-border: rgba(114, 130, 176, 0.22);
-  --surface-shadow: 0 8px 22px rgba(44, 56, 92, 0.1);
-  --surface-shadow-hover: 0 12px 28px rgba(44, 56, 92, 0.14);
-  --ink-strong: #1e284a;
-  --ink-muted: #3d4e72;
+  --surface-glass: rgba(255, 255, 255, 0.90);
+  --surface-glass-strong: rgba(255, 255, 255, 0.94);
+  --surface-border: rgba(114, 130, 176, 0.32);
+  --surface-shadow: 0 8px 22px rgba(44, 56, 92, 0.12);
+  --surface-shadow-hover: 0 12px 28px rgba(44, 56, 92, 0.17);
+  --ink-strong: #161f3a;
+  --ink-muted: #2e3d5e;
   --accent: #3f61bf;
 }
 
@@ -18,7 +18,7 @@ body {
   background:
     radial-gradient(72rem 40rem at -12% -8%, rgba(187, 164, 244, 0.16), transparent 58%),
     radial-gradient(70rem 40rem at 110% 0%, rgba(146, 178, 252, 0.14), transparent 55%),
-    linear-gradient(160deg, #fcfbff 0%, #f2f6ff 48%, #f8faff 100%);
+    linear-gradient(160deg, #f9f8fe 0%, #e9eef8 48%, #f3f5fc 100%);
   background-attachment: fixed;
 }
 
@@ -195,7 +195,7 @@ body {
 .home-section {
   --section-accent: #5566b7;
   --section-accent-soft: rgba(85, 102, 183, 0.18);
-  --section-accent-surface: rgba(85, 102, 183, 0.06);
+  --section-accent-surface: rgba(85, 102, 183, 0.12);
   --section-card-tint: rgba(85, 102, 183, 0.09);
   --section-card-highlight: rgba(255, 255, 255, 0.82);
   margin-bottom: $spacing-unit * 0.75;
@@ -217,7 +217,7 @@ body {
   height: 46px;
   border: 1px solid var(--section-accent-soft);
   border-radius: 14px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), var(--section-accent-surface));
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.85), var(--section-accent-surface));
   color: var(--section-accent);
   box-shadow: 0 10px 24px rgba(38, 56, 116, 0.08);
 }
@@ -243,28 +243,28 @@ body {
 .home-section--research {
   --section-accent: #665eb8;
   --section-accent-soft: rgba(102, 94, 184, 0.2);
-  --section-accent-surface: rgba(102, 94, 184, 0.08);
+  --section-accent-surface: rgba(102, 94, 184, 0.14);
   --section-card-tint: rgba(162, 146, 221, 0.14);
 }
 
 .home-section--projects {
   --section-accent: #1f7f8f;
   --section-accent-soft: rgba(31, 127, 143, 0.22);
-  --section-accent-surface: rgba(31, 127, 143, 0.08);
+  --section-accent-surface: rgba(31, 127, 143, 0.14);
   --section-card-tint: rgba(102, 185, 177, 0.13);
 }
 
 .home-section--software {
   --section-accent: #2b7899;
   --section-accent-soft: rgba(43, 120, 153, 0.22);
-  --section-accent-surface: rgba(43, 120, 153, 0.08);
+  --section-accent-surface: rgba(43, 120, 153, 0.14);
   --section-card-tint: rgba(141, 200, 224, 0.13);
 }
 
 .home-section--publications {
   --section-accent: #6b5ea0;
   --section-accent-soft: rgba(107, 94, 160, 0.2);
-  --section-accent-surface: rgba(107, 94, 160, 0.08);
+  --section-accent-surface: rgba(107, 94, 160, 0.14);
 }
 
 .home-section-intro {
@@ -284,7 +284,7 @@ body {
   padding: 6px 12px;
   border: 1px solid var(--surface-border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.74);
+  background: rgba(255, 255, 255, 0.88);
   color: var(--ink-strong);
   line-height: 1.1;
   transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
@@ -837,7 +837,7 @@ body {
   padding: 12px 14px;
   border: 1px solid var(--surface-border);
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.78);
 }
 
 .pub__year {
@@ -846,7 +846,7 @@ body {
   padding: 3px 8px;
   border: 1px solid var(--surface-border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.88);
   color: var(--accent);
   font-weight: 600;
   line-height: 1.2;
@@ -876,7 +876,7 @@ body {
   padding: 3px 9px;
   border: 1px solid var(--surface-border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.92);
   color: var(--ink-strong);
   @include relative-font-size(0.84);
 }
