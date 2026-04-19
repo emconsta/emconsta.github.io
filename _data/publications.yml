@@ -34,7 +34,7 @@
   tags:
   - data-assimilation
   - power-grid
-  featured: []
+  featured: true
 - id: ganguli-2026-disentangled-deep-priors-for-bayesian-inverse
   type: journal
   title: Disentangled deep priors for Bayesian inverse problems
