@@ -108,7 +108,7 @@ description: Homepage of Emil Constantinescu
     <a class="card project-card" href="{{ '/pages/project-power-grid' | relative_url }}">
       <p class="card__tag">Power grid</p>
       <h3 class="card__title">Power Grid and Uncertainty Quantification</h3>
-      <p class="card__desc">Weather-aware operations, stochastic power-system dynamics, adjoint-based inference, and surrogate-assisted security margins for renewable-rich grids.</p>
+      <p class="card__desc">Weather-aware operations, stochastic power-system dynamics, adjoint-based inference, and surrogate-assisted security margins for inverter-based grids.</p>
       <p class="card__meta">Open project page →</p>
     </a>
     <a class="card project-card" href="{{ '/pages/project-hybrid-ml-pde' | relative_url }}">

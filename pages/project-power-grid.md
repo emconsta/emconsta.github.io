@@ -21,7 +21,7 @@ description: "Power grid project overview"
 
 <div class="project-overview">
   <p class="project-overview__lead">
-    This project brings together work on power-grid operations under weather uncertainty, stochastic models for renewable-rich dynamics,
+    This project brings together work on power-grid operations under weather and hazard uncertainty, stochastic models for inverter-based dynamics,
     adjoint-based sensitivity and inverse methods, and recent surrogate-assisted approaches to security margins and reliability.
     The common thread is that the grid should be treated as an uncertain dynamical system rather than as a single deterministic operating point.
   </p>
@@ -63,7 +63,7 @@ description: "Power grid project overview"
 
 ## Motivation {#motivation}
 
-Modern power systems are shaped by weather, renewable variability, incomplete knowledge of dynamic parameters, and rare but consequential security events.
+Modern power systems are shaped by weather, hazard exposure, inverter-based resources, incomplete knowledge of dynamic parameters, and rare but consequential security events.
 That makes the computational problem broader than classical steady-state analysis.
 At different stages, one may need to schedule generation under uncertain wind, infer hidden model parameters from transient measurements, propagate stochastic forcing through dynamic simulations, or estimate how close the system is to a critical security boundary.
 This progression, from weather-aware operations to calibrated security surrogates, is reflected in work ranging from [Constantinescu et al. (2011)](https://doi.org/10.1109/TPWRS.2010.2048133) and [Bessa et al. (2012)](https://doi.org/10.1109/TSTE.2012.2200302) to [Maldonado et al. (2022)](https://doi.org/10.1109/TPWRS.2022.3141372), [Zhao et al. (2024)](https://arxiv.org/abs/2401.02555), and [Su et al. (2026)](https://doi.org/10.1109/TPWRS.2026.3685097).
@@ -76,10 +76,10 @@ One abstract view is
 g(u,\xi) \le 0,
 \]</p>
 
-where $u$ collects control decisions and $\xi$ represents uncertain weather, loads, renewable injections, or model parameters.
+where $u$ collects control decisions and $\xi$ represents uncertain weather, hazard-driven conditions, loads, inverter-based injections, or model parameters.
 The technical question is not only how to solve such problems, but how to build uncertainty models that remain informative when embedded in large dynamical and optimization workflows.
 
-## Weather-aware operations and renewable integration {#topic-operations}
+## Weather-aware operations and inverter-based integration {#topic-operations}
 
 The earliest phase of this line of work focused on bringing weather uncertainty into grid operations in a way that mattered for decisions, not only for forecast verification.
 That began with reports and conference work in 2009--2010 on exploiting weather forecasts in integrated energy systems and on the economic implications of better forecast information, and it matured into journal work on stochastic unit commitment, probabilistic wind forecasting, and cooling-constrained plant operation.
@@ -94,7 +94,7 @@ Conditional kernel density estimation produces full predictive distributions, an
 Once the output is a density rather than a point, one can ask calibration and sharpness questions that are directly relevant to bidding and reserve decisions ([Bessa et al., 2012](https://doi.org/10.1109/TSTE.2012.2200302)).
 
 The water-management work adds a different operational constraint: thermal generation is not only limited by fuel and demand, but also by environmental and cooling conditions.
-That paper shows how stochastic optimization changes the operating point when weather and intake constraints are uncertain, and it broadens the meaning of "energy uncertainty" beyond renewable injections alone ([Salazar et al., 2013](https://doi.org/10.1016/j.apenergy.2013.05.077)).
+That paper shows how stochastic optimization changes the operating point when weather and intake constraints are uncertain, and it broadens the meaning of "energy uncertainty" beyond variable injections alone toward wider hazard-aware operating constraints ([Salazar et al., 2013](https://doi.org/10.1016/j.apenergy.2013.05.077)).
 
 The solar-irradiation study is a short but useful bridge in this story.
 Even though it is not a power-grid dynamics paper, it reinforces the same idea: spatial information and probabilistic prediction are valuable when the end use is operational risk, not just pointwise forecast error ([Bilionis et al., 2014](https://doi.org/10.1016/j.solener.2014.09.009)).
@@ -107,7 +107,7 @@ Even though it is not a power-grid dynamics paper, it reinforces the same idea: 
 
 ## Stochastic uncertainty models for power systems {#topic-stochastic}
 
-Once uncertain renewable injections are treated as dynamic forcing rather than as exogenous scenarios, the problem becomes one of uncertainty propagation through power-system models, as developed in [Wang et al. (2015)](https://doi.org/10.1137/130940050) and carried into operational flexibility studies such as [Li et al. (2016)](https://doi.org/10.1109/TSTE.2015.2497470).
+Once uncertain inverter-based injections are treated as dynamic forcing rather than as exogenous scenarios, the problem becomes one of uncertainty propagation through power-system models, as developed in [Wang et al. (2015)](https://doi.org/10.1137/130940050) and carried into operational flexibility studies such as [Li et al. (2016)](https://doi.org/10.1109/TSTE.2015.2497470).
 For a stochastic dynamical system,
 
 <p class="mathjax-display">\[
@@ -199,7 +199,7 @@ G(t) = \max_{\lVert \delta x_0 \rVert = 1} \lVert \delta x(t) \rVert,
 \]</p>
 
 which captures the largest pre-asymptotic amplification over all admissible initial perturbations.
-That perspective is useful because renewable-rich systems can exhibit significant short-term growth even when asymptotic modal analysis looks benign.
+That perspective is useful because inverter-based systems can exhibit significant short-term growth even when asymptotic modal analysis looks benign.
 
 The trust-region trajectory work addresses a related, but nonlinear, question: how can one compute extreme trajectories over uncertain parameter sets without relying on prohibitively large Monte Carlo ensembles ([Maldonado et al., 2022](https://doi.org/10.1109/TPWRS.2022.3141372)).
 The answer is to combine sensitivity information with a trust-region optimization procedure that keeps the local approximation under control when nonlinear effects become important.
@@ -326,7 +326,7 @@ The underlying idea is attractive: use data-driven models for speed, but force t
 
 ## References {#references}
 
-### Weather-aware operations and renewable integration
+### Weather-aware operations and inverter-based integration
 
 <ul class="pub-list">
   {%- assign p = site.data.publications | where: "id", "constantinescu-2011-a-computational-framework-for-uncertainty-quantification" | first -%}
