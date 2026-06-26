@@ -35,6 +35,39 @@
   - data-assimilation
   - power-grid
   featured: true
+- id: jung-2026-hybrid-physics-machine-learning-framework-for-enhancing
+  type: proceedings
+  title: A hybrid physics-machine-learning framework for enhancing coarse-grid spectral element simulations
+    for large-scale computing
+  authors: Junoh Jung, Emil M Constantinescu, Riccardo Balin, and Bethany Lusch
+  venue: AIAA AVIATION 2026 Forum
+  volume: []
+  number: []
+  pages: []
+  year: 2026
+  doi: 10.2514/6.2026-4474
+  arxiv: []
+  pdf: https://arc.aiaa.org/doi/pdf/10.2514/6.2026-4474
+  tags:
+  - sciml
+  - amr
+  featured: true
+- id: jung-2026-physics-informed-b-spline-framework-for-continuous
+  type: journal
+  title: A physics-informed B-spline framework for continuous approximation of flow data
+  authors: Junoh Jung, David Lenz, Emil M Constantinescu, and Tom Peterka
+  venue: Submitted
+  volume: []
+  number: []
+  pages: []
+  year: 2026
+  doi: []
+  arxiv: '2606.10335'
+  pdf: https://arxiv.org/pdf/2606.10335.pdf
+  tags:
+  - sciml
+  - amr
+  featured: true
 - id: ganguli-2026-disentangled-deep-priors-for-bayesian-inverse
   type: journal
   title: Disentangled deep priors for Bayesian inverse problems

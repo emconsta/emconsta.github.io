@@ -21,7 +21,7 @@ description: "Hybrid ML-PDE project overview"
 
 <div class="project-overview">
   <p class="project-overview__lead">
-    This project develops hybrid machine learning and PDE methods that augment coarse-grid finite element or DG solvers with learnable correction operators.
+    This project develops hybrid machine learning and PDE methods that augment coarse-grid finite element, DG, and spectral-element solvers with learnable correction operators.
     The objective is to preserve the numerical structure of scientific simulations while improving long-horizon accuracy and computational efficiency.
   </p>
   <div class="project-overview__meta">
@@ -113,6 +113,10 @@ Across both correction mechanisms, training typically minimizes rollout mismatch
 
 with gradients computed by differentiating through the time integrator (e.g., neural ODE / adjoint methods for DG+source models, and discrete adjoints plus backpropagation for weak-form finite element models).
 
+A recent extension moves this idea into production-scale spectral-element simulation with [NekRS](https://nekrsdoc.readthedocs.io/en/latest/). In that setting, a local element stencil correction is embedded directly in the solver and trained in situ through short autoregressive rollouts initialized from projected restart states. The AIAA 2026 study demonstrates this solver-integrated workflow on [Aurora](https://www.alcf.anl.gov/aurora) for three-dimensional Taylor-Green vortex and backward-facing-step configurations, establishing a baseline for stable coarse-grid correction in large-scale incompressible flow simulations.
+
+Complementary work on physics-informed B-splines provides continuous, differentiable approximations of flow data rather than another solver correction. The framework uses compactly supported spline bases with exact derivatives and physics-informed residuals, which makes it useful for reconstructing, analyzing, and visualizing flow fields in a form that remains compatible with downstream PDE-based diagnostics.
+
 ## Representative results {#results}
 
 <div class="project-media-card">
@@ -159,6 +163,8 @@ with gradients computed by differentiating through the time integrator (e.g., ne
 
 ## References for deeper dive {#references}
 
-1. Junoh Jung and Emil M Constantinescu. *Learning differentiable weak-form corrections to accelerate finite element simulations* (proceedings, 2026). [arXiv](https://arxiv.org/abs/2601.20019)
-2. Shinhoo Kang and Emil M Constantinescu. *Differentiable DG with neural operator source term correction* (2025). [arXiv](https://arxiv.org/abs/2310.18897)
-3. Shinhoo Kang and Emil M Constantinescu. *Learning subgrid-scale models with neural ordinary differential equations*. Computers and Fluids, 2023. [DOI](https://doi.org/10.1016/j.compfluid.2023.105919) [arXiv](https://arxiv.org/abs/2212.09967)
+1. Junoh Jung, Emil M Constantinescu, Riccardo Balin, and Bethany Lusch. *A hybrid physics-machine-learning framework for enhancing coarse-grid spectral element simulations for large-scale computing*. AIAA AVIATION 2026 Forum, 2026. [DOI](https://doi.org/10.2514/6.2026-4474) [PDF](https://arc.aiaa.org/doi/pdf/10.2514/6.2026-4474)
+2. Junoh Jung, David Lenz, Emil M Constantinescu, and Tom Peterka. *A physics-informed B-spline framework for continuous approximation of flow data* (Submitted, 2026). [arXiv](https://arxiv.org/abs/2606.10335) [PDF](https://arxiv.org/pdf/2606.10335.pdf)
+3. Junoh Jung and Emil M Constantinescu. *Learning differentiable weak-form corrections to accelerate finite element simulations* (proceedings, 2026). [arXiv](https://arxiv.org/abs/2601.20019)
+4. Shinhoo Kang and Emil M Constantinescu. *Differentiable DG with neural operator source term correction* (2025). [arXiv](https://arxiv.org/abs/2310.18897)
+5. Shinhoo Kang and Emil M Constantinescu. *Learning subgrid-scale models with neural ordinary differential equations*. Computers and Fluids, 2023. [DOI](https://doi.org/10.1016/j.compfluid.2023.105919) [arXiv](https://arxiv.org/abs/2212.09967)
