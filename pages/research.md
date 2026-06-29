@@ -46,6 +46,7 @@ See the [Projects page]({{ '/pages/projects' | relative_url }}) for high-level r
 - DESolve (time integration package): <https://emconsta.github.io/desolve> | GitHub: <https://github.com/emconsta/desolve>
 - PETSc time stepping: <https://petsc.org/release/>
 - DAPack (data assimilation package): <https://bitbucket.org/emconsta/dapack>
+- DeepGenPrior (disentangled deep priors for Bayesian inverse problems; lead developer): <https://github.com/emconsta/DeepGenPrior>
 - UQGrid (power grid dynamics; contributor): <https://github.com/dmaldona/uqgrid>
 
 ## Publications

@@ -155,6 +155,11 @@ In elliptic PDE inverse problems, the resulting prior supports latent-space MAP 
 Instead of a purely black-box generative prior, the posterior can be read in two layers: uncertainty in the physically meaningful auxiliary variables and uncertainty in the residual latent field.
 That is useful when the goal is not merely to fit observations, but to recover a scientifically meaningful uncertainty decomposition.
 
+<div class="project-callout">
+  <h3>Software</h3>
+  <p><strong><a href="https://github.com/emconsta/DeepGenPrior">DeepGenPrior</a></strong> provides the software implementation associated with the disentangled deep-priors work. Emil Constantinescu is listed here as lead developer for the package.</p>
+</div>
+
 <div class="project-media-card">
   <h3>Deep priors: interpretable posteriors for inverse problems</h3>
   <p class="project-media-card__lead">

@@ -177,6 +177,12 @@ description: Homepage of Emil Constantinescu
       <p class="software-card__links"><a class="pub-chip" href="https://bitbucket.org/emconsta/dapack">Repository</a></p>
     </article>
     <article class="card software-card">
+      <h3 class="card__title">DeepGenPrior</h3>
+      <p class="software-card__role">Lead developer</p>
+      <p class="card__desc">Disentangled deep generative priors for Bayesian inverse problems.</p>
+      <p class="software-card__links"><a class="pub-chip" href="https://github.com/emconsta/DeepGenPrior">GitHub</a></p>
+    </article>
+    <article class="card software-card">
       <h3 class="card__title">UQGrid</h3>
       <p class="software-card__role">Contributor</p>
       <p class="card__desc">Power grid dynamics and UQ workflows.</p>
