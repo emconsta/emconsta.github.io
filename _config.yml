@@ -74,3 +74,5 @@ exclude:
   - vendor/ruby/
   - legacy
   - AGENTS.md
+  - CLAUDE.md
+  - last.sh

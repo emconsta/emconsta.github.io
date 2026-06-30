@@ -160,7 +160,7 @@ description: Homepage of Emil Constantinescu
   <div class="cards cards--software cards--compact">
     <article class="card software-card">
       <h3 class="card__title">DESolve</h3>
-      <p class="software-card__role">Lead package</p>
+      <p class="software-card__role">Lead developer</p>
       <p class="card__desc">Time integration for stiff and multiscale systems.</p>
       <p class="software-card__links"><a class="pub-chip" href="https://emconsta.github.io/desolve">Website</a> <a class="pub-chip" href="https://github.com/emconsta/desolve">GitHub</a></p>
     </article>
@@ -172,7 +172,7 @@ description: Homepage of Emil Constantinescu
     </article>
     <article class="card software-card">
       <h3 class="card__title">DAPack</h3>
-      <p class="software-card__role">Lead package</p>
+      <p class="software-card__role">Lead developer</p>
       <p class="card__desc">Data assimilation for UQ and inference.</p>
       <p class="software-card__links"><a class="pub-chip" href="https://bitbucket.org/emconsta/dapack">Repository</a></p>
     </article>
