@@ -31,6 +31,7 @@ description: Homepage of Emil Constantinescu
         Scientist at Large, <a href="https://researchdevelopment.uchicago.edu/case/">Consortium for Advanced Science and Engineering (CASE)</a>, University of Chicago
       </li>
     </ul>
+    <p class="home-hero__bio">DOE Early Career awardee, former associate editor of the <em>SIAM Journal on Scientific Computing</em>, and mentor to 25+ postdocs and students. <a href="{{ '/pages/bio' | relative_url }}">Read the full bio →</a></p>
     <div class="home-hero__links">
       <a class="pill" href="https://scholar.google.com/citations?hl=en&user=aPLUgCMAAAAJ">Google Scholar</a>
       <a class="pill" href="https://orcid.org/0000-0002-7003-6899">ORCID</a>

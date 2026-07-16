@@ -36,6 +36,7 @@ plugins:
   - jekyll-feed
 
 header_pages:
+ - pages/bio.md
  - pages/group.md
  - pages/projects.md
  - pages/publications.md
