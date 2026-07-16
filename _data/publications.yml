@@ -1,5 +1,38 @@
 # Publication metadata for the site (edit this file directly).
 # Use `[]` for missing values so they don’t render.
+- id: ganguli-2026-function-space-dichotomy-for-compositional-learning
+  type: journal
+  title: 'A function-space dichotomy for compositional learning: Exponential sub-optimality of the
+    neural tangent kernel'
+  authors: Arkaprabha Ganguli and Emil M Constantinescu
+  venue: Submitted
+  volume: []
+  number: []
+  pages: []
+  year: 2026
+  doi: []
+  arxiv: '2607.06382'
+  pdf: https://arxiv.org/pdf/2607.06382.pdf
+  tags:
+  - sciml
+  featured: true
+- id: barry-2026-event-level-qcd-inference-framework-for-quark
+  type: journal
+  title: Event-level QCD inference framework for quark-gluon imaging
+  authors: Patrick Barry, Pi-Yueh Chuang, Ian Cloët, Emil M Constantinescu, Arkaprabha Ganguli,
+    and Chao Peng
+  venue: Submitted
+  volume: []
+  number: []
+  pages: []
+  year: 2026
+  doi: []
+  arxiv: '2606.20923'
+  pdf: https://arxiv.org/pdf/2606.20923.pdf
+  tags:
+  - data-assimilation
+  - sciml
+  featured: true
 - id: ganguli-2026-uncovering-physical-drivers-of-dark-matter
   type: journal
   title: Uncovering physical drivers of dark matter halo structures with auxiliary-variable-guided generative

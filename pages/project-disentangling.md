@@ -86,6 +86,10 @@ Here $u$ denotes auxiliary variables with direct scientific meaning.
 The guided block $z_{\mathrm{aux}}$ is encouraged to align with those variables, while the residual block $z_{\mathrm{rec}}$ captures remaining variation that should not be forced into a named coordinate.
 In practical terms, this makes the latent space more useful for controlled traversals, response studies, outlier detection, and Bayesian posterior summaries.
 
+A related theoretical thread studies compositional learning directly in function space.
+That work asks when a model can exploit nested or compositional structure efficiently, and when kernelized infinite-width descriptions such as the neural tangent kernel miss useful structure.
+It provides context for why the project emphasizes representations with explicit, interpretable organization rather than treating the learned map as a purely opaque function approximator.
+
 <div class="project-callout">
   <h3>What disentanglement means in this project</h3>
   <p><strong>Interpretability:</strong> changing one guided coordinate should correspond to one physical effect rather than a mixture of unrelated changes.</p>
@@ -199,5 +203,7 @@ That is useful when the goal is not merely to fit observations, but to recover a
   {%- assign p = site.data.publications | where: "id", "ganguli-2026-uncovering-physical-drivers-of-dark-matter" | first -%}
   {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
   {%- assign p = site.data.publications | where: "id", "ganguli-2026-disentangled-deep-priors-for-bayesian-inverse" | first -%}
+  {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
+  {%- assign p = site.data.publications | where: "id", "ganguli-2026-function-space-dichotomy-for-compositional-learning" | first -%}
   {%- if p -%}{%- include publication.html pub=p -%}{%- endif -%}
 </ul>
