@@ -151,7 +151,7 @@
   - data-assimilation
   - sciml
   featured: true
-- id: chuang-2025-distributional-sensitivity-analysis-enabling-differentiability-in
+- id: chuang-2026-distributional-sensitivity-analysis-enabling-differentiability-in
   type: journal
   title: 'Distributional sensitivity analysis: Enabling differentiability in sample-based inference'
   authors: Pi-Yueh Chuang, Ahmed Attia, and Emil M Constantinescu
@@ -159,7 +159,7 @@
   volume: []
   number: []
   pages: []
-  year: 2025
+  year: 2026
   doi: []
   arxiv: '2508.09347'
   pdf: []
