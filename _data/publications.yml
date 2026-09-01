@@ -155,8 +155,8 @@
   type: journal
   title: 'Distributional sensitivity analysis: Enabling differentiability in sample-based inference'
   authors: Pi-Yueh Chuang, Ahmed Attia, and Emil M Constantinescu
-  venue: Computer Physics Communications, In press
-  volume: []
+  venue: Computer Physics Communications
+  volume: '329'
   number: []
   pages: '110363'
   year: 2026
