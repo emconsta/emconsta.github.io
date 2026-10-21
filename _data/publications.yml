@@ -85,16 +85,16 @@
   - sciml
   - amr
   featured: true
-- id: jung-2026-physics-informed-b-spline-framework-for-continuous
+- id: jung-2027-physics-informed-b-spline-framework-for-continuous
   type: journal
   title: A physics-informed B-spline framework for continuous approximation of flow data
   authors: Junoh Jung, David Lenz, Emil M Constantinescu, and Tom Peterka
-  venue: Submitted
-  volume: []
-  number: []
-  pages: []
-  year: 2026
-  doi: []
+  venue: Computer Methods in Applied Mechanics and Engineering
+  volume: '463'
+  number: B
+  pages: '119436'
+  year: 2027
+  doi: 10.1016/j.cma.2026.119436
   arxiv: '2606.10335'
   pdf: https://arxiv.org/pdf/2606.10335.pdf
   tags:
