@@ -253,7 +253,7 @@
   type: journal
   title: Learning subgrid-scale models with neural ordinary differential equations
   authors: Shinhoo Kang and Emil M Constantinescu
-  venue: Computers and Fluids, In Press
+  venue: Computers and Fluids
   volume: '261'
   number: []
   pages: '105919'
